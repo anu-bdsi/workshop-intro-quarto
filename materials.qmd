@@ -2,6 +2,7 @@
 title: "Materials"
 date: 04/12/2024
 engine: knitr
+categories: BDSI Workshop
 format: 
   html:
     css: assets/webex.css
