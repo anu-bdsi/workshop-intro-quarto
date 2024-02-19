@@ -1,0 +1,99 @@
+/* css styles */
+
+.tag-label {
+  font-size:0.45em; 
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #fdfefe;
+  background-color: #fdfefe;
+  color: #517699;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+
+.navbar-dark {
+    background-color: #BE830E;
+}
+
+a {
+  color: #BE830E;
+}
+
+a:hover { color: black; }
+
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+  color: #BE830E!important;
+  border-left: 1px solid #BE830E!important;
+}
+
+div.callout-note.callout {
+    border-left-color: #BE830E;
+}
+
+div.callout-note.callout-titled .callout-icon::before {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23BE830E' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z'/></svg>");
+}
+
+div.callout-note.callout-style-default>.callout-header {
+    background-color: #F5EDDE;
+}
+
+.footer, .footer a {
+  margin-top: 50px!important;
+  color: grey!important;
+}
+
+.footer {
+  display: block;
+}
+
+.circle-image-120 {
+  background: #000;
+  border-radius: 50%;
+  border: solid 3px black;
+  margin: auto;
+  height: 120px;
+  overflow: hidden;
+}
+
+.button {
+  background-color: #F5EDDE; 
+  border: none;
+  color: black;
+  padding: 10px 10px!important;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px auto!important;
+  text-decoration: none!important;
+  display: block;
+  font-size: 1.2em;
+  transition-duration: 0.4s;
+  box-shadow: 0 3px #999;
+}
+
+
+
+.w-100 {
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #BE830E;
+  color: white;
+}
+
+.no-decoration {
+  text-decoration: none!important;
+  -webkit-text-decoration: none!important;
+  -moz-text-decoration: none!important;
+  -ms-text-decoration: none!important;
+}
+
+.button:active {
+  background-color: #BE830E;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}

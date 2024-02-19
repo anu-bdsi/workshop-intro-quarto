@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "slack.html",
+    "href": "slack.html",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "",
+    "text": "We take making our community safe, friendly, and free from harassment and abuse seriously. In order to participate in this Slack workspace all individuals must read and by participating in the Slack community agree to be bound by this Code of Conduct.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "slack.html#summary",
+    "href": "slack.html#summary",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "Summary",
+    "text": "Summary\n\nBe respectful, be kind.\nAbusive behaviour is never tolerated.\nYou must use your full name and an image of yourself in your profile in order to participate in the community. Anonymous users who do not edit their profile after being given a warning by the Slack admin team will be removed from the Slack channel.\nShould you have any issues while participating in the Slack community you can reach out to one of the teaching team via Direct Message (DM).\nViolations of this code of conduct may result in immediate and permanent expulsion from the Slack community.\nAny decisions made by the Slack admin team are final."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reproducible research with Quarto",
+    "section": "",
+    "text": "This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).\nThe workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Reproducible research with Quarto",
+    "section": "",
+    "text": "This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).\nThe workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Reproducible research with Quarto",
+    "section": "🎯 Learning objectives",
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nProduce HTML, PDF or Word documents using Markdown syntax\nProduce dynamic documents with code (in R, Python, or Julia) using Quarto\nRecognise how YAML affects the document output\nApply different chunk options to modify the behaviour of the chunk output\nSet up their folder structure for data projects\nUnderstand the anatomy of Quarto documents"
+  },
+  {
+    "objectID": "index.html#preperation",
+    "href": "index.html#preperation",
+    "title": "Reproducible research with Quarto",
+    "section": "🔧 Preperation",
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of Quarto\nSlack (alternatively you can use the web version), and\nthe following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"quarto\"))\n If you are having issues, see also here or talk to the teaching team.\n\n\n\n\n\n\n Slack workspace\n\n\n\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct."
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Reproducible research with Quarto",
+    "section": "👩‍🏫👨‍🏫 Teaching team",
+    "text": "👩‍🏫👨‍🏫 Teaching team\n\n\n\n\n\n\n\n\n\nDr. Emi Tanaka\n\n\n\n\n\n\n\nHelper"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Help",
+    "section": "",
+    "text": "You aren’t alone in your R journey. Make use of the experiences of those around you.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "help.html#during-the-workshop",
+    "href": "help.html#during-the-workshop",
+    "title": "Help",
+    "section": "During the workshop",
+    "text": "During the workshop\n\nDon’t be shy and ask fellow participants in the workshop.\nFlag and ask the teaching team."
+  },
+  {
+    "objectID": "help.html#outside-of-the-workshop",
+    "href": "help.html#outside-of-the-workshop",
+    "title": "Help",
+    "section": "Outside of the workshop",
+    "text": "Outside of the workshop\n\nAsk people around you. A second opinion is often helpful in uncovering a step towards the solution to your problem.\nAsk the local experts such as at the BDSI Drop-In Sessions and ANU Statistical Support Network.\nUse online resources such as:\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community.\n\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "help.html#reporting-mistakes",
+    "href": "help.html#reporting-mistakes",
+    "title": "Help",
+    "section": "Reporting mistakes",
+    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know either by either emailing Emi (emi.tanaka@anu.edu.au) or reporting it at https://github.com/anu-bdsi/training-R1/issues (latter preferred)."
+  },
+  {
+    "objectID": "help.html#providing-feedback",
+    "href": "help.html#providing-feedback",
+    "title": "Help",
+    "section": "Providing feedback",
+    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email Emi (emi.tanaka@anu.edu.au) or use the survey link that was/will be emailed to you (for workshop participants)."
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Materials",
+    "section": "",
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nWriting with Markdown syntax\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nFlexible document outputs\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nDynamic documents with code\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nProject structure\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap up\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "materials.html#schedule",
+    "href": "materials.html#schedule",
+    "title": "Materials",
+    "section": "",
+    "text": "Time\nContent\n\n\n\n\n10.00-10.20\nWriting with Markdown syntax\n\n\n10.20-10.30\nExercise 1\n\n\n10.30-10.50\nFlexible document outputs\n\n\n10.50-11.10\nExercise 2\n\n\n11.10-11.20\nDynamic documents with code\n\n\n11.20-11.40\nExercise 3\n\n\n11.40-12.00\nProject structure\n\n\n12.00-12.20\nExercise 4\n\n\n12.50-13.00\nWrap up"
+  },
+  {
+    "objectID": "materials.html#resources",
+    "href": "materials.html#resources",
+    "title": "Materials",
+    "section": "📑 Resources",
+    "text": "📑 Resources"
+  },
+  {
+    "objectID": "materials.html#exercises",
+    "href": "materials.html#exercises",
+    "title": "Materials",
+    "section": "🏋️‍♀️ Exercises",
+    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4"
+  }
+]
