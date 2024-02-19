@@ -1,0 +1,59 @@
+---
+title: "Reproducible research with Quarto"
+categories: BDSI workshop
+date: 04/12/2024
+---
+
+
+## Welcome 👋
+
+This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI). 
+
+The workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia.
+
+## 🎯 Learning objectives 
+
+Upon completion of this workshop, participants should be able to:
+
+{{< include slides/_learning-objectives.qmd >}}
+
+## 🔧 Preperation 
+
+Please ensure that you download and install 
+
+- the latest version of [Quarto](https://quarto.org/docs/get-started/)
+- [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
+- the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.
+
+```r
+install.packages(c("tidyverse", "rmarkdown", "quarto"))
+```
+
+{{< fa hand-holding-medical >}} If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.
+
+::: {.callout-note icon=false style="width:100%"}
+
+## <i class='fab fa-slack'></i> [Slack workspace]{#slack}
+
+::: w-100
+
+[<button class="button">Join ANU Learning Data Slack Community</button>](https://join.slack.com/t/anulearningdata/signup){.no-decoration}
+
+:::
+
+- You must use your ANU email to sign up. 
+- Use your full name. 
+- By joining, you agree to abide by this [**code of conduct**](/slack.html).
+
+:::
+
+## 👩‍🏫👨‍🏫 Teaching team 
+
+::: {layout-ncol=2 style="text-align:center;"}
+
+
+![Dr. Emi Tanaka](slides/images/team/emi-square.png){.circle-image-120}
+
+![Helper](slides/images/team/dummy.jpg){.circle-image-120}
+
+:::

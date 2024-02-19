@@ -1,0 +1,38 @@
+---
+title: "Help"
+---
+
+You aren't alone in your R journey. Make use of the experiences of those around you.
+
+::: callout-important
+
+## Writing reproducible examples
+
+If your issue is in coding, it often helps to present your problem with a minimally reproducible example (show your full code so that we can run it ourselves, details about your operating system, what was the error message?, etc). Provide us the details so that we can help you! Read more [here](https://learnr.numbat.space/chapter3).
+
+:::
+
+## During the workshop
+
+- Don't be shy and ask fellow participants in the workshop. 
+- Flag and ask the teaching team.
+
+## Outside of the workshop
+
+- Ask people around you. A second opinion is often helpful in uncovering a step towards the solution to your problem. 
+- Ask the local experts such as at the [BDSI Drop-In Sessions](https://bdsi.anu.edu.au/news-events/event-series/bdsi-bioinformatics-and-statistics-drop-sessions) and [ANU Statistical Support Network](https://services.anu.edu.au/business-units/research-initiatives-and-infrastructure/statistical-support-network).
+- Use online resources such as:
+  - [Online Statistics Courses](https://services.anu.edu.au/training/online-statistics-courses#overlay-context=business-units/statistical-consulting-unit)  by ANU Statistical Support Network
+  - [R Project Sharepoint Resources](https://anu365.sharepoint.com/sites/StatSupportoNline/SitePages/R-Project(1).aspx?promotedState=0) by ANU Statistical Support Network
+  - [R for Data Science](https://r4ds.hadley.nz/)
+  - [R4DS Online Learning Community](https://rfordatasci.com/)
+  - Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/r) or [Posit Community](https://community.rstudio.com/).
+- You can continue to use the [ANU Learning Data Slack Community](https://anu-bdsi.github.io/training-R1/#slack) to connect with each other.
+
+## Reporting mistakes
+
+Did you find mistakes in the workshop? Please let us know either by either emailing Emi ([emi.tanaka@anu.edu.au](mailto:emi.tanaka@anu.edu.au)) or reporting it at <https://github.com/anu-bdsi/training-R1/issues> (latter preferred).
+
+## Providing feedback
+
+We want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email Emi ([emi.tanaka@anu.edu.au](mailto:emi.tanaka@anu.edu.au)) or use the survey link that was/will be emailed to you (for workshop participants). 

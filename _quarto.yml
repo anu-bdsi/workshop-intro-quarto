@@ -1,0 +1,26 @@
+project:
+  type: website
+  render:
+   - "*.qmd"
+   - "!slides/*"
+
+website:
+  title: "[ANU BDSI<br>workshop]{.tag-label} Reproducible Research with Quarto"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - materials.qmd
+      - help.qmd
+  body-footer: | 
+    [This website is brought to you by the [ANU Biological Data Science Institute](https://bdsi.anu.edu.au/).]{.footer}
+  margin-header: |
+    ![](/images/ANU_Secondary_Horizontal_GoldBlack.png)
+format:
+  html:
+    css: styles.css
+    toc: true
+    
+
+
+

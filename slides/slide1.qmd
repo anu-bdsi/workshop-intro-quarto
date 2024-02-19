@@ -1,0 +1,50 @@
+---
+title: Writing with Markdown syntax 
+subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
+format:
+  anu-light-revealjs:
+    width: 1920
+    height: 1080
+    auto-stretch: false
+    html-math-method: katex
+    self-contained: true
+    css: assets/custom.css
+    footer: anu-bdsi.github.io/workshop-intro-quarto/
+author: Emi Tanaka
+institute: Biological Data Science Institute
+date: 2024/04/12
+date-format: "D[th] MMMM YYYY"
+---
+
+
+# Welcome 👋
+
+
+## Teaching team 
+
+::: {layout-ncol=3 style="text-align:center;"}
+
+
+![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
+
+![Helper](images/team/dummy.jpg){.circle-image-120}
+
+
+:::
+
+::: incremental
+
+- Who are you?
+  - What statistical software have you used before?
+  - Introduce yourself to people around you
+    
+:::
+
+# Workshop materials
+
+::: box
+
+All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-to-R/>]{.f-subheadline target="_blank"}
+
+:::
+

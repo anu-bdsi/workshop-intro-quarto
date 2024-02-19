@@ -1,0 +1,58 @@
+---
+title: "Materials"
+date: 04/12/2024
+engine: knitr
+format: 
+  html:
+    css: assets/webex.css
+    include-after-body: assets/webex.js
+---
+
+```{r setup, include = FALSE}
+library(webexercises)
+ex_tabset <- function(id) {
+  paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
+         'document.getElementById(', "'tabset-1-", id, "-tab').click();",
+         '}')
+}
+slide_title <- function(id) {
+  paste0("[", 
+         rmarkdown::yaml_front_matter(paste0("slides/slide", id, ".qmd"))$title,
+         "](slides/slide", id, ".html){target='_blank'}")
+}
+```
+
+## 🕙 Schedule
+
+
+Time | Content 
+:-----------|:-----------------|
+10.00-10.20 | `r slide_title(1)` |     
+10.20-10.30 | `r ex_tabset(1)` |     
+10.30-10.50 | `r slide_title(2)`|     
+10.50-11.10 | `r ex_tabset(2)` |      
+11.10-11.20 | `r slide_title(3)` |     
+11.20-11.40 | `r ex_tabset(3)` |     
+11.40-12.00 | `r slide_title(4)` |     
+12.00-12.20 | `r ex_tabset(4)` |     
+12.50-13.00 | `r slide_title(5)`|      
+
+## 📑 Resources
+
+
+
+## 🏋️‍♀️ Exercises
+
+::: panel-tabset
+
+## Exercise 1
+
+
+## Exercise 2
+
+
+## Exercise 3
+
+## Exercise 4
+
+:::

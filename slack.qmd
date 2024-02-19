@@ -1,0 +1,68 @@
+---
+title: Code of Conduct in Slack Workspace
+---
+
+We take making our community safe, friendly, and free from harassment and abuse seriously. In order to participate in this Slack workspace all individuals must read and by participating in the Slack community agree to be bound by this Code of Conduct.
+
+## Summary
+
+- Be respectful, be kind.
+- Abusive behaviour is never tolerated.
+- You must use your full name and an image of yourself in your profile in order to participate in the community. Anonymous users who do not edit their profile after being given a warning by the Slack admin team will be removed from the Slack channel.
+- Should you have any issues while participating in the Slack community you can reach out to one of the teaching team via Direct Message (DM).
+- Violations of this code of conduct may result in immediate and permanent expulsion from the Slack community.
+- Any decisions made by the Slack admin team are final.
+
+
+# Standards of behaviour
+
+We are committed to making the Slack community a friendly, safe, and welcoming environment for everyone, regardless of gender identity, sexual orientation, disability, ethnicity, religion, age, physical appearance, body size, race, or similar personal characteristics. 
+
+Examples of behaviours that contribute to creating a positive environment include:
+
+- using welcoming and inclusive language;
+- being respectful of differing viewpoints and experiences; 
+- gracefully accepting constructive criticism;
+- focusing on what is best for the community;
+- showing empathy towards other community members.
+
+Examples of **unacceptable behaviour** include:
+
+- the use of sexualized language or imagery and unwelcome sexual attention or advances;
+- trolling, insulting/derogatory comments, and personal or political attacks;
+- public or private harassment;
+- publishing others’ private information, such as a physical or electronic address, without explicit permission;
+- other conduct which could reasonably be considered inappropriate in a professional setting.
+
+Whether the topic of discussion is about data or not, we ask that you take a moment before posting or commenting to consider whether the topic or the language you are using may make others uncomfortable, and refrain from doing so if you believe it may. As we state in the first summary point, be kind. We also ask everyone to be respectful in their communications. Discussions of data topics are encouraged, however differences of opinion should remain respectful and personal attacks and harassment are never acceptable.
+
+Harassment includes, but is not limited to: harmful or prejudicial verbal or written comments related to gender identity, sexual orientation, disability, ethnicity, religion, age, physical appearance, body size, race, or similar personal characteristics; inappropriate use of nudity, sexual images, and/or sexually explicit language; threats of physical or non-physical harm; deliberate intimidation, stalking or following; harassing photography or recording; and unwelcome sexual attention.
+
+Any member of a hate organization, or supporter of such, is not welcome.
+
+# Participation and acceptable content
+
+When using the Slack workspace:
+
+- Do not publish text/screenshots of anything shared in Slack without explicit consent from the author. This includes screenshots of private messages to public channels, as well as conversations on public channels to anywhere outside of the Slack community.
+- Promotion of commercial products and services is allowed if it is relevant to the group’s purpose, does not saturate communications within Slack and the promoters have demonstrated other contributions to the ANU data community.
+
+Content must not contain illegal or infringing content. You should only publish content if you have the right to do so. This includes complying with all software license agreements or other intellectual property restrictions. For example, redistributing an MIT-licensed module with the copyright notice removed, would not be allowed. You will be responsible for any violation of laws or others’ intellectual property rights.
+
+Content must not be malware. For example, content (code, video, pictures, words, etc.) which is designed to maliciously exploit or damage computer systems, is not allowed.
+
+Content name, description, and other visible metadata must not include abusive, inappropriate, or harassing content.
+
+The support channel is available for users to post questions and ask for help on problems they are facing. If you would like help on a data problem that may require extensive time commitment, please consider consulting a professional. Please refrain from asking questions related to assessment tasks.
+
+# Violations of the Code of Conduct
+
+If you believe someone is harassing you or is otherwise engaging in behaviours that violate this Code of Conduct please reach out to any of the Slack admin team listed at the start of this document. If your issue is not resolvable by the person you contact and requires discussion by the admin team, the person you contacted will ask you first if you are happy for them to discuss with the broader admin team.
+
+Reports to the admin team will be managed in the strictest confidence and all reports will be investigated. All efforts will be made to protect the anonymity of persons reporting violations. Persons reporting violations of the Code of Conduct may request that their report remain confidential and that no further action be taken. However, if the Slack admin team deems it necessary for the safety of members, action will be taken.
+
+Depending on the transgression, consequences of violating the Code of Conduct may vary from a warning and compulsion to cease the violating behaviour to a temporary or permanent ban from the Slack community. Individuals who keep engaging in the violating behaviour will be permanently banned with no option for appeal. Any misconduct will be recorded in our internal records.
+
+# Acknowledgements
+
+This code of conduct borrows from the SSA Victoria & Tasmania, the runapp, and the DevRel Collective codes of conduct.

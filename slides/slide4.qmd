@@ -1,0 +1,18 @@
+---
+title: Project structure
+subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
+format:
+  anu-light-revealjs:
+    width: 1920
+    height: 1080
+    auto-stretch: false
+    html-math-method: katex
+    self-contained: true
+    css: assets/custom.css
+    footer: anu-bdsi.github.io/workshop-intro-quarto/
+author: Emi Tanaka
+institute: Biological Data Science Institute
+date: 2024/04/12
+date-format: "D[th] MMMM YYYY"
+---
+

@@ -1,0 +1,6 @@
+- Produce HTML, PDF or Word documents using Markdown syntax
+- Produce dynamic documents with code (in R, Python, or Julia) using Quarto
+- Recognise how YAML affects the document output
+- Apply different chunk options to modify the behaviour of the chunk output 
+- Set up their folder structure for data projects
+- Understand the anatomy of Quarto documents
