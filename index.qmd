@@ -7,9 +7,9 @@ date: 04/12/2024
 
 ## Welcome 👋
 
-This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI). 
+This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).
 
-The workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia.
+The workshop aims to equip participants with the skills to write reproducible research documents using Quarto (an open-source scientific and technical publishing system). It is expected that the participants know and use at least Python, R, or Julia to get the most of the workshop.
 
 ## 🎯 Learning objectives 
 
