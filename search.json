@@ -18,21 +18,21 @@
     "href": "index.html",
     "title": "Reproducible research with Quarto",
     "section": "",
-    "text": "This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).\nThe workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia.\nThis website is brought to you by the ANU Biological Data Science Institute."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to equip participants with the skills to write reproducible research documents using Quarto (an open-source scientific and technical publishing system). It is expected that the participants know and use at least Python, R, or Julia to get the most of the workshop.\nThis website is brought to you by the ANU Biological Data Science Institute."
   },
   {
     "objectID": "index.html#welcome",
     "href": "index.html#welcome",
     "title": "Reproducible research with Quarto",
     "section": "",
-    "text": "This is a training workshop for (aspiring) scientists offered by the Australian National University (ANU) Biological Data Science Institute (BDSI).\nThe workshop is meant for ANU staff or students who wish to upskill in using Quarto (next generation R Markdown) to write dynamic documents. It is expected that the participants know and use at least one of the following languages: Python, R, or Julia."
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe workshop aims to equip participants with the skills to write reproducible research documents using Quarto (an open-source scientific and technical publishing system). It is expected that the participants know and use at least Python, R, or Julia to get the most of the workshop."
   },
   {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
     "title": "Reproducible research with Quarto",
     "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nProduce HTML, PDF or Word documents using Markdown syntax\nProduce dynamic documents with code (in R, Python, or Julia) using Quarto\nRecognise how YAML affects the document output\nApply different chunk options to modify the behaviour of the chunk output\nSet up their folder structure for data projects\nUnderstand the anatomy of Quarto documents"
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nProduce HTML, PDF or Word documents using Markdown syntax\nProduce dynamic documents with code (in R, Python, or Julia) using Quarto\nUnderstand the anatomy of Quarto documents\nApply different chunk options to modify the behaviour of the chunk output\nSet up their folder structure for data projects\nUnderstand the importance of reproducibility\nApply reproducible practices"
   },
   {
     "objectID": "index.html#preperation",
