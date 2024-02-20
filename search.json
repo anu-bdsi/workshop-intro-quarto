@@ -32,7 +32,7 @@
     "href": "index.html#learning-objectives",
     "title": "Reproducible research with Quarto",
     "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nProduce HTML, PDF or Word documents using Markdown syntax\nProduce dynamic documents with code (in R, Python, or Julia) using Quarto\nUnderstand the anatomy of Quarto documents\nApply different chunk options to modify the behaviour of the chunk output\nSet up their folder structure for data projects\nUnderstand the importance of reproducibility\nApply reproducible practices"
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nProduce HTML, PDF or Word documents using Markdown syntax\nProduce dynamic documents with code (in R, Python, or Julia) using Quarto\nUnderstand the anatomy of Quarto documents\nApply different code chunk options to modify the behaviour of the chunk\nSet up their folder structure for data projects\nUnderstand the importance of reproducibility\nApply reproducible practices"
   },
   {
     "objectID": "index.html#preperation",
