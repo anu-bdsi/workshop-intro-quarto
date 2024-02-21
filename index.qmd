@@ -9,7 +9,8 @@ date: 04/12/2024
 
 This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).
 
-The workshop aims to equip participants with the skills to write reproducible research documents using Quarto (an open-source scientific and technical publishing system). It is expected that the participants know and use at least Python, R, or Julia to get the most out of the workshop.
+
+The goal of the workshop is to provide participants with the proficiency to author reproducible research documents using Quarto, an open-source system for scientific and technical publishing. Prior familiarity and usage of at least one of the programming languages such as Python, R, or Julia is assumed to get the most out of the workshop.
 
 ## 🎯 Learning objectives 
 

@@ -1,7 +1,7 @@
-- Produce HTML, PDF or Word documents using Markdown syntax
-- Produce dynamic documents with code (in R, Python, or Julia) using Quarto
+- Generate HTML, PDF, or Word documents using Markdown syntax
+- Develop dynamic documents containing code (in R, Python, or Julia) using Quarto
 - Understand the anatomy of Quarto documents 
-- Apply different code chunk options to modify the behaviour of the chunk 
-- Set up their folder structure for data projects
-- Understand the importance of reproducibility and the concept of literate programming
+- Implement various code chunk options to customize chunk behaviour
+- Establish an organized folder structure for data projects
+- Recognize the significance of reproducibility and grasp the concept of literate programming
 - Apply reproducible practices 
