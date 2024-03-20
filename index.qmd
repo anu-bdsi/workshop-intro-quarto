@@ -2,6 +2,7 @@
 title: "Reproducible research with Quarto"
 categories: BDSI workshop
 date: 04/12/2024
+engine: knitr
 ---
 
 
@@ -50,11 +51,6 @@ install.packages(c("tidyverse", "rmarkdown", "quarto"))
 
 ## 👩‍🏫👨‍🏫 Teaching team 
 
-::: {layout-ncol=2 style="text-align:center;"}
+`r photo_path <- "slides/"`
 
-
-![Dr. Emi Tanaka](slides/images/team/emi-square.png){.circle-image-120}
-
-![Helper](slides/images/team/dummy.jpg){.circle-image-120}
-
-:::
+{{< include slides/_team.qmd >}}

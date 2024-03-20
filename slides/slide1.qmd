@@ -14,6 +14,7 @@ author: Emi Tanaka
 institute: Biological Data Science Institute
 date: 2024/04/12
 date-format: "D[th] MMMM YYYY"
+engine: knitr
 ---
 
 
@@ -22,29 +23,16 @@ date-format: "D[th] MMMM YYYY"
 
 ## Teaching team 
 
-::: {layout-ncol=3 style="text-align:center;"}
+`r photo_path <- ""`
 
+{{< include _team.qmd >}}
 
-![Dr. Emi Tanaka](images/team/emi-square.png){.circle-image-120}
-
-![Helper](images/team/dummy.jpg){.circle-image-120}
-
-
-:::
-
-::: incremental
-
-- Who are you?
-  - What statistical software have you used before?
-  - Introduce yourself to people around you
-    
-:::
 
 # Workshop materials
 
 ::: box
 
-All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-to-R/>]{.f-subheadline target="_blank"}
+All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-quarto/>]{.f-subheadline target="_blank"}
 
 :::
 

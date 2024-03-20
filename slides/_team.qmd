@@ -1,0 +1,14 @@
+::: {layout-ncol=4 style="text-align:center;"}
+
+
+![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}
+
+![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}
+
+![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}
+
+
+![Nils Kreuter (TBA)](`r photo_path`images/team/avatar3.png){.circle-image-120}
+
+
+:::
