@@ -34,9 +34,7 @@ Time | Content
 10.50-11.10 | `r ex_tabset(2)` |      
 11.10-11.20 | `r slide_title(3)` |     
 11.20-11.40 | `r ex_tabset(3)` |     
-11.40-12.00 | `r slide_title(4)` |     
-12.00-12.20 | `r ex_tabset(4)` |     
-12.50-13.00 | `r slide_title(5)`|      
+11.40-12.00 | `r slide_title(4)` |      
 
 ## 📑 Resources
 
