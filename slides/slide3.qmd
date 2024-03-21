@@ -1,5 +1,5 @@
 ---
-title: Dynamic documents with code
+title: Towards better reproducible practice
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
@@ -16,3 +16,16 @@ date: 2024/04/12
 date-format: "D[th] MMMM YYYY"
 ---
 
+## {{< fa crosshairs >}} Current learning objective
+
+```{r, include = FALSE}
+library(tidyverse)
+source("setup.R")
+```
+
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives(5:7)
+```

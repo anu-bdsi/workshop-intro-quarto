@@ -1,5 +1,5 @@
 ---
-title: Writing with Markdown syntax 
+title: Writing flexible document outputs with Markdown syntax 
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
@@ -36,3 +36,28 @@ All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-
 
 :::
 
+
+## Today's learning objectives 
+
+```{r, include = FALSE}
+library(tidyverse)
+source("setup.R")
+```
+
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives()
+```
+
+
+
+## {{< fa crosshairs >}} Current learning objective
+
+
+```{r}
+#| results: asis 
+#| echo: false
+learning_objectives(1:2)
+```

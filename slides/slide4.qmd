@@ -1,5 +1,5 @@
 ---
-title: Project structure
+title: Wrap up
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
