@@ -158,7 +158,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome 👋</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">🎯 Learning objectives</a></li>
   <li><a href="#preperation" id="toc-preperation" class="nav-link" data-scroll-target="#preperation">🔧 Preperation</a></li>
-  <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">👩‍🏫👨‍🏫 Teaching team</a></li>
+  <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">Teaching team</a></li>
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
   </ul>
 </nav>
     </div>
@@ -203,12 +204,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Upon completion of this workshop, participants should be able to:</p>
 <ul>
 <li>Generate HTML, PDF, or Word documents using Markdown syntax</li>
-<li>Develop dynamic documents containing code (in R, Python, or Julia) using Quarto</li>
 <li>Understand the anatomy of Quarto documents</li>
+<li>Develop dynamic documents containing code (in R, Python, or Julia) using Quarto</li>
 <li>Implement various code chunk options to customize chunk behaviour</li>
-<li>Establish an organized folder structure for data projects</li>
 <li>Recognize the significance of reproducibility and grasp the concept of literate programming</li>
 <li>Apply reproducible practices</li>
+<li>Establish an organized folder structure for data projects</li>
 </ul>
 </section>
 <section id="preperation" class="level2">
@@ -216,7 +217,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Please ensure that you download and install</p>
 <ul>
 <li>the latest version of <a href="https://quarto.org/docs/get-started/">Quarto</a></li>
-<li><a href="https://slack.com/intl/en-au">Slack</a> (alternatively you can use the web version), and</li>
+<li>(Optional) <a href="https://slack.com/intl/en-au">Slack</a> (alternatively you can use the web version), and</li>
 <li>the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"rmarkdown"</span>, <span class="st">"quarto"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -227,10 +228,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<i class="fab fa-slack"></i> <span id="slack">Slack workspace</span>
+<i class="fab fa-slack"></i> <span id="slack">Slack workspace (Optional)</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p>We use Slack to facilitate communication between workshop participants and the teaching team.</p>
 <div class="w-100">
 <p><a href="https://join.slack.com/t/anulearningdata/signup" class="no-decoration"><button class="button">Join ANU Learning Data Slack Community</button></a></p>
 </div>
@@ -243,30 +245,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 <section id="teaching-team" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-team">👩‍🏫👨‍🏫 Teaching team</h2>
-<div>
+<h2 class="anchored" data-anchor-id="teaching-team">Teaching team</h2>
+<div class="cell">
+<style type="text/css">
+.nav-link.active {
+  background-color: #F5EDDE!important;
+  border-bottom-color: #F5EDDE!important;
+}
 
+.tab-content {
+  background-color: #F5EDDE!important;
+}
+</style>
 </div>
-<div class="quarto-layout-panel" data-layout-ncol="2" style="text-align:center;">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="slides/images/team/emi-square.png" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Dr.&nbsp;Emi Tanaka</figcaption>
-</figure>
+<div class="tabset-margin-container"></div><div class="panel-tabset f1">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><img src="slides/images/team/emi-square.png" class="circle-image-120 img-fluid" alt="Dr.&nbsp;Emi Tanaka"><br>Dr.&nbsp;Emi Tanaka</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><img src="slides/images/team/jeremias-ivan.jpg" class="circle-image-120 img-fluid" alt="Jeremias Ivan"><br>Jeremias Ivan</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><img src="slides/images/team/audrey-prasetya.jpeg" class="circle-image-120 img-fluid" alt="Audrey Prasetya"><br>Audrey Prasetya</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false"><img src="slides/images/team/ryan-odonnell.jpg" class="circle-image-120 img-fluid" alt="Ryan O’Donnell"><br>Ryan O’Donnell</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false"><img src="slides/images/team/nils-kreuter.jpeg" class="circle-image-120 img-fluid" alt="Nils Kreuter"><br>Nils Kreuter</a></li></ul>
+<div class="tab-content f1">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="f2">
+<ul class="fa-ul">
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> Academic statistician passionate about data science and open source software
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-graduation-cap"></i></span> PhD in Statistical Bioinformatics
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-graduate"></i></span> BSci (Adv Maths) with major in Mathematics and Statistics
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-heart fa-beat"></i></span> Loves data and coding
+</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <i class="fa-solid fa-globe" aria-label="globe"></i> https://emitanaka.org &nbsp; &nbsp; <i class="fab fa-twitter"></i> <span class="citation" data-cites="statsgen">@statsgen</span> &nbsp; &nbsp; <i class="fab fa-mastodon"></i> fosstodon.org/<span class="citation" data-cites="emitanaka">@emitanaka</span></p>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="slides/images/team/dummy.jpg" class="circle-image-120 img-fluid figure-img"></p>
-<figcaption>Helper</figcaption>
-</figure>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="f2">
+<ul class="fa-ul">
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-graduate"></i></span> BSci in Bioinformatics
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-heart fa-beat"></i></span> Enjoy hiking and science
+</li>
+<li class="">
+<span class="fa-li"><i class="fab fa-github"></i></span> <a href="https://github.com/jeremiasivan">jeremiasivan</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="f2">
+<ul class="fa-ul">
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> (Almost finishing) PhD student <span class="citation" data-cites="Moritz">@Moritz</span> Lab, E&amp;E Division, RSB, ANU
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-dove"></i></span> Working on historical biogeography of Indo-Australian birds
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-graduate"></i></span> BSc (Hons) with major in Zoology and Ecology &amp; Conservation
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-heart fa-beat"></i></span> Loves games, art markets, and FOOD
+</li>
+<li class="">
+<span class="fa-li"><i class="fab fa-twitter"></i></span> <span class="citation" data-cites="goaudreymp">@goaudreymp</span>
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-link"></i></span> https://linktr.ee/goaudreymp
+</li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div class="f2">
+<ul class="fa-ul">
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> 3rd Year PhD student @ Linde Lab, E&amp;E Division, RSB, ANU
+</li>
+<li class="">
+<span class="fa-li"><i class="fab fa-pagelines"></i></span> Investigating the evolution of the Australian orchid flora and associated funga
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-graduate"></i></span> MScSt (Biodiversity Science)
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-heart fa-beat"></i></span> Loves playing music, reading, nature
+</li>
+<li class="">
+<span class="fa-li"><i class="fab fa-twitter"></i></span> <span class="citation" data-cites="rpodonnell">@rpodonnell</span>
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-link"></i></span> rpodonnell.github.io
+</li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div class="f2">
+<ul class="fa-ul">
+<li class="">
+<span class="fa-li"><i class="fas fa-user-circle"></i></span> 2nd Year PhD student @ Sequeira Lab, E&amp;E Division, RSB, ANU
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-fish"></i></span> Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-user-graduate"></i></span> MSc (Marine Biology), BSc (Biology)
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-heart fa-beat"></i></span> Loves triathlon, hiking and the ocean
+</li>
+<li class="">
+<span class="fa-li"><i class="fab fa-twitter"></i></span> <span class="citation" data-cites="nilskreuter">@nilskreuter</span>
+</li>
+<li class="">
+<span class="fa-li"><i class="fas fa-link"></i></span> https://linktr.ee/nilskreuter
+</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
+</section>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<p>The materials can be found <a href="./materials.html">here</a>.</p>
+<p><img src="images/cc.svg" class="img-fluid"> <img src="images/by.svg" class="img-fluid"> <img src="images/nc.svg" class="img-fluid"> <img src="images/sa.svg" class="img-fluid"></p>
+<p>These materials are shared under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
 
 </section>

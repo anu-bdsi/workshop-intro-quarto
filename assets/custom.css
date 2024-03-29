@@ -1,0 +1,27 @@
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul.checkbox {
+  list-style-type: none;
+}
+
+.checkbox p {
+  margin-bottom: 0!important;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
