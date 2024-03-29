@@ -5,12 +5,23 @@ engine: knitr
 categories: BDSI Workshop
 format: 
   html:
-    css: assets/webex.css
-    include-after-body: assets/webex.js
+    css: 
+      - assets/webex.css
+      - assets/custom.css
+    include-after-body: 
+      - assets/webex.js
+filters:
+  - webr2
+webr: 
+  show-startup-message: false  
 ---
+
+[![](images/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 
 ```{r setup, include = FALSE}
 library(webexercises)
+library(lubridate)
+library(tidyverse)
 ex_tabset <- function(id) {
   paste0("[_Exercise ", id, "_](#tabset-1-", id, "-tab){onclick=",
          'document.getElementById(', "'tabset-1-", id, "-tab').click();",
@@ -21,37 +32,81 @@ slide_title <- function(id) {
          rmarkdown::yaml_front_matter(paste0("slides/slide", id, ".qmd"))$title,
          "](slides/slide", id, ".html){target='_blank'}")
 }
+
+LOs <- readLines("slides/_learning-objectives.qmd")
+LOs <- LOs[LOs!=""]
+LOs <- stringr::str_replace(LOs, "- ", "")
+
+checklist <- function(x) {
+  paste0("::: {.callout-note}\n\n", 
+         "## Reflect on learning objectives \n\n",
+         "You should be able to:\n",
+         paste0("<ul class='checkbox'>", paste(paste0("<li><input type='checkbox'> ", x, "</li>"), collapse = "\n\n"), "</ul>\n\n:::"))
+
+}
+
+start <- dmy_hms("03/04/2024 10.00.00")
+timedisplay <- function(duration) {
+  end <- start + duration(duration, units = "minutes")
+  ret <- paste0(format(start, "%H:%M"), "--", format(end, "%H:%M"))
+  start <<- end
+  ret
+}
+
+content <- read_csv("slides/data/content.csv")
 ```
 
 ## 🕙 Schedule
 
 
-Time | Content 
-:-----------|:-----------------|
-10.00-10.20 | `r slide_title(1)` |     
-10.20-10.30 | `r ex_tabset(1)` |     
-10.30-10.50 | `r slide_title(2)`|     
-10.50-11.10 | `r ex_tabset(2)` |      
-11.10-11.20 | `r slide_title(3)` |     
-11.20-11.40 | `r ex_tabset(3)` |     
-11.40-12.00 | `r slide_title(4)` |      
+```{r}
+#| echo: false
+content |> 
+  rowwise() |> 
+  mutate(Time = timedisplay(time)) |> 
+  mutate(Content = switch(type,
+                              "exercise" = ex_tabset(content_id),
+                              "slide" = slide_title(content_id),
+                              "break" = "_Break_")) |>
+  select(Time, Content) |> 
+  knitr::kable()
+```
+   
 
 ## 📑 Resources
 
 
 
+
 ## 🏋️‍♀️ Exercises
 
-::: panel-tabset
+::: {.panel-tabset}
 
 ## Exercise 1
 
+{{< include "exercises/_exercise1.qmd" >}}
+
+`r checklist(LOs[1:3])`
 
 ## Exercise 2
 
 
+{{< include "exercises/_exercise2.qmd" >}}
+
+
+`r checklist(LOs[4:7])`
+
 ## Exercise 3
 
+{{< include "exercises/_exercise3.qmd" >}}
+
+`r checklist(LOs[8])`
+
 ## Exercise 4
+
+{{< include "exercises/_exercise4.qmd" >}}
+
+`r checklist(LOs[9:10])`
+
 
 :::

@@ -1,8 +1,5 @@
 project:
   type: website
-  render:
-   - "*.qmd"
-   - "!slides/*"
 
 website:
   title: "[ANU BDSI<br>workshop]{.tag-label} Reproducible Research with Quarto"

@@ -1,14 +1,102 @@
-::: {layout-ncol=4 style="text-align:center;"}
 
 
-![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}
+::: {.panel-tabset .f1}
 
-![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}
+## ![Dr. Emi Tanaka](`r photo_path`images/team/emi-square.png){.circle-image-120}<br>Dr. Emi Tanaka
 
-![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "Academic statistician passionate about data science and open source software",
+                    "fas fa-user-circle" = "Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal",
+                  "fas fa-graduation-cap" = "PhD in Statistical Bioinformatics",
+                "fas fa-user-graduate" = "BSci (Adv Maths) with major in Mathematics and Statistics",
+                "fas fa-heart fa-beat" = "Loves data and coding")))
+```
 
 
-![Nils Kreuter (TBA)](`r photo_path`images/team/avatar3.png){.circle-image-120}
+&nbsp; &nbsp; &nbsp; &nbsp; {{< fa globe >}} https://emitanaka.org &nbsp; &nbsp; <i class="fab fa-twitter"></i> @statsgen &nbsp; &nbsp; <i class="fab fa-mastodon"></i> fosstodon.org/@emitanaka
 
+
+:::
+
+## ![Jeremias Ivan](`r photo_path`images/team/jeremias-ivan.jpg){.circle-image-120}<br>Jeremias Ivan
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation",
+                "fas fa-user-graduate" = "BSci in Bioinformatics",
+                "fas fa-heart fa-beat" = "Enjoy hiking and science",
+                "fab fa-github" = "[jeremiasivan](https://github.com/jeremiasivan)")))
+```
+
+
+
+:::
+
+
+## ![Audrey Prasetya](`r photo_path`images/team/audrey-prasetya.jpeg){.circle-image-120}<br>Audrey Prasetya
+
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "(Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU",
+                    "fas fa-dove" = "Working on historical biogeography of Indo-Australian birds",
+                "fas fa-user-graduate" = "BSc (Hons) with major in Zoology and Ecology & Conservation",
+                "fas fa-heart fa-beat" = "Loves games, art markets, and FOOD",
+                "fab fa-twitter" = "@goaudreymp",
+                "fas fa-link" = "https://linktr.ee/goaudreymp")))
+```
+
+
+
+:::
+
+## ![Ryan O'Donnell](`r photo_path`images/team/ryan-odonnell.jpg){.circle-image-120}<br>Ryan O'Donnell
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU",
+                    "fab fa-pagelines" = "Investigating the evolution of the Australian orchid flora and associated funga",
+                "fas fa-user-graduate" = "MScSt (Biodiversity Science)",
+                "fas fa-heart fa-beat" = "Loves playing music, reading, nature",
+                "fab fa-twitter" = "@rpodonnell",
+                "fas fa-link" = "rpodonnell.github.io")))
+```
+
+
+
+:::
+
+
+## ![Nils Kreuter](`r photo_path`images/team/nils-kreuter.jpeg){.circle-image-120}<br>Nils Kreuter
+
+::: f2
+
+```{r}
+#| results: asis
+#| echo: false
+cat(emix::fa_list(c("fas fa-user-circle" = "2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU",
+                    "fas fa-fish" = "Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data",
+                "fas fa-user-graduate" = "MSc (Marine Biology), BSc (Biology)",
+                "fas fa-heart fa-beat" = "Loves triathlon, hiking and the ocean",
+                "fab fa-twitter" = "@nilskreuter",
+                "fas fa-link" = "https://linktr.ee/nilskreuter")))
+```
+
+
+
+:::
 
 :::

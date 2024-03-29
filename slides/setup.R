@@ -1,6 +1,6 @@
 learning_objectives <- function(highlight = NULL) {
   lines <- readLines("_learning-objectives.qmd") |> 
-    str_replace("^- ", "")
+    stringr::str_replace("^- ", "")
   
   lines <- lines[lines!=""]
   
@@ -13,4 +13,13 @@ learning_objectives <- function(highlight = NULL) {
   cat(c('<ul class="fa-ul">',
          lines,
          '</ul>'), sep = "\n")
+}
+
+content <- readr::read_csv("data/content.csv")
+
+exercise_countdown <- function(id) {
+  content |> 
+    dplyr::filter(type=="exercise", content_id==id) |> 
+    dplyr::pull(time) |> 
+    countdown::countdown(font_size = "3em", color_background = "white", color_text = "black")
 }

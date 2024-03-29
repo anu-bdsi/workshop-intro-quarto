@@ -27,12 +27,12 @@ If your issue is in coding, it often helps to present your problem with a minima
   - [R for Data Science](https://r4ds.hadley.nz/)
   - [R4DS Online Learning Community](https://rfordatasci.com/)
   - Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/r) or [Posit Community](https://community.rstudio.com/).
-- You can continue to use the [ANU Learning Data Slack Community](https://anu-bdsi.github.io/training-R1/#slack) to connect with each other.
+- You can continue to use the [ANU Learning Data Slack Community](/index.html#slack) to connect with each other.
 
 ## Reporting mistakes
 
-Did you find mistakes in the workshop? Please let us know either by either emailing Emi ([emi.tanaka@anu.edu.au](mailto:emi.tanaka@anu.edu.au)) or reporting it at <https://github.com/anu-bdsi/training-R1/issues> (latter preferred).
+Did you find mistakes in the workshop? Please let us know by emailing [workshop.bdsi@anu.edu.au](mailto:workshop.bdsi@anu.edu.au).
 
 ## Providing feedback
 
-We want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email Emi ([emi.tanaka@anu.edu.au](mailto:emi.tanaka@anu.edu.au)) or use the survey link that was/will be emailed to you (for workshop participants). 
+We want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email [workshop.bdsi@anu.edu.au](mailto:workshop.bdsi@anu.edu.au) or use the survey link that was/will be provided to you (if you are a workshop participants). 

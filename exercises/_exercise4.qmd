@@ -1,0 +1,20 @@
+---
+# filters:
+#   - webr2
+# webr: 
+#   show-startup-message: false  
+engine: knitr
+format: 
+  html:
+    self-contained: true
+    css: 
+      - ../assets/webex.css
+    include-after-body: 
+      - ../assets/webex.js
+---
+
+```{r}
+#| include: false
+library(webexercises)
+```
+
