@@ -31,7 +31,9 @@
   border-radius: 50%;
   border: solid 3px black;
   margin: auto;
-  height: 360px;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
   overflow: hidden;
 }
 

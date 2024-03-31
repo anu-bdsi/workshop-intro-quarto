@@ -56,6 +56,8 @@ div.callout-note.callout-style-default>.callout-header {
   border: solid 3px black;
   margin: auto;
   height: 120px;
+  width: 120px;
+  object-fit: contain;
   overflow: hidden;
 }
 
