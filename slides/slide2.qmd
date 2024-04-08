@@ -31,3 +31,14 @@ source("setup.R")
 #| echo: false
 learning_objectives(3:4)
 ```
+
+
+## Code chunk
+
+
+![](images/code-chunk.png)
+
+
+## Inline code
+
+![](images/inline-code.png)

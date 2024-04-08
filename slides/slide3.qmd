@@ -29,3 +29,64 @@ source("setup.R")
 #| echo: false
 learning_objectives(5:7)
 ```
+
+
+## Non-Robust Workflow
+
+::: flex
+
+::: {.w-50}
+
+::: {.ba .pa3 .ml3 .fragment fragment-index=1}
+
+![](images/report1.png)
+
+:::
+
+::: {.ba .pa3 .mt3 .ml3 .fragment fragment-index=3}
+
+![](images/report3.png)
+
+:::
+
+:::
+
+::: {.w-50 .pl3}
+
+::: {.ba .pa3 .ml3 .fragment fragment-index=2}
+
+![](images/report2.png)
+
+:::
+
+::: {.ba .pa3 .ml3 .mt3 .fragment fragment-index=4}
+
+<center>
+
+What should have been submitted:
+
+![](images/report4.png){height="40%"}
+
+</center>
+
+:::
+
+:::
+
+:::
+
+## A Robust Workflow
+
+- Using a robust, reproducible workflow means:
+  - you avoid manual, repetitive tasks
+  - your results are computationally reproducible 
+
+- Using a robust, reproducible workflow doesn't mean you won't make mistakes.
+- Practice of reproducibility just helps to minimise mistakes. 
+
+
+
+## Literate Programming 
+
+
+

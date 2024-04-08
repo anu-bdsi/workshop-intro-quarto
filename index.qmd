@@ -48,6 +48,9 @@ We use Slack to facilitate communication between workshop participants and the t
 - You must use your ANU email to sign up. 
 - Use your full name. 
 - By joining, you agree to abide by this [**code of conduct**](/slack.html).
+- Please **don't direct message the teaching team** in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.
+
+Please note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop.
 
 :::
 

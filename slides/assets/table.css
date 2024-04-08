@@ -1,0 +1,23 @@
+table tr {
+  font-size: 0.7em!important;
+  font-family: "Arial";
+}
+table tr:nth-child(odd)  { background: #e3e3e3!important; }
+table th { background: white; }
+.reveal table td {
+  border: none;
+}
+.reveal table th {
+  border-bottom: 3px solid;
+}
+
+.ste tr {
+  font-size: 14pt!important;
+}
+.ste tr:nth-child(even)  { background: #cceeff!important; }
+.ste tr:nth-child(odd)  { background: #4dc3ff!important; }
+.ste th {background: #006699; color:white;}
+.scroll-vert {
+  height: 500px!important;
+  overflow:scroll;
+}

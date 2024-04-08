@@ -7,8 +7,10 @@ format:
     height: 1080
     auto-stretch: false
     html-math-method: katex
-    self-contained: true
-    css: assets/custom.css
+    self-contained: false
+    css: 
+     - assets/custom.css
+     - assets/table.css
     footer: anu-bdsi.github.io/workshop-intro-quarto/
 author: Emi Tanaka
 institute: Biological Data Science Institute
@@ -19,6 +21,12 @@ engine: knitr
 
 
 # Welcome 👋
+
+```{r}
+#| include: false
+library(tidyverse)
+source("setup.R")
+```
 
 
 ## Teaching team 
@@ -35,6 +43,40 @@ engine: knitr
 All materials will be hosted at<br> [<https://anu-bdsi.github.io/workshop-intro-quarto/>]{.f-subheadline target="_blank"}
 
 :::
+
+![](/images/website-qr-code.png)
+
+
+## 🕙 Schedule
+
+```{r}
+#| echo: false
+ex_tabset <- function(id) {
+  paste0("_Exercise ", id, "_")
+}
+
+slide_title <- function(id) {
+ paste0("**", rmarkdown::yaml_front_matter(paste0("slide", id, ".qmd"))$title, "**")
+}
+
+start <- dmy_hms("03/04/2024 10.00.00")
+timedisplay <- function(duration) {
+  end <- start + duration(duration, units = "minutes")
+  ret <- paste0(format(start, "%H:%M"), "--", format(end, "%H:%M"))
+  start <<- end
+  ret
+}
+
+content |> 
+  rowwise() |> 
+  mutate(Time = timedisplay(time)) |> 
+  mutate(Content = switch(type,
+                              "exercise" = ex_tabset(content_id),
+                              "slide" = slide_title(content_id),
+                               type)) |>
+  select(Time, Content) |> 
+  knitr::kable()
+```
 
 
 ## Today's learning objectives 
@@ -61,3 +103,142 @@ learning_objectives()
 #| echo: false
 learning_objectives(1:2)
 ```
+
+## Quarto in a nutshell
+
+Quarto integrates [**text**]{.anu-gold} + [`code`]{.anu-gold} in one source document with ability to render to _many output formats_ (via Pandoc).
+
+<center>
+![](images/quarto-overview.png){width="70%"}
+</center>
+
+## What can you do with Quarto?
+
+<br>
+<center>
+<iframe src="slide1.html" width="80%" height="800px" style="border: solid 3px black;"></iframe>
+</center>
+
+::: color-box
+
+These **slides** are made using Quarto.
+
+:::
+
+
+## What can you do with Quarto?
+
+<br>
+<center>
+<iframe src="" width="80%" height="800px" style="border: solid 3px black;"></iframe>
+</center>
+
+::: color-box
+
+These **dynamic report** is made using Quarto.
+
+:::
+
+## What can you do with Quarto?
+
+<br>
+<center>
+<object data="output/articles/article_template_pnas_article.pdf" type="application/pdf" width="80%" height="450px" style="border: solid 3px black;">
+<embed src="output/articles/article_template_pnas_article.pdf" type="application/pdf" />
+</object>
+</center>
+
+::: color-box
+
+These **manuscript** is made using Quarto.
+
+:::
+
+## What can you do with Quarto?
+
+<br>
+<center>
+<iframe src="" width="80%" height="800px" style="border: solid 3px black;"></iframe>
+</center>
+
+::: color-box
+
+These **online book** is made using Quarto.  
+Available at XXX  
+The **pdf book** is also made using Quarto.
+
+:::
+
+## What can you do with R Markdown?
+
+<br>
+<div class="grid" style="grid: 1fr / 1fr 1fr;">
+<div class="item">
+<center>
+<iframe src="https://thesis.earo.me/" width="80%" height="450px" style="border: solid 3px black;"></iframe>
+</center>
+</div>
+
+<div class="item">
+<center>
+<a href="https://github.com/earowang/thesis/blob/master/_thesis/thesis.pdf"><img src="images/earothesis.png" width="60%" style="border: solid 3px black;"/></a>
+</center>
+</div>
+</div>
+
+::: color-box
+
+This <b>thesis</b> (online and pdf) is made using R Markdown.<br>
+Available at https://thesis.earo.me/ <br>
+
+:::
+
+
+## Anatomy of Quarto documents
+
+
+![](images/quarto-overview.png)
+
+## Anatomy of Quarto documents
+
+
+![](images/quarto-magic.png)
+
+## Stack components as you like!
+
+![](images/quarto-stack.png)
+
+
+## Text
+
+![](images/text.png)
+
+## Markdown basics
+
+
+
+
+## Quarto cheatsheet
+
+::: flex
+
+::: {.w-50}
+
+![](assets/quarto-cheatsheet_Page_1.png){.ba}
+
+:::
+
+::: {.w-50 .pl3}
+
+![](assets/quarto-cheatsheet_Page_2.png){.ba}
+
+
+:::
+
+:::
+
+::: aside
+
+[<i class='fas fa-file-pdf'></i> Quarto cheatsheet](assets/quarto-cheatsheet.pdf)
+
+:::
