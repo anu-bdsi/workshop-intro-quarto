@@ -19,14 +19,15 @@ date: "2024-04-12"
 date-format: "Do MMMM YYYY" # see https://quarto.org/docs/reference/dates.html
 date-modified: today
 engine: knitr # if using Python or Julia, try changing this to "jupyter" if it is not working
+number-sections: true
 format: 
   html:
     # for other options, see https://quarto.org/docs/reference/formats/html.html
     toc: true
-    number-sections: true
+    
     theme: simplex # for other themes see https://quarto.org/docs/output-formats/html-themes.html
 execute: 
-  eval: false
+  eval: false # global chunk options
 ---
 
 ## Introduction 
@@ -97,8 +98,8 @@ _ = ax.legend(
 #| message: true
 #| echo: true
 #| eval: false
-#| fig-width: 8 # these don't work in Julia :(
-#| fig-height: 6 # these don't work in Julia :(
+#| fig-width: 8 # this don't work in Julia :(
+#| fig-height: 6 # see why at  https://github.com/quarto-dev/quarto-cli/issues/3155
 using StatsPlots
 using RDatasets
 iris = dataset("datasets", "iris");
