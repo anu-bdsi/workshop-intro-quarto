@@ -756,8 +756,8 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 </ul>
 </section></section>
 <section>
-<section id="open-and-inspect-the-file-example-01.qmd" class="title-slide slide level1 center">
-<h1>🔍 Open and inspect the file <a href="../exercises/example-01.qmd" download=""><code>example-01.qmd</code></a></h1>
+<section id="open-and-inspect-the-file-example-01-first-quarto.qmd" class="title-slide slide level1 center">
+<h1>🔍 Open and inspect the file <a href="../exercises/example-01-first-quarto.qmd" download=""><code>example-01-first-quarto.qmd</code></a></h1>
 
 </section>
 <section id="quarto-basics" class="slide level2">
@@ -765,18 +765,29 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <center>
 <img data-src="images/quarto-first-doc.png">
 </center>
+<ul>
+<li>If you are not using RStudio Desktop, open with your own editor.</li>
+</ul>
 </section>
 <section id="render-to-a-html-document" class="slide level2">
 <h2>Render to a HTML document</h2>
 <center>
 <img data-src="images/quarto-render.png">
 </center>
+<ul>
+<li>If you are not using RStudio Desktop, open the terminal and run</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a></a><span class="ex">quarto</span> render /your/file/location/filename.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="render-to-a-pdf-document" class="slide level2">
 <h2>Render to a PDF document</h2>
 <center>
 <img data-src="images/quarto-pdf.png">
 </center>
+<ul>
+<li>If you are not using RStudio Desktop, open the terminal and run</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">quarto</span> render /your/file/location/filename.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="rstudio-desktop" class="slide level2">
 <h2>RStudio Desktop</h2>
@@ -816,20 +827,20 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <div class="flex">
 <div class="w-30">
 <p>Basic format</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
-<span id="cb1-2"><a></a><span class="an">key:</span><span class="co"> value</span></span>
-<span id="cb1-3"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="co">---</span></span>
+<span id="cb3-2"><a></a><span class="an">key:</span><span class="co"> value</span></span>
+<span id="cb3-3"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="w-70 pl3 fragment">
 <p>Example</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="co">---</span></span>
-<span id="cb2-2"><a></a><span class="an">title:</span><span class="co"> "Reproducible Research with Quarto"</span></span>
-<span id="cb2-3"><a></a><span class="an">subtitle:</span><span class="co"> "The Basics"</span></span>
-<span id="cb2-4"><a></a><span class="an">author:</span><span class="co"> "Emi Tanaka"</span></span>
-<span id="cb2-5"><a></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
-<span id="cb2-6"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
-<span id="cb2-7"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb2-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="co">---</span></span>
+<span id="cb4-2"><a></a><span class="an">title:</span><span class="co"> "Reproducible Research with Quarto"</span></span>
+<span id="cb4-3"><a></a><span class="an">subtitle:</span><span class="co"> "The Basics"</span></span>
+<span id="cb4-4"><a></a><span class="an">author:</span><span class="co"> "Emi Tanaka"</span></span>
+<span id="cb4-5"><a></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
+<span id="cb4-6"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
+<span id="cb4-7"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb4-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>There must be a space after “<code>:</code>”!</p>
 </div>
 </div>
@@ -848,34 +859,34 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <li><p>A <code>key</code> can hold multiple values.</p></li>
 <li><p>Multiple values can be listed as a list:</p></li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="an">key:</span><span class="co"> </span></span>
-<span id="cb3-2"><a></a><span class="ss">  - </span>value1</span>
-<span id="cb3-3"><a></a><span class="ss">  - </span>value2</span>
-<span id="cb3-4"><a></a><span class="ss">  - </span>value3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="an">key:</span><span class="co"> </span></span>
+<span id="cb5-2"><a></a><span class="ss">  - </span>value1</span>
+<span id="cb5-3"><a></a><span class="ss">  - </span>value2</span>
+<span id="cb5-4"><a></a><span class="ss">  - </span>value3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Or it can be separated by a comma within a square bracket:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="an">key:</span><span class="co"> [value1, value2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="an">key:</span><span class="co"> [value1, value2]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="values-spanning-multiple-lines" class="slide level2">
 <h2>Values spanning multiple lines</h2>
 <div class="flex">
 <div class="w-50">
 <div class="text">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="co">---</span></span>
-<span id="cb5-2"><a></a><span class="an">title:</span><span class="co"> &gt;</span></span>
-<span id="cb5-3"><a></a><span class="co">  this is a  </span></span>
-<span id="cb5-4"><a></a><span class="co">  </span></span>
-<span id="cb5-5"><a></a><span class="co">  **single line**</span></span>
-<span id="cb5-6"><a></a><span class="co">  </span></span>
-<span id="cb5-7"><a></a><span class="an">abstract:</span><span class="co"> |</span></span>
-<span id="cb5-8"><a></a><span class="co">  | this value spans   </span></span>
-<span id="cb5-9"><a></a><span class="co">  | *many lines* and      </span></span>
-<span id="cb5-10"><a></a><span class="co">  | </span></span>
-<span id="cb5-11"><a></a><span class="co">  | appears as it is     </span></span>
-<span id="cb5-12"><a></a><span class="co">  </span></span>
-<span id="cb5-13"><a></a><span class="an">format:</span><span class="co"> html</span></span>
-<span id="cb5-14"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="co">---</span></span>
+<span id="cb7-2"><a></a><span class="an">title:</span><span class="co"> &gt;</span></span>
+<span id="cb7-3"><a></a><span class="co">  this is a  </span></span>
+<span id="cb7-4"><a></a><span class="co">  </span></span>
+<span id="cb7-5"><a></a><span class="co">  **single line**</span></span>
+<span id="cb7-6"><a></a><span class="co">  </span></span>
+<span id="cb7-7"><a></a><span class="an">abstract:</span><span class="co"> |</span></span>
+<span id="cb7-8"><a></a><span class="co">  | this value spans   </span></span>
+<span id="cb7-9"><a></a><span class="co">  | *many lines* and      </span></span>
+<span id="cb7-10"><a></a><span class="co">  | </span></span>
+<span id="cb7-11"><a></a><span class="co">  | appears as it is     </span></span>
+<span id="cb7-12"><a></a><span class="co">  </span></span>
+<span id="cb7-13"><a></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb7-14"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="w-50 pl3">
@@ -886,20 +897,20 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 </div>
 </section></section>
 <section>
-<section id="open-and-inspect-the-file-example-02.qmd" class="title-slide slide level1 center">
-<h1>🔍 Open and inspect the file <a href="../exercises/example-02.qmd" download=""><code>example-02.qmd</code></a></h1>
+<section id="open-and-inspect-the-file-example-02-yaml.qmd" class="title-slide slide level1 center">
+<h1>🔍 Open and inspect the file <a href="../exercises/example-02-yaml.qmd" download=""><code>example-02-yaml.qmd</code></a></h1>
 
 </section>
 <section id="key-can-contain-keys" class="slide level2">
 <h2>key can contain keys</h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="co">---</span></span>
-<span id="cb6-2"><a></a><span class="an">format:</span><span class="co"> </span></span>
-<span id="cb6-3"><a></a><span class="co">  html:</span></span>
-<span id="cb6-4"><a></a><span class="co">    toc: true</span></span>
-<span id="cb6-5"><a></a><span class="co">    toc-float: true </span></span>
-<span id="cb6-6"><a></a><span class="co">    code-download: true </span></span>
-<span id="cb6-7"><a></a><span class="co">    code-folding: "hide"</span></span>
-<span id="cb6-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="co">---</span></span>
+<span id="cb8-2"><a></a><span class="an">format:</span><span class="co"> </span></span>
+<span id="cb8-3"><a></a><span class="co">  html:</span></span>
+<span id="cb8-4"><a></a><span class="co">    toc: true</span></span>
+<span id="cb8-5"><a></a><span class="co">    toc-float: true </span></span>
+<span id="cb8-6"><a></a><span class="co">    code-download: true </span></span>
+<span id="cb8-7"><a></a><span class="co">    code-folding: "hide"</span></span>
+<span id="cb8-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>What does each of the above keys do?</li>
 </ul>
@@ -916,12 +927,12 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <div class="flex">
 <div class="w-50">
 <div class="text">
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="fu"># Header 1</span></span>
-<span id="cb7-2"><a></a><span class="fu">## Header 2</span></span>
-<span id="cb7-3"><a></a><span class="fu">### Header 3</span></span>
-<span id="cb7-4"><a></a><span class="fu">#### Header 4</span></span>
-<span id="cb7-5"><a></a><span class="fu">##### Header 5</span></span>
-<span id="cb7-6"><a></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="fu"># Header 1</span></span>
+<span id="cb9-2"><a></a><span class="fu">## Header 2</span></span>
+<span id="cb9-3"><a></a><span class="fu">### Header 3</span></span>
+<span id="cb9-4"><a></a><span class="fu">#### Header 4</span></span>
+<span id="cb9-5"><a></a><span class="fu">##### Header 5</span></span>
+<span id="cb9-6"><a></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="w-50 pl3">
@@ -936,21 +947,21 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <div class="flex">
 <div class="w-50">
 <div class="text">
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a></span>
-<span id="cb8-2"><a></a>Ordered list</span>
-<span id="cb8-3"><a></a></span>
-<span id="cb8-4"><a></a><span class="ss">1. </span>Item 1</span>
-<span id="cb8-5"><a></a><span class="ss">2. </span>Item 2</span>
-<span id="cb8-6"><a></a><span class="ss">   - </span>Subitem 3A</span>
-<span id="cb8-7"><a></a><span class="ss">   - </span>Subitem 3B</span>
-<span id="cb8-8"><a></a>  </span>
-<span id="cb8-9"><a></a>Unordered list</span>
-<span id="cb8-10"><a></a></span>
-<span id="cb8-11"><a></a><span class="ss">* </span>Item 1 </span>
-<span id="cb8-12"><a></a><span class="ss">  * </span>Subitem 1</span>
-<span id="cb8-13"><a></a><span class="ss">* </span>Item 2</span>
-<span id="cb8-14"><a></a><span class="ss">- </span>Item 3</span>
-<span id="cb8-15"><a></a><span class="ss">- </span>Item 4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a></span>
+<span id="cb10-2"><a></a>Ordered list</span>
+<span id="cb10-3"><a></a></span>
+<span id="cb10-4"><a></a><span class="ss">1. </span>Item 1</span>
+<span id="cb10-5"><a></a><span class="ss">2. </span>Item 2</span>
+<span id="cb10-6"><a></a><span class="ss">   - </span>Subitem 3A</span>
+<span id="cb10-7"><a></a><span class="ss">   - </span>Subitem 3B</span>
+<span id="cb10-8"><a></a>  </span>
+<span id="cb10-9"><a></a>Unordered list</span>
+<span id="cb10-10"><a></a></span>
+<span id="cb10-11"><a></a><span class="ss">* </span>Item 1 </span>
+<span id="cb10-12"><a></a><span class="ss">  * </span>Subitem 1</span>
+<span id="cb10-13"><a></a><span class="ss">* </span>Item 2</span>
+<span id="cb10-14"><a></a><span class="ss">- </span>Item 3</span>
+<span id="cb10-15"><a></a><span class="ss">- </span>Item 4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="w-50 pl3">
@@ -965,15 +976,15 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <div class="flex">
 <div class="w-50">
 <div class="text">
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a> **This text is bold** </span>
-<span id="cb9-2"><a></a> </span>
-<span id="cb9-3"><a></a> __This text is also bold__  </span>
-<span id="cb9-4"><a></a> </span>
-<span id="cb9-5"><a></a> *This text is italic* </span>
-<span id="cb9-6"><a></a> </span>
-<span id="cb9-7"><a></a> _This text is also italic_  </span>
-<span id="cb9-8"><a></a> </span>
-<span id="cb9-9"><a></a> **_You can combine both_** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a> **This text is bold** </span>
+<span id="cb11-2"><a></a> </span>
+<span id="cb11-3"><a></a> __This text is also bold__  </span>
+<span id="cb11-4"><a></a> </span>
+<span id="cb11-5"><a></a> *This text is italic* </span>
+<span id="cb11-6"><a></a> </span>
+<span id="cb11-7"><a></a> _This text is also italic_  </span>
+<span id="cb11-8"><a></a> </span>
+<span id="cb11-9"><a></a> **_You can combine both_** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="w-50 pl3">
@@ -986,6 +997,11 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <div class="f-headline fragment">
 <p>RStudio &gt; Help &gt; Markdown Quick Reference</p>
 </div>
+</section></section>
+<section>
+<section id="open-and-inspect-the-file-example-03-markdown.qmd" class="title-slide slide level1 center">
+<h1>🔍 Open and inspect the file <a href="../exercises/example-03-markdown.qmd" download=""><code>example-03-markdown.qmd</code></a></h1>
+
 </section>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>

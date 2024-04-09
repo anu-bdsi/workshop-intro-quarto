@@ -1,0 +1,111 @@
+---
+title: "Reproducible Reseach with Quarto"
+subtitle: "Demo for BDSI Workshop"
+author:  
+  - name: Emi Tanaka
+    orcid: 0000-0002-1455-259X
+    email: workshop.bdsi@anu.edu.au
+    affiliation: "Australian National University"
+    department: "Biological Data Science Institute"
+  - "Chat GPT"
+  # for other author formats, see https://quarto.org/docs/journals/authors.html
+keywords: 
+  - reproducible research
+  - quarto 
+  - markdown
+abstract: | 
+  Reproducible research is indispensable for ensuring the trustworthiness of scientific findings. This abstract explores its significance, emphasizing open access to data, code, and documentation. Key practices such as version control and reproducible environments are highlighted for their role in enhancing verifiability. Additionally, the integration of reproducibility criteria in peer review is discussed. Overall, reproducible research serves as a vital framework for advancing scientific knowledge with transparency and integrity.
+date: "2024-04-12"
+date-format: "Do MMMM YYYY" # see https://quarto.org/docs/reference/dates.html
+date-modified: today
+engine: knitr # if using Python or Julia, try changing this to "jupyter" if it is not working
+format: 
+  html:
+    # for other options, see https://quarto.org/docs/reference/formats/html.html
+    toc: true
+    number-sections: true
+    theme: simplex # for other themes see https://quarto.org/docs/output-formats/html-themes.html
+execute: 
+  eval: false
+---
+
+## Introduction 
+
+Reproducible research refers to the practice of making research methods, data, and results transparent and accessible so that others can verify and replicate the findings. The goal of reproducibility is to ensure that scientific findings are trustworthy and can be independently validated.
+
+
+## Tasks
+
+::: callout-warning
+
+1. There is a Julia, Python and R code chunks in this document. _Delete the code chunks that are not relevant to your work._
+2. Change the `eval: false` to `eval: true` in the YAML.
+3. Try modifying the YAML and code chunk options.
+
+:::
+
+
+## Results 
+
+### For **R** users 
+
+**DELETE IF IRRELEVANT FOR YOU**
+
+```{r}
+#| warning: true
+#| message: true
+#| echo: true
+#| eval: true
+#| fig-width: 8
+#| fig-height: 6
+library(tidyverse)
+theme_set(theme_classic(base_size = 14))
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+  geom_point(aes(color = Species))
+```
+
+### For **Python** users
+
+**DELETE IF IRRELEVANT FOR YOU**
+
+
+```{python}
+#| warning: true
+#| message: true
+#| echo: true
+#| eval: false
+#| fig-width: 8
+#| fig-height: 6
+from sklearn import datasets
+import matplotlib.pyplot as plt
+iris = datasets.load_iris()
+_, ax = plt.subplots()
+scatter = ax.scatter(iris.data[:, 0], iris.data[:, 1], c=iris.target)
+ax.set(xlabel=iris.feature_names[0], ylabel=iris.feature_names[1])
+_ = ax.legend(
+    scatter.legend_elements()[0], iris.target_names, loc="lower right", title="Species"
+)
+```
+
+### For **Julia** users
+
+**DELETE IF IRRELEVANT FOR YOU**
+
+
+```{julia}
+#| warning: true
+#| message: true
+#| echo: true
+#| eval: false
+#| fig-width: 8
+#| fig-height: 6
+using StatsPlots
+using RDatasets
+iris = dataset("datasets", "iris");
+@df iris scatter(:SepalLength, :SepalWidth, group = :Species)
+```
+
+
+## Conclusion 
+
+Reproducible research not only fosters trust in scientific findings but also promotes collaboration and innovation by allowing others to build upon existing research. Many journals and funding agencies now require or encourage researchers to adopt reproducible practices to improve the reliability and credibility of scientific research.

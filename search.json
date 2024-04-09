@@ -11,7 +11,7 @@
     "href": "slides/slide2.html#chunk-options",
     "title": "Dynamic documents with code",
     "section": "Chunk options",
-    "text": "Chunk options\n```{r}\n#| label: fig-plot\n#| eval: true\n#| echo: true\n#| fig-width: 4\n#| fig-height: 4\n#| fig-cap: \"A scatter plot of speed and distance.\"\nlibrary(ggplot2)\nggplot(cars, aes(speed, dist)) + geom_point()\n```"
+    "text": "Chunk options\n```{r}\n#| label: fig-plot\n#| eval: true\n#| echo: true\n#| fig-width: 4\n#| fig-height: 4\n#| fig-cap: \"A scatter plot of speed and distance.\"\nlibrary(ggplot2)\nggplot(cars, aes(speed, dist)) + geom_point()\n```\n\n\n\n\n\n\n\n\n\nFigure 1: A scatter plot of speed and distance."
   },
   {
     "objectID": "slides/slide2.html#quarto-and-r-markdown-is-not-just-for-r",
@@ -46,14 +46,14 @@
     "href": "slides/slide2.html#figure-references",
     "title": "Dynamic documents with code",
     "section": "Figure references",
-    "text": "Figure references\n```{r}\n#| label: fig-scatter\n#| fig-cap: \"The scatter plot of speed and distance.\"\nlibrary(ggplot2)\nggplot(cars, aes(dist, speed)) + geom_point()\n```\n\nAbove figure number can be referenced as @fig-scatter.\nThe chunk label has the prefix fig-."
+    "text": "Figure references\n```{r}\n#| label: fig-scatter\n#| fig-cap: \"The scatter plot of speed and distance.\"\nlibrary(ggplot2)\nggplot(cars, aes(dist, speed)) + geom_point()\n```\n\nAbove figure can be referenced in text as @fig-scatter.\nThe chunk label has the prefix fig-."
   },
   {
     "objectID": "slides/slide2.html#table-references",
     "href": "slides/slide2.html#table-references",
     "title": "Dynamic documents with code",
     "section": "Table references",
-    "text": "Table references\n```{r}\n#| label: tbl-cars\n#| tbl-cap: \"The first few rows of the `cars` dataset.\"\nknitr::kable(head(cars), booktabs = TRUE)\n```\n\nAbove table number can be referenced as @tbl-cars.\nThe chunk label has the prefix tbl-."
+    "text": "Table references\n```{r}\n#| label: tbl-cars\n#| tbl-cap: \"The first few rows of the `cars` dataset.\"\nknitr::kable(head(cars), booktabs = TRUE)\n```\n\nAbove table can be referenced in text as @tbl-cars.\nThe chunk label has the prefix tbl-."
   },
   {
     "objectID": "slides/slide2.html#stack-components-as-you-like",
@@ -179,7 +179,7 @@
     "href": "materials.html#files",
     "title": "Materials",
     "section": "🔎 Files",
-    "text": "🔎 Files\n\nexample-01.qmd"
+    "text": "🔎 Files\n\nexample-01-first-quarto.qmd\nexample-02-yaml.qmd\nexample-03-markdown.qmd\nexample-04-code.qmd\nexample-05-cross-references.qmd"
   },
   {
     "objectID": "slides/slide1.html#teaching-team",
@@ -270,21 +270,21 @@
     "href": "slides/slide1.html#quarto-basics",
     "title": "Writing flexible document outputs with Markdown syntax",
     "section": "Quarto basics",
-    "text": "Quarto basics"
+    "text": "Quarto basics\n\n\n\n\nIf you are not using RStudio Desktop, open with your own editor."
   },
   {
     "objectID": "slides/slide1.html#render-to-a-html-document",
     "href": "slides/slide1.html#render-to-a-html-document",
     "title": "Writing flexible document outputs with Markdown syntax",
     "section": "Render to a HTML document",
-    "text": "Render to a HTML document"
+    "text": "Render to a HTML document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
   },
   {
     "objectID": "slides/slide1.html#render-to-a-pdf-document",
     "href": "slides/slide1.html#render-to-a-pdf-document",
     "title": "Writing flexible document outputs with Markdown syntax",
     "section": "Render to a PDF document",
-    "text": "Render to a PDF document"
+    "text": "Render to a PDF document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
   },
   {
     "objectID": "slides/slide1.html#rstudio-desktop",
