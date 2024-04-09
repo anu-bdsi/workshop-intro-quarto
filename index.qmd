@@ -23,23 +23,56 @@ Upon completion of this workshop, participants should be able to:
 
 Please ensure that you download and install 
 
-- the latest version of [Quarto](https://quarto.org/docs/get-started/)
-- (Optional) [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
-- the latest version of [R](https://cran.csiro.au/),
-- the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), 
-- the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.
+- the latest version of [Quarto](https://quarto.org/docs/get-started/),
+- bring your own dataset for technical report writing _(note: the teaching team can't help with the analysis or writing content -- you are recommended to do the analysis and writing up the results before the workshop)_,
+- (Optional) make a free account at [Quarto Pub](https://quartopub.com/), and
+- (Optional) [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version).
+
+
+### For **R** users
+
+- It is assumed that you already have R installed.
+- Please install the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/),
+- And install the following R packages:
 
 ```r
-install.packages(c("tidyverse", "rmarkdown", "quarto", "JuliaCall", "reticulate"))
+install.packages(c("tidyverse", "rmarkdown", "quarto"))
 ```
 
-- If you would like to use Julia or Python, it is recommended that you can install Jupyter
+### For **Python** users
 
-```
-python3 -m pip install jupyter
+- It is assumed that you already have Python installed.
+- Please install [Jupyter](https://jupyter.org/install).
+- Optionally (but preferred), follow the same instruction as the R users and install the following R package:
+
+```r
+install.packages("reticulate")
 ```
 
-{{< fa hand-holding-medical >}} If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.
+### For **Julia** users
+
+- It is assumed that you already have Julia installed.
+- Please install [Jupyter](https://jupyter.org/install).
+- Optionally (but preferred), follow the same instruction as the R users and install the following R package:
+
+```r
+install.packages("JuliaCall")
+```
+
+### For **other language** users
+
+Other languages are possible as well (e.g. E-Views, SAS and Stata) but it may not work as seamlessly as above languages. Other languages that is supported via the knitr engine are listed below.
+
+```{r}
+names(knitr::knit_engines$get())
+```
+
+### {{< fa hand-holding-medical >}} Issues 
+If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.
+
+<i class='fas fa-exclamation-circle'></i> Please note that the teaching team primarily consists of R users, so we may not be able to provide help for other languages.
+
+
 
 ::: {.callout-note icon=false style="width:100%"}
 
