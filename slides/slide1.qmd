@@ -3,6 +3,7 @@ title: Writing flexible document outputs with Markdown syntax
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
+    code-block-height: 750px
     width: 1920
     height: 1080
     auto-stretch: false
@@ -106,11 +107,44 @@ learning_objectives(1:2)
 
 ## Quarto in a nutshell
 
-Quarto integrates [**text**]{.anu-gold} + [`code`]{.anu-gold} in one source document with ability to render to _many output formats_ (via Pandoc).
+- Quarto integrates [**text**]{.anu-gold} + [`code`]{.anu-gold} in one source document with ability to render to _many output formats_ (via Pandoc).
 
 <center>
 ![](images/quarto-overview.png){width="70%"}
 </center>
+
+. . . 
+
+- Quarto is the next generation of **R Markdown**.
+
+
+## R Markdown 
+
+- **Quarto** and **R Markdown** are very similar.
+- The same team that created R Markdown created Quarto.
+- Quarto supersedes R Markdown so we focus on Quarto.
+
+::: flex
+
+::: {.w-50}
+
+**R Markdown**
+
+![](images/rmd-system.png)
+
+:::
+
+::: {.w-50 .pl3}
+
+**Quarto**
+
+![](images/qmd-system.png)
+
+
+:::
+
+:::
+
 
 ## What can you do with Quarto?
 
@@ -121,7 +155,7 @@ Quarto integrates [**text**]{.anu-gold} + [`code`]{.anu-gold} in one source docu
 
 ::: color-box
 
-These **slides** are made using Quarto.
+These **HTML slides** are made using Quarto.
 
 :::
 
@@ -193,28 +227,363 @@ Available at https://thesis.earo.me/ <br>
 
 :::
 
+## What can you do with Quarto?
+
+Possibilities are endless...
+
+* Microsoft Word document (.doc, .docx)
+* Open Document Text (.odt)
+* Rich text format (.rtf)
+* Power point slides (.ppt, .pptx)
+* Posters (as .html or .pdf)
+* Resume (as .html or .pdf)
+* Interactive R Notebooks (.html)
+* Markdown documents (.md)
+* Dashboard (.html)
+
+# 🔍 Open and inspect the file <a href="/exercises/first-quarto.qmd" download>`first-quarto.qmd`</a>
+
+
+## Quarto basics
+
+<center>
+![](images/quarto-first-doc.png)
+</center>
+
+
+
+## Render to a HTML document
+
+<center>
+![](images/quarto-render.png)
+</center>
+
+
+## Render to a PDF document 
+
+<center>
+![](images/quarto-pdf.png)
+</center>
+
+## RStudio Desktop
+
+<center>
+![](images/rstudio-quarto-option.png)
+</center>
+
+
+## How does it all work?
+
+. . . 
+
+<center>
+![](images/quarto-magic.png){width="65%"}
+</center>
+
+. . . 
+
+<center class="f-headline">
+
+**Quarto** via knitr/jupyter: `r fa_file("qmd")` <i class='fas fa-arrow-right'></i> `r fa_file("md")`
+
+::: fragment
+
+**Pandoc**:  `r fa_file("md")` <i class='fas fa-arrow-right'></i> `r fa_file("html, pdf, docx")`
+
+:::
+
+</center>
 
 ## Anatomy of Quarto documents
 
 
 ![](images/quarto-overview.png)
 
-## Anatomy of Quarto documents
+# Meta data with YAML {background-color="#F5EDDE"}
+
+<center>
+![](images/metadata.png)
+</center>
+
+## YAML - YAML Ain't Markup Language
+
+::: flex
+
+::: {.w-30}
+
+Basic format
+```markdown
+---
+key: value
+---
+```
+
+:::
+
+::: {.w-70 .pl3 .fragment}
+
+Example
+
+```markdown
+---
+title: "Reproducible Research with Quarto"
+subtitle: "The Basics"
+author: "Emi Tanaka"
+date: "``r "r Sys.Date()"``"
+engine: knitr
+format: html
+---
+```
+
+There must be a space after "`:`"!
+
+:::
+
+:::
+
+## YAML structure
+
+* White spaces indicate structure in YAML - don't use tabs though!
+* Same as R, you can comment lines by starting with `#`.
+* YAML is case sensitive.
 
 
-![](images/quarto-magic.png)
-
-## Stack components as you like!
-
-![](images/quarto-stack.png)
+## YAML with multiple key values
 
 
-## Text
+* A `key` can hold multiple values. 
 
+- Multiple values can be listed as a list:
+
+```markdown
+key: 
+  - value1
+  - value2
+  - value3
+```
+
+- Or it can be separated by a comma within a square bracket:
+
+```markdown
+key: [value1, value2]
+```
+
+
+
+## Values spanning multiple lines
+
+::: flex
+
+::: {.w-50}
+
+::: text
+
+```markdown
+---
+title: >
+  this is a  
+  
+  **single line**
+  
+abstract: |
+  | this value spans   
+  | *many lines* and      
+  | 
+  | appears as it is     
+  
+format: html
+---
+
+```
+
+:::
+
+:::
+
+::: {.w-50 .pl3}
+
+::: output
+
+![](images/text-multiline.png)
+
+:::
+
+:::
+
+:::
+
+
+
+
+# 🔍 Open and inspect the file <a href="/exercises/first-quarto.qmd" download>`second-quarto.qmd`</a>
+
+
+## key can contain keys
+
+```markdown
+---
+format: 
+  html:
+    toc: true
+    toc-float: true 
+    code-download: true 
+    code-folding: "hide"
+---
+```
+
+- What does each of the above keys do?
+
+# Text via Markdown {background-color="#F5EDDE"}
+
+<center>
 ![](images/text.png)
+</center>
 
-## Markdown basics
+## Headers
 
+
+::: flex
+
+::: {.w-50}
+
+::: text
+
+```markdown
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+
+```
+
+:::
+
+:::
+
+::: {.w-50 .pl3}
+
+::: output
+
+![](images/markdown-header.png)
+
+:::
+
+:::
+
+:::
+
+## Lists
+
+
+::: flex
+
+::: {.w-50}
+
+::: text
+
+
+```markdown
+
+Ordered list
+
+1. Item 1
+2. Item 2
+   - Subitem 3A
+   - Subitem 3B
+  
+Unordered list
+
+* Item 1 
+  * Subitem 1
+* Item 2
+- Item 3
+- Item 4
+
+```
+
+
+
+:::
+
+:::
+
+::: {.w-50 .pl3}
+
+::: {.output .pl3}
+
+![](images/markdown-list.png)
+
+:::
+
+:::
+
+:::
+
+## Formatting text
+
+::: flex
+
+::: {.w-50}
+
+::: text
+
+```markdown
+ **This text is bold** 
+ 
+ __This text is also bold__  
+ 
+ *This text is italic* 
+ 
+ _This text is also italic_  
+ 
+ **_You can combine both_** 
+```
+
+:::
+
+:::
+
+::: {.w-50 .pl3}
+
+::: {.output .pl3}
+
+![](images/markdown-formatting.png)
+
+:::
+
+:::
+
+:::
+
+<br>
+
+::: {.f-headline .fragment}
+
+RStudio > Help > Markdown Quick Reference
+
+:::
+
+## Summary
+
+
+::: flex
+
+::: {.w-50}
+
+<center>
+![](images/quarto-first-doc.png)
+</center>
+
+
+:::
+
+::: {.w-50 .pl3}
+
+:::
+
+:::
 
 
 
@@ -242,3 +611,6 @@ Available at https://thesis.earo.me/ <br>
 [<i class='fas fa-file-pdf'></i> Quarto cheatsheet](assets/quarto-cheatsheet.pdf)
 
 :::
+
+
+

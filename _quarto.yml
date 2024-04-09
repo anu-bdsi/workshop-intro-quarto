@@ -1,5 +1,11 @@
 project:
   type: website
+  resources:
+    - "exercises/*.qmd"
+    - "!exercises/_*.qmd"
+  render:
+    - "*.qmd"
+    - "!exercises/"
 
 website:
   title: "[ANU BDSI<br>workshop]{.tag-label} Reproducible Research with Quarto"

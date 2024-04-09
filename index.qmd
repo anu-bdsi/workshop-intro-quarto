@@ -25,10 +25,18 @@ Please ensure that you download and install
 
 - the latest version of [Quarto](https://quarto.org/docs/get-started/)
 - (Optional) [Slack](https://slack.com/intl/en-au) (alternatively you can use the web version), and 
+- the latest version of [R](https://cran.csiro.au/),
+- the latest version of [RStudio Desktop](https://posit.co/download/rstudio-desktop/), 
 - the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.
 
 ```r
-install.packages(c("tidyverse", "rmarkdown", "quarto"))
+install.packages(c("tidyverse", "rmarkdown", "quarto", "JuliaCall", "reticulate"))
+```
+
+- If you would like to use Julia or Python, it is recommended that you can install Jupyter
+
+```
+python3 -m pip install jupyter
 ```
 
 {{< fa hand-holding-medical >}} If you are having issues, see also [here](https://learnr.numbat.space/chapter1) or talk to the teaching team.

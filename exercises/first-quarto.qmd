@@ -1,0 +1,28 @@
+---
+title: "My first Quarto document"
+format: html
+---
+
+## Quarto
+
+**Quarto** enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can also run code in other languages, like Python and Julia. If you have Python or Julia then you can run the following code chunks by changing "eval: false" to "eval: true".
+
+```{python}
+#| eval: false
+2 * 2
+```
+
+```{julia}
+#| eval: false
+3 * 3
+```

@@ -33,12 +33,21 @@ learning_objectives(3:4)
 ```
 
 
-## Code chunk
+# Code chunk  {background-color="#F5EDDE"}
 
+<center>
 
 ![](images/code-chunk.png)
+</center>
 
 
-## Inline code
+# Inline code {background-color="#F5EDDE"}
 
+<center>
 ![](images/inline-code.png)
+</center>
+
+
+## Stack components as you like!
+
+![](images/quarto-stack.png)

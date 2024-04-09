@@ -23,3 +23,7 @@ exercise_countdown <- function(id) {
     dplyr::pull(time) |> 
     countdown::countdown(font_size = "3em", color_background = "white", color_text = "black")
 }
+
+fa_file <- function(ext) {
+  glue::glue('<span class="fa-layers fa-fw"><i class="fas fa-file"></i><span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11 down-3" style="font-weight:900;color:grey;">{ext}</span></span>')
+}
