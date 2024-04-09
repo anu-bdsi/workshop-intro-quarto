@@ -3,6 +3,7 @@ title: Dynamic documents with code
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
+    code-block-height: 750px
     width: 1920
     height: 1080
     auto-stretch: false
@@ -41,11 +42,47 @@ learning_objectives(3:4)
 </center>
 
 
+## Chunk options 
+
+```{{r}}
+#| label: fig-plot
+#| eval: true
+#| echo: true
+#| fig-width: 4
+#| fig-height: 4
+#| fig-cap: "A scatter plot of speed and distance."
+library(ggplot2)
+ggplot(cars, aes(speed, dist)) + geom_point()
+```
+
+## Quarto (and R Markdown) is not just for R
+
+- To use **Python**, change the language to `python`: 
+
+```{python}
+#| echo: fenced
+2 * 2 + 3
+```
+
+- To use **Julia**, change the language to `julia`: 
+
+```{julia}
+#| echo: fenced
+3 + 3
+```
+
+
+
 # Inline code {background-color="#F5EDDE"}
 
 <center>
 ![](images/inline-code.png)
 </center>
+
+## Inline R commands
+
+- Note that these inline R command only work if `engine: knitr`. 
+- This doesn't work for other languages.
 
 
 ## Stack components as you like!
