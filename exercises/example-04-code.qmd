@@ -39,7 +39,7 @@ Reproducible research refers to the practice of making research methods, data, a
 ::: callout-warning
 
 1. There is a Julia, Python and R code chunks in this document. _Delete the code chunks that are not relevant to your work._
-2. Change the `eval: false` to `eval: true` in the YAML.
+2. Change the `eval: false` to `eval: true`.
 3. Try modifying the YAML and code chunk options.
 
 :::
@@ -55,7 +55,7 @@ Reproducible research refers to the practice of making research methods, data, a
 #| warning: true
 #| message: true
 #| echo: true
-#| eval: true
+#| eval: false
 #| fig-width: 8
 #| fig-height: 6
 library(tidyverse)
@@ -97,8 +97,8 @@ _ = ax.legend(
 #| message: true
 #| echo: true
 #| eval: false
-#| fig-width: 8
-#| fig-height: 6
+#| fig-width: 8 # these don't work in Julia :(
+#| fig-height: 6 # these don't work in Julia :(
 using StatsPlots
 using RDatasets
 iris = dataset("datasets", "iris");
