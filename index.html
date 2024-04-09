@@ -157,7 +157,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome 👋</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">🎯 Learning objectives</a></li>
-  <li><a href="#preperation" id="toc-preperation" class="nav-link" data-scroll-target="#preperation">🔧 Preperation</a></li>
+  <li><a href="#preperation" id="toc-preperation" class="nav-link" data-scroll-target="#preperation">🔧 Preperation</a>
+  <ul class="collapse">
+  <li><a href="#for-r-users" id="toc-for-r-users" class="nav-link" data-scroll-target="#for-r-users">For <strong>R</strong> users</a></li>
+  <li><a href="#for-python-users" id="toc-for-python-users" class="nav-link" data-scroll-target="#for-python-users">For <strong>Python</strong> users</a></li>
+  <li><a href="#for-julia-users" id="toc-for-julia-users" class="nav-link" data-scroll-target="#for-julia-users">For <strong>Julia</strong> users</a></li>
+  <li><a href="#for-other-language-users" id="toc-for-other-language-users" class="nav-link" data-scroll-target="#for-other-language-users">For <strong>other language</strong> users</a></li>
+  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues"><i class="fa-solid fa-hand-holding-medical" aria-label="hand-holding-medical"></i> Issues</a></li>
+  </ul></li>
   <li><a href="#teaching-team" id="toc-teaching-team" class="nav-link" data-scroll-target="#teaching-team">Teaching team</a></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
   </ul>
@@ -216,12 +223,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="preperation">🔧 Preperation</h2>
 <p>Please ensure that you download and install</p>
 <ul>
-<li>the latest version of <a href="https://quarto.org/docs/get-started/">Quarto</a></li>
-<li>(Optional) <a href="https://slack.com/intl/en-au">Slack</a> (alternatively you can use the web version), and</li>
-<li>the following packages by opening RStudio Desktop, then copy and paste the command below in the Console section, pushing Enter after pasting.</li>
+<li>the latest version of <a href="https://quarto.org/docs/get-started/">Quarto</a>,</li>
+<li>bring your own dataset for technical report writing <em>(note: the teaching team can’t help with the analysis or writing content – you are recommended to do the analysis and writing up the results before the workshop)</em>,</li>
+<li>(Optional) make a free account at <a href="https://quartopub.com/">Quarto Pub</a>, and</li>
+<li>(Optional) <a href="https://slack.com/intl/en-au">Slack</a> (alternatively you can use the web version).</li>
+</ul>
+<section id="for-r-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-r-users">For <strong>R</strong> users</h3>
+<ul>
+<li>It is assumed that you already have R installed.</li>
+<li>Please install the latest version of <a href="https://posit.co/download/rstudio-desktop/">RStudio Desktop</a>,</li>
+<li>And install the following R packages:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"rmarkdown"</span>, <span class="st">"quarto"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><i class="fa-solid fa-hand-holding-medical" aria-label="hand-holding-medical"></i> If you are having issues, see also <a href="https://learnr.numbat.space/chapter1">here</a> or talk to the teaching team.</p>
+</section>
+<section id="for-python-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-python-users">For <strong>Python</strong> users</h3>
+<ul>
+<li>It is assumed that you already have Python installed.</li>
+<li>Please install <a href="https://jupyter.org/install">Jupyter</a>.</li>
+<li>Optionally (but preferred), follow the same instruction as the R users and install the following R package:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"reticulate"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="for-julia-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-julia-users">For <strong>Julia</strong> users</h3>
+<ul>
+<li>It is assumed that you already have Julia installed.</li>
+<li>Please install <a href="https://jupyter.org/install">Jupyter</a>.</li>
+<li>Optionally (but preferred), follow the same instruction as the R users and install the following R package:</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"JuliaCall"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="for-other-language-users" class="level3">
+<h3 class="anchored" data-anchor-id="for-other-language-users">For <strong>other language</strong> users</h3>
+<p>Other languages are possible as well (e.g.&nbsp;E-Views, SAS and Stata) but it may not work as seamlessly as above languages. Other languages that is supported via the knitr engine are listed below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(knitr<span class="sc">::</span>knit_engines<span class="sc">$</span><span class="fu">get</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "awk"       "bash"      "coffee"    "gawk"      "groovy"    "haskell"  
+ [7] "lein"      "mysql"     "node"      "octave"    "perl"      "php"      
+[13] "psql"      "Rscript"   "ruby"      "sas"       "scala"     "sed"      
+[19] "sh"        "stata"     "zsh"       "asis"      "asy"       "block"    
+[25] "block2"    "bslib"     "c"         "cat"       "cc"        "comment"  
+[31] "css"       "ditaa"     "dot"       "embed"     "eviews"    "exec"     
+[37] "fortran"   "fortran95" "go"        "highlight" "js"        "julia"    
+[43] "python"    "R"         "Rcpp"      "sass"      "scss"      "sql"      
+[49] "stan"      "targets"   "tikz"      "verbatim"  "ojs"       "mermaid"  </code></pre>
+</div>
+</div>
+</section>
+<section id="issues" class="level3">
+<h3 class="anchored" data-anchor-id="issues"><i class="fa-solid fa-hand-holding-medical" aria-label="hand-holding-medical"></i> Issues</h3>
+<p>If you are having issues, see also <a href="https://learnr.numbat.space/chapter1">here</a> or talk to the teaching team.</p>
+<p><i class="fas fa-exclamation-circle"></i> Please note that the teaching team primarily consists of R users, so we may not be able to provide help for other languages.</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled" style="width:100%">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -240,9 +295,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>You must use your ANU email to sign up.</li>
 <li>Use your full name.</li>
 <li>By joining, you agree to abide by this <a href="./slack.html"><strong>code of conduct</strong></a>.</li>
+<li>Please <strong>don’t direct message the teaching team</strong> in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.</li>
 </ul>
+<p>Please note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop.</p>
 </div>
 </div>
+</section>
 </section>
 <section id="teaching-team" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-team">Teaching team</h2>

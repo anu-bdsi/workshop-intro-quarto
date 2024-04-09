@@ -1,0 +1,182 @@
+.tag-label {
+  font-size:0.45em; 
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #BE830E;
+  background-color: #BE830E;
+  color: #fdfefe;
+  padding: 5px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.tag-workshop {
+  line-height:1em; 
+  font-weight: bold; 
+  display:inline-block; 
+  text-align: center;
+  border: 1px solid #F5EDDE;
+  background-color: #F5EDDE;
+  color: #BE830E;
+  padding: 8px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+
+.circle-image-120 {
+  background: #000;
+  border-radius: 50%;
+  border: solid 3px black;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.grey {
+  color: grey;
+}
+
+
+
+/* The container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 10px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.catalogue {
+  margin: 0!important;
+  width: 18%!important;
+  height: 18%!important;
+  margin-right: 2%!important;
+}
+
+.color-box {
+  position: absolute;
+  bottom:10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:70%;
+  text-align:center;
+  color: #BE830E;
+  border-radius: 5px;
+  border: double 5px #BE830E;
+  background-color: #F5EDDE;
+  padding: 20px;
+  z-index: 350;
+}  
+
+.output {
+  border: solid 3px black;
+  background-color:white;
+  margin-top: 10px;
+}
+
+.output:before {
+  position: absolute;
+  content: "output";
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: -1em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  border: 3px solid black;
+  background-color: #F5EDDE;
+  font-size: 18pt;
+  color: black;
+  z-index: 300;
+}
+
+
+.text {
+  border: solid 3px black;
+  background-color:white;
+  margin-top: 10px;
+}
+
+.text:before {
+  position: absolute;
+  content: "text";
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: -1em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  border: 3px solid black;
+  background-color: #F5EDDE;
+  font-size: 18pt;
+  color: black;
+  z-index: 300;
+}
+
+
