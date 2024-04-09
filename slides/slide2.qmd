@@ -137,7 +137,7 @@ The value of $\pi$ is `r pi`.
 - This doesn't work for other languages.
 
 
-# Citations {background-color="#F5EDDE"}
+# Cross references {background-color="#F5EDDE"}
 
 ## Bibliography
 
