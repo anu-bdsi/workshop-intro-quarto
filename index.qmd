@@ -36,12 +36,19 @@ Please ensure that you download and install
 - And install the following R packages:
 
 ```r
-install.packages(c("tidyverse", "rmarkdown", "quarto"))
+install.packages(c("tidyverse", "rmarkdown", "quarto", "tinytex"))
+# then install tinytex
+tinytex::install_tinytex()
 ```
 
 ### For **Python** users
 
 - It is assumed that you already have Python installed.
+- Run the following command in the terminal:
+
+```bash
+quarto install tinytex
+```
 - Please install [Jupyter](https://jupyter.org/install).
 - Optionally (but preferred), follow the same instruction as the R users and install the following R package:
 
@@ -52,6 +59,11 @@ install.packages("reticulate")
 ### For **Julia** users
 
 - It is assumed that you already have Julia installed.
+- Run the following command in the terminal:
+
+```bash
+quarto install tinytex
+```
 - Please install [Jupyter](https://jupyter.org/install).
 - Optionally (but preferred), follow the same instruction as the R users and install the following R package:
 
