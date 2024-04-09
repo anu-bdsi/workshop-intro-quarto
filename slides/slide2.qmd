@@ -190,6 +190,8 @@ knitr::kable(head(cars), booktabs = TRUE)
 
 # `r example_doc(5)`
 
+Download the <a href="/exercises/ref.bib" download>ref.bib</a> file and place in the same location as the above file.
+
 ## Stack components as you like!
 
 ![](images/quarto-stack.png)
