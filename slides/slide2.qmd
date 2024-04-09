@@ -157,7 +157,7 @@ library(ggplot2)
 ggplot(cars, aes(dist, speed)) + geom_point()
 ```
 
-* Above figure number can be referenced as `@fig-scatter`.
+* Above figure can be referenced in text as `@fig-scatter`.
 * The chunk label has the prefix `fig-`.
 
 ## Table references
@@ -169,7 +169,7 @@ ggplot(cars, aes(dist, speed)) + geom_point()
 knitr::kable(head(cars), booktabs = TRUE)
 ```
 
-* Above table number can be referenced as `@tbl-cars`.
+* Above table can be referenced in text as `@tbl-cars`.
 * The chunk label has the prefix `tbl-`.
 
 
