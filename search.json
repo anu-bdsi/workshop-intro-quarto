@@ -21,11 +21,39 @@
     "text": "Quarto (and R Markdown) is not just for R\n\nTo use Python, change the language to python:\n\n\n```{python}\n2 * 2 + 3\n```\n\n7\n\n\n\nTo use Julia, change the language to julia:\n\n\n```{julia}\n3 + 3\n```\n\n6"
   },
   {
-    "objectID": "slides/slide2.html#inline-r-commands",
-    "href": "slides/slide2.html#inline-r-commands",
+    "objectID": "slides/slide2.html#inline-r-code",
+    "href": "slides/slide2.html#inline-r-code",
     "title": "Dynamic documents with code",
-    "section": "Inline R commands",
-    "text": "Inline R commands\n\nNote that these inline R command only work if engine: knitr.\nThis doesn’t work for other languages."
+    "section": "Inline R code",
+    "text": "Inline R code\n`r some_r_code()`\n\n\nThe number of observations in the `ChickWeight` dataset \nis **`r nrow(ChickWeight)`**.\n\nThe value of $\\pi$ is `r pi`.\n\n\n\n\n\nThe number of observations in the ChickWeight dataset is 578.\nThe value of \\pi is 3.1415927.\n\n\n\n\n\nNote that these inline R command only work if engine: knitr.\nThis doesn’t work for other languages."
+  },
+  {
+    "objectID": "slides/slide2.html#bibliography",
+    "href": "slides/slide2.html#bibliography",
+    "title": "Dynamic documents with code",
+    "section": "Bibliography",
+    "text": "Bibliography\n\nBibTeX citation style format is used to store references in .bib files.\nYou can get most BibTeX citation for R packages citation function.\n\n\n\nTo cite ggplot2 in publications, please use\n\n  H. Wickham. ggplot2: Elegant Graphics for Data Analysis.\n  Springer-Verlag New York, 2016.\n\nA BibTeX entry for LaTeX users is\n\n  @Book{,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org},\n  }"
+  },
+  {
+    "objectID": "slides/slide2.html#citing-literature",
+    "href": "slides/slide2.html#citing-literature",
+    "title": "Dynamic documents with code",
+    "section": "Citing literature",
+    "text": "Citing literature\n---\nbibliography: bibliography.bib\n---\n\n[@bibtex-key]\n\n@bibtex-key\n(Author et al. 2019)\nAuthor et al. 2019"
+  },
+  {
+    "objectID": "slides/slide2.html#figure-references",
+    "href": "slides/slide2.html#figure-references",
+    "title": "Dynamic documents with code",
+    "section": "Figure references",
+    "text": "Figure references\n```{r}\n#| label: fig-scatter\n#| fig-cap: \"The scatter plot of speed and distance.\"\nlibrary(ggplot2)\nggplot(cars, aes(dist, speed)) + geom_point()\n```\n\nAbove figure number can be referenced as @fig-scatter.\nThe chunk label has the prefix fig-."
+  },
+  {
+    "objectID": "slides/slide2.html#table-references",
+    "href": "slides/slide2.html#table-references",
+    "title": "Dynamic documents with code",
+    "section": "Table references",
+    "text": "Table references\n```{r}\n#| label: tbl-cars\n#| tbl-cap: \"The first few rows of the `cars` dataset.\"\nknitr::kable(head(cars), booktabs = TRUE)\n```\n\nAbove table number can be referenced as @tbl-cars.\nThe chunk label has the prefix tbl-."
   },
   {
     "objectID": "slides/slide2.html#stack-components-as-you-like",
@@ -137,21 +165,21 @@
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nWriting flexible document outputs with Markdown syntax\n\n\n10:30–10:45\nExercise 1\n\n\n10:45–11:15\nDynamic documents with code\n\n\n11:15–11:30\nExercise 2\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:00\nTowards better reproducible practice\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nWrap up"
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–12:50\nWriting\n\n\n12:50–13:00\nWrap up"
   },
   {
     "objectID": "materials.html#resources",
     "href": "materials.html#resources",
     "title": "Materials",
     "section": "📑 Resources",
-    "text": "📑 Resources"
+    "text": "📑 Resources\n\nThe best guide is the Quarto documentation website."
   },
   {
-    "objectID": "materials.html#exercises",
-    "href": "materials.html#exercises",
+    "objectID": "materials.html#files",
+    "href": "materials.html#files",
     "title": "Materials",
-    "section": "🏋️‍♀️ Exercises",
-    "text": "🏋️‍♀️ Exercises\n\nExercise 1Exercise 2Exercise 3Exercise 4\n\n\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Generate HTML, PDF, or Word documents using Markdown syntax\n\n\n Understand the anatomy of Quarto documents\n\n\n Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n Implement various code chunk options to customize chunk behaviour\n\n\n Recognize the significance of reproducibility and grasp the concept of literate programming\n\n\n Apply reproducible practices\n\n\n Establish an organized folder structure for data projects\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n NA\n\n\n\n\n\n\n\n\n\n\n\n\nReflect on learning objectives\n\n\n\nYou should be able to:\n\n\n NA\n\n\n NA"
+    "section": "🔎 Files",
+    "text": "🔎 Files\n\nexample-01.qmd"
   },
   {
     "objectID": "slides/slide1.html#teaching-team",
@@ -165,7 +193,7 @@
     "href": "slides/slide1.html#schedule",
     "title": "Writing flexible document outputs with Markdown syntax",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:30\nWriting flexible document outputs with Markdown syntax\n\n\n10:30–10:45\nExercise 1\n\n\n10:45–11:15\nDynamic documents with code\n\n\n11:15–11:30\nExercise 2\n\n\n11:30–11:40\nbreak\n\n\n11:40–12:00\nTowards better reproducible practice\n\n\n12:00–12:10\nExercise 3\n\n\n12:10–12:40\nWrap up"
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–12:50\nWriting\n\n\n12:50–13:00\nWrap up"
   },
   {
     "objectID": "slides/slide1.html#todays-learning-objectives",
@@ -347,7 +375,7 @@
     "href": "slides/slide1.html#quarto-cheatsheet",
     "title": "Writing flexible document outputs with Markdown syntax",
     "section": "Quarto cheatsheet",
-    "text": "Quarto cheatsheet\n\n\n\n\n\n\n\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-quarto/\n\n\n\n Quarto cheatsheet"
+    "text": "Quarto cheatsheet\n\n\n\n\n\n\n\n\n\n\n Quarto cheatsheet"
   },
   {
     "objectID": "slides/slide3.html#current-learning-objective",
