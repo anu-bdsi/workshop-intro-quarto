@@ -241,8 +241,7 @@ Possibilities are endless...
 * Markdown documents (.md)
 * Dashboard (.html)
 
-# 🔍 Open and inspect the file <a href="/exercises/first-quarto.qmd" download>`first-quarto.qmd`</a>
-
+# `r example_doc(1)`
 
 ## Quarto basics
 
@@ -415,7 +414,8 @@ format: html
 
 
 
-# 🔍 Open and inspect the file <a href="/exercises/first-quarto.qmd" download>`second-quarto.qmd`</a>
+# `r example_doc(2)`
+
 
 
 ## key can contain keys
@@ -585,8 +585,6 @@ RStudio > Help > Markdown Quick Reference
 
 :::
 
-
-
 ## Quarto cheatsheet
 
 ::: flex
@@ -613,4 +611,11 @@ RStudio > Help > Markdown Quick Reference
 :::
 
 
+# Starting your own project {background-color="#F5EDDE"}
 
+::: f1
+
+- RStudio Desktop > New Project > New Directory > New Project
+- For those without RStudio Desktop, create a new directory.
+
+:::

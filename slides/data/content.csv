@@ -1,9 +1,7 @@
 time,type,content_id
-30,slide,1
-15,exercise,1
-30,slide,2
-15,exercise,2
-10,break,0
-20,slide,3
-10,exercise,3
-30,slide,4
+45,slide,1
+45,slide,2
+10,_Break_,0
+45,slide,3
+25,_Writing_,0
+10,slide,4

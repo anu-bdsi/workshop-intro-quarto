@@ -79,10 +79,98 @@ ggplot(cars, aes(speed, dist)) + geom_point()
 ![](images/inline-code.png)
 </center>
 
-## Inline R commands
+## Inline R code
+
+```
+`r knitr::inline_expr("some_r_code()")`
+```
+
+<br>
+
+::: text
+
+```markdown 
+The number of observations in the `ChickWeight` dataset 
+is **``r "r nrow(ChickWeight)"``**.
+
+The value of $\pi$ is ``r "r pi"``.
+```
+
+:::
+
+<br>
+
+. . . 
+
+::: {.output .pl3 .pr3}
+
+<br>
+
+The number of observations in the `ChickWeight` dataset 
+is **`r nrow(ChickWeight)`**.
+
+The value of $\pi$ is `r pi`.
+
+<br>
+
+:::
+
+. . . 
 
 - Note that these inline R command only work if `engine: knitr`. 
 - This doesn't work for other languages.
+
+
+# Citations {background-color="#F5EDDE"}
+
+## Bibliography
+
+* BibTeX citation style format is used to store references in `.bib` files.
+* You can get most BibTeX citation for R packages `citation` function. 
+
+```{r}
+citation("ggplot2")
+```
+
+## Citing literature
+
+```markdown
+---
+bibliography: bibliography.bib
+---
+
+[@bibtex-key]
+
+@bibtex-key
+```
+
+(Author et al. 2019)
+
+Author et al. 2019
+
+## Figure references
+
+```{{r}}
+#| label: fig-scatter
+#| fig-cap: "The scatter plot of speed and distance."
+library(ggplot2)
+ggplot(cars, aes(dist, speed)) + geom_point()
+```
+
+* Above figure number can be referenced as `@fig-scatter`.
+* The chunk label has the prefix `fig-`.
+
+## Table references
+
+
+```{{r}}
+#| label: tbl-cars
+#| tbl-cap: "The first few rows of the `cars` dataset."
+knitr::kable(head(cars), booktabs = TRUE)
+```
+
+* Above table number can be referenced as `@tbl-cars`.
+* The chunk label has the prefix `tbl-`.
 
 
 ## Stack components as you like!

@@ -67,7 +67,7 @@ content |>
   mutate(Content = switch(type,
                               "exercise" = ex_tabset(content_id),
                               "slide" = slide_title(content_id),
-                              "break" = "_Break_")) |>
+                              type)) |>
   select(Time, Content) |> 
   knitr::kable()
 ```
@@ -75,38 +75,15 @@ content |>
 
 ## 📑 Resources
 
+- The best guide is the [Quarto documentation website](https://quarto.org/docs/guide/).
+
+## 🔎 Files 
 
 
+```{r}
+#| echo: false
+#| results: asis
+fns <- dir(path = "exercises", pattern = "[.]qmd$")
+cat(paste0("- <a href='exercises/", fns, "' download>", fns, "</a>"), sep = "\n")
+```
 
-## 🏋️‍♀️ Exercises
-
-::: {.panel-tabset}
-
-## Exercise 1
-
-{{< include "exercises/_exercise1.qmd" >}}
-
-`r checklist(LOs[1:3])`
-
-## Exercise 2
-
-
-{{< include "exercises/_exercise2.qmd" >}}
-
-
-`r checklist(LOs[4:7])`
-
-## Exercise 3
-
-{{< include "exercises/_exercise3.qmd" >}}
-
-`r checklist(LOs[8])`
-
-## Exercise 4
-
-{{< include "exercises/_exercise4.qmd" >}}
-
-`r checklist(LOs[9:10])`
-
-
-:::

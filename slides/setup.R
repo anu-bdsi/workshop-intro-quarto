@@ -27,3 +27,9 @@ exercise_countdown <- function(id) {
 fa_file <- function(ext) {
   glue::glue('<span class="fa-layers fa-fw"><i class="fas fa-file"></i><span class="fa-layers-text fa-inverse" data-fa-transform="shrink-11 down-3" style="font-weight:900;color:grey;">{ext}</span></span>')
 }
+
+
+example_doc <- function(id) {
+  ex <- sprintf("example-%.2d.qmd", id)
+  paste0("🔍 Open and inspect the file <a href='/exercises/", ex, "' download>`", ex, "`</a>")
+}
