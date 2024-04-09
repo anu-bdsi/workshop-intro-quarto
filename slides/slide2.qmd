@@ -55,6 +55,22 @@ library(ggplot2)
 ggplot(cars, aes(speed, dist)) + geom_point()
 ```
 
+<center>
+
+```{r}
+#| echo: false
+#| label: fig-plot
+#| eval: true
+#| fig-width: 4
+#| fig-height: 4
+#| fig-cap: "A scatter plot of speed and distance."
+library(ggplot2)
+ggplot(cars, aes(speed, dist)) + geom_point()
+```
+
+</center>
+
+
 ## Quarto (and R Markdown) is not just for R
 
 - To use **Python**, change the language to `python`: 
@@ -71,7 +87,7 @@ ggplot(cars, aes(speed, dist)) + geom_point()
 3 + 3
 ```
 
-
+# `r example_doc(4)`
 
 # Inline code {background-color="#F5EDDE"}
 
@@ -172,6 +188,7 @@ knitr::kable(head(cars), booktabs = TRUE)
 * Above table can be referenced in text as `@tbl-cars`.
 * The chunk label has the prefix `tbl-`.
 
+# `r example_doc(5)`
 
 ## Stack components as you like!
 

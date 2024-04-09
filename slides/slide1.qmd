@@ -249,6 +249,7 @@ Possibilities are endless...
 ![](images/quarto-first-doc.png)
 </center>
 
+- If you are not using RStudio Desktop, open with your own editor.
 
 
 ## Render to a HTML document
@@ -257,12 +258,23 @@ Possibilities are endless...
 ![](images/quarto-render.png)
 </center>
 
+- If you are not using RStudio Desktop, open the terminal and run 
+
+```bash
+quarto render /your/file/location/filename.qmd
+```
 
 ## Render to a PDF document 
 
 <center>
 ![](images/quarto-pdf.png)
 </center>
+
+- If you are not using RStudio Desktop, open the terminal and run 
+
+```bash
+quarto render /your/file/location/filename.qmd
+```
 
 ## RStudio Desktop
 
@@ -564,6 +576,8 @@ Unordered list
 RStudio > Help > Markdown Quick Reference
 
 :::
+
+# `r example_doc(3)`
 
 ## Summary
 

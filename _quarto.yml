@@ -2,6 +2,7 @@ project:
   type: website
   resources:
     - "exercises/*.qmd"
+    - "exercises/ref.bib"
     - "!exercises/_*.qmd"
   render:
     - "*.qmd"

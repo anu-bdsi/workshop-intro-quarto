@@ -1,0 +1,56 @@
+---
+title: "Reproducible Reseach with Quarto"
+subtitle: "Demo for BDSI Workshop"
+author:  
+  - name: Emi Tanaka
+    orcid: 0000-0002-1455-259X
+    email: workshop.bdsi@anu.edu.au
+    affiliation: "Australian National University"
+    department: "Biological Data Science Institute"
+  - "Chat GPT"
+  # for other author formats, see https://quarto.org/docs/journals/authors.html
+keywords: 
+  - reproducible research
+  - quarto 
+  - markdown
+abstract: | 
+  Reproducible research is indispensable for ensuring the trustworthiness of scientific findings. This abstract explores its significance, emphasizing open access to data, code, and documentation. Key practices such as version control and reproducible environments are highlighted for their role in enhancing verifiability. Additionally, the integration of reproducibility criteria in peer review is discussed. Overall, reproducible research serves as a vital framework for advancing scientific knowledge with transparency and integrity.
+date: "2024-04-12"
+date-format: "Do MMMM YYYY" # see https://quarto.org/docs/reference/dates.html
+date-modified: today
+format: 
+  html:
+    # for other options, see https://quarto.org/docs/reference/formats/html.html
+    toc: true
+    number-sections: true
+    theme: simplex # for other themes see https://quarto.org/docs/output-formats/html-themes.html
+---
+
+## Introduction 
+
+Reproducible research refers to the practice of making research methods, data, and results transparent and accessible so that others can verify and replicate the findings. The goal of reproducibility is to ensure that scientific findings are trustworthy and can be independently validated.
+
+
+## Tasks
+
+::: callout-note
+
+Try modifying the **body** of this file so that the contents are reflective of your own research or interests. 
+
+:::
+
+### Markdown syntax
+
+When writing, you can use a variety of markdown syntax to format your text. For example, you can make texts **bold**, *italic*, or `monospace`. You can also create ordered lists:
+
+1. First item
+2. Second item
+
+Unordered lists are also possible:
+
+* Item 1
+* Item 2
+
+## Conclusion 
+
+Reproducible research not only fosters trust in scientific findings but also promotes collaboration and innovation by allowing others to build upon existing research. Many journals and funding agencies now require or encourage researchers to adopt reproducible practices to improve the reliability and credibility of scientific research.
