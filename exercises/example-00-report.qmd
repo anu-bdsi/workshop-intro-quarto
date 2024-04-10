@@ -1,0 +1,67 @@
+---
+title: "Reproducible Reseach with Quarto"
+subtitle: "Demo for BDSI Workshop"
+author:  
+  - name: Emi Tanaka
+    orcid: 0000-0002-1455-259X
+    email: workshop.bdsi@anu.edu.au
+    affiliation: "Australian National University"
+    department: "Biological Data Science Institute"
+  - "Chat GPT"
+  # for other author formats, see https://quarto.org/docs/journals/authors.html
+keywords: 
+  - reproducible research
+  - quarto 
+  - markdown
+summary: | 
+  Reproducible research is indispensable for ensuring the trustworthiness of scientific findings. This abstract explores its significance, emphasizing open access to data, code, and documentation. Key practices such as version control and reproducible environments are highlighted for their role in enhancing verifiability. Additionally, the integration of reproducibility criteria in peer review is discussed. Overall, reproducible research serves as a vital framework for advancing scientific knowledge with transparency and integrity.
+date: "2024-04-12"
+date-format: "Do MMMM YYYY" # see https://quarto.org/docs/reference/dates.html
+date-modified: today
+engine: knitr # if using Python or Julia, try changing this to "jupyter" if it is not working
+format: 
+  anu-report-html: 
+    self-contained: true
+    embed-resources: true
+  anu-report-pdf: default
+execute: 
+  eval: true
+  echo: false
+bibliography: ref.bib
+number-sections: true
+---
+
+## Introduction 
+
+Reproducible research refers to the practice of making research methods, data, and results transparent and accessible so that others can verify and replicate the findings. The goal of reproducibility is to ensure that scientific findings are trustworthy and can be independently validated. 
+
+## Key insight {#sec-background}
+
+Quarto [@quarto] can seamless integrate code, text, and output in a single document, facilitating transparency and reproducibility. Quarto allows researchers to combine code from various programming languages (such as R, Python, or Julia) with explanatory text and resulting visualizations or analyses. This integration ensures that the entire research process, from data analysis to interpretation, can be easily replicated by others.
+
+
+
+## Results {#sec-results}
+
+Data plots can be easily replicated if the plots are produced with the `ggplot2` R package [@ggplot2]. For example, @fig-penguins has been produced using `ggplot2`.
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-penguins
+#| fig-cap: "The above plot shows the boxplots of the bill length (in mm) for each species."
+library(tidyverse)
+library(palmerpenguins)
+theme_set(theme_classic(base_size = 14))
+ggplot(penguins, aes(bill_length_mm)) +
+  geom_density(aes(fill = species), alpha = 0.2) +
+  labs(fill = "Species", x = "Bill length (mm)", y = "Density") + 
+  scale_y_continuous(expand = c(0, 0)) +
+  scale_x_continuous(expand = c(0, 0))
+```
+
+
+
+## Conclusion 
+
+Reproducible research not only fosters trust in scientific findings but also promotes collaboration and innovation by allowing others to build upon existing research. Many journals and funding agencies now require or encourage researchers to adopt reproducible practices to improve the reliability and credibility of scientific research.

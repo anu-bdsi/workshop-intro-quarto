@@ -160,69 +160,69 @@ These **HTML slides** are made using Quarto.
 :::
 
 
-## What can you do with Quarto? {visibility="hidden"}
+## What can you do with Quarto? 
+
+::: flex
+
+::: {.w-50}
 
 <br>
 <center>
-<iframe src="" width="80%" height="800px" style="border: solid 3px black;"></iframe>
+<iframe src="/exercises/example-00-report.html" width="80%" height="800px" style="border: solid 3px black;"></iframe>
 </center>
-
-::: color-box
-
-These **dynamic report** is made using Quarto.
 
 :::
 
-## What can you do with Quarto? {visibility="hidden"}
+::: {.w-50 .pl3}
 
 <br>
 <center>
-<object data="output/articles/article_template_pnas_article.pdf" type="application/pdf" width="80%" height="450px" style="border: solid 3px black;">
-<embed src="output/articles/article_template_pnas_article.pdf" type="application/pdf" />
+<object data="/exercises/example-00-report.pdf" type="application/pdf" width="80%" height="800px" style="border: solid 3px black;">
+<embed src="/exercises/example-00-report.pdf" type="application/pdf" />
 </object>
 </center>
 
-::: color-box
-
-These **manuscript** is made using Quarto.
+:::
 
 :::
 
-## What can you do with Quarto? {visibility="hidden"}
 
-<br>
-<center>
-<iframe src="" width="80%" height="800px" style="border: solid 3px black;"></iframe>
-</center>
 
 ::: color-box
 
-These **online book** is made using Quarto.  
-Available at XXX  
-The **pdf book** is also made using Quarto.
+These **dynamic reports** is made using Quarto.
+
+Template available at  
+<https://github.com/anuopensci/quarto-anu-report>
 
 :::
 
-## What can you do with R Markdown? {visibility="hidden"}
 
-<br>
-<div class="grid" style="grid: 1fr / 1fr 1fr;">
-<div class="item">
-<center>
-<iframe src="https://thesis.earo.me/" width="80%" height="450px" style="border: solid 3px black;"></iframe>
-</center>
-</div>
+## What can you do with R Markdown?
 
-<div class="item">
+
+::: flex
+
+::: {.w-50}
+
+<iframe src="https://thesis.earo.me/" width="80%" height="800px" style="border: solid 3px black;"></iframe>
+
+:::
+
+::: {.w-50 .pl3}
+
 <center>
 <a href="https://github.com/earowang/thesis/blob/master/_thesis/thesis.pdf"><img src="images/earothesis.png" width="60%" style="border: solid 3px black;"/></a>
 </center>
-</div>
-</div>
+
+:::
+
+:::
+
 
 ::: color-box
 
-This <b>thesis</b> (online and pdf) is made using R Markdown.<br>
+This <b>thesis</b> (online and pdf) is made using R Markdown (previous generation of Quarto).<br>
 Available at https://thesis.earo.me/ <br>
 
 :::
@@ -644,6 +644,7 @@ RStudio > Help > Markdown Quick Reference
 - Use **YAML** to control document's meta data.
 - Use **Markdown syntax** in the body of the document to write content.
 - Focus on _writing the content_ instead of formatting!
+- The best guide for Quarto is at <https://quarto.org/docs/guide/>.
 
 :::
 

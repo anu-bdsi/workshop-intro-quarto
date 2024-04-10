@@ -56,7 +56,7 @@ Reproducible research refers to the practice of making research methods, data, a
 #| warning: true
 #| message: true
 #| echo: true
-#| eval: false
+#| eval: true
 #| fig-width: 8
 #| fig-height: 6
 library(tidyverse)
@@ -74,7 +74,7 @@ ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
 #| warning: true
 #| message: true
 #| echo: true
-#| eval: false
+#| eval: true
 #| fig-width: 8
 #| fig-height: 6
 from sklearn import datasets
@@ -97,7 +97,7 @@ _ = ax.legend(
 #| warning: true
 #| message: true
 #| echo: true
-#| eval: false
+#| eval: true
 #| fig-width: 8 # this don't work in Julia :(
 #| fig-height: 6 # see why at  https://github.com/quarto-dev/quarto-cli/issues/3155
 using StatsPlots

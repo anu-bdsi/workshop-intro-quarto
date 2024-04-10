@@ -1,0 +1,22 @@
+% Inspired by https://github.com/nmfs-opensci/quarto_titlepages_v1
+$if(has-frontmatter)$
+  \begin{frontmatter}
+  \begin{titlepage}
+  $_titlepage.tex()$
+
+  \end{titlepage}
+  \end{frontmatter}
+$else$
+  \begin{titlepage}
+  $_titlepage.tex()$
+
+  \end{titlepage}
+$endif$
+
+\restoregeometry
+
+\cleardoublepage
+\AddToShipoutPicture{\includegraphics[width=\paperwidth,height=\paperheight]{$bg-image$}}
+
+
+\floatplacement{table}{H}

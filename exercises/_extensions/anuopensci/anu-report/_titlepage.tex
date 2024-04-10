@@ -1,0 +1,106 @@
+% This is a combination of Pandoc templating and LaTeX
+% Pandoc templating https://pandoc.org/MANUAL.html#templates
+% See the README for help
+
+$if(titlepage-geometry)$
+\newgeometry{$for(titlepage-geometry)$$titlepage-geometry$$sep$,$endfor$}
+$endif$
+\begin{minipage}[b][\textheight][s]{\textwidth}
+\raggedright
+
+% background image
+$if(title-bg-image)$
+\This$if(title-bg-location)$$title-bg-location$$else$UL$endif$CornerWallPaper{$if(title-bg-size)$$title-bg-size$$else$0.5$endif$}{$title-bg-image$}
+$endif$
+
+% Title and subtitle
+{\Huge\bfseries{$title$}}\\[1\baselineskip]
+$if(subtitle)${\LARGE{$subtitle$}}\\[1\baselineskip]$endif$
+$if(categories)$
+  $for(categories)$
+  \inlinebox{\scriptsize\textcolor{gray}{\MakeUppercase{$categories$}}}
+  $endfor$
+\vspace{3mm}
+$endif$
+
+$if(hide-description)$
+$elseif(description)$
+    $description$
+$endif$
+
+\begin{titlepagebox}
+
+
+
+% Authors
+\textcolor{anugold}{\MakeUppercase{$labels.authors$}}
+\vspace{-3mm}
+\begin{multicols}{2}
+$for(by-author)$
+    \begin{minipage}{\columnwidth}
+    \raggedright
+    \normalfont
+    {\textbf{$by-author.name.literal$}}\\
+    $for(by-author.affiliations)$
+    $if(it.department)${$it.department$}\\$endif$
+    $if(it.name)${\itshape{$it.name$}}\\$endif$
+    $endfor$
+    $if(by-author.email)$\faIcon[regular]{envelope} $by-author.email$\\$endif$
+    $if(by-author.url)$\faIcon{link} $by-author.url$\\$endif$
+    $if(by-author.orcid)$\orcid{$by-author.orcid$}\\$endif$
+    \vspace{4mm}
+    \end{minipage}
+
+$endfor$
+\end{multicols}
+
+\vspace{-4mm}
+
+% Date %
+
+$if(date)$
+% FIXME: \bfseries doesn't seem to be working
+{\textcolor{anugold}{\MakeUppercase{$labels.published$}}}\\ $date$
+$if(date-modified)$
+{\itshape{(Last modified: $date-modified$)}}
+$endif$
+\vspace{3mm}
+$endif$
+
+$if(hide-summary)$
+$elseif(summary)$
+\textcolor{anugold}{\MakeUppercase{$summary-title$}}\\
+$summary$
+$endif$
+\vspace{3mm}
+
+$if(keywords)$
+{\textcolor{anugold}{\MakeUppercase{$labels.keywords$}}}\\
+$for(keywords)$$it$$sep$, $endfor$
+$endif$
+
+\end{titlepagebox}
+
+\vspace{2\baselineskip}
+
+
+
+
+
+%use \vfill instead to get the space to fill flexibly
+%\vspace{0.25\textheight} % Whitespace between the title block and the publisher
+
+\vfill
+
+%%%%%% Cover image
+$if(cover)$\includegraphics[width=4cm]{$cover$}$endif$
+
+% Whitespace between the title block and the tagline
+\vspace{1\baselineskip}
+
+The Australian National University\\{\footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}
+
+\end{minipage}
+$if(titlepage-geometry)$
+\restoregeometry
+$endif$

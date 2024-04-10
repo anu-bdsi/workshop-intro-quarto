@@ -1,0 +1,54 @@
+title: ANU Report
+author: Emi Tanaka
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      date-format: "Do MMMM YYYY"
+      toc: true
+      summary-title: "Executive Summary"
+      published-title: "Date"
+      hide-description: false
+      hide-summary: false
+      mainfont: "Public Sans"
+    html:
+      toc-location: left
+      theme: [custom.scss]
+      css: assets/css/all.css
+      self-contained: true
+      template-partials:
+       - assets/title-block.html
+       - assets/toc.html
+
+    pdf:
+      #include-before-body: before-body.tex
+      include-in-header: header.tex
+      documentclass: scrbook
+      number-sections: false
+      classoption: ["oneside", "open=any"]
+      mainfont: "Public Sans"
+      geometry:
+      - top=30mm
+      - left=25mm
+      - right=25mm
+      - bottom=30mm
+      papersize: a4
+      titlepage-geometry:
+      - top=3in
+      - bottom=1in
+      - right=1in
+      - left=1in
+      title-bg-image: assets/images/coverpage.jpg
+      title-bg-location: "UL"
+      title-bg-size: 1
+      bg-image: assets/images/page-background.jpg
+      template-partials:
+      - before-body.tex
+      - _titlepage.tex
+      # - assets/title.tex
+      #template: assets/template.tex
+
+    docx:
+      reference-doc: anu-reference-doc.docx
+

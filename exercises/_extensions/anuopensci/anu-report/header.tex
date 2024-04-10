@@ -1,0 +1,60 @@
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{lastpage}
+\usepackage{wallpaper} % for the background image on title page
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+\definecolor{orcidlogocol}{rgb}{0.65, 0.807, 0.223}
+\definecolor{anugoldtint}{HTML}{F5EDDE}
+\definecolor{anugold}{HTML}{BE830E}
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\textcolor{orcidlogocol}{\faOrcid} #1}}
+
+\usepackage[manualmark]{scrlayer-scrpage}
+\clearpairofpagestyles
+\ihead{}
+\ofoot{Page \thepage\ of \pageref*{LastPage}}
+\ifoot{The Australian National University\\{\footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}}
+\addtokomafont{pageheadfoot}{\upshape}
+
+\usepackage{multicol}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{titlepagebox}{colback=anugoldtint,colframe=white}
+\newtcbox{\inlinebox}[1][]{enhanced,
+ box align=base,
+ nobeforeafter,
+ colback=white,
+ colframe=gray,
+ size=small,
+ left=0pt,
+ right=0pt,
+ boxsep=2pt,
+ #1}
+
+% \usepackage{fancyhdr}
+% % for title page
+% \fancypagestyle{plain}{%
+%   \renewcommand{\headrulewidth}{0pt}%
+%   \fancyhf{}%
+%   \fancyhf[rf]{Page \thepage\ of \pageref*{LastPage}}
+% \fancyhf[lf]{The Australian National University\\{\footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}}
+% }
+% % for other pages
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhf[rf]{Page \thepage\ of \pageref*{LastPage}}
+% \fancyhf[lf]{The Australian National University\\{\footnotesize TEQSA Provider ID: PRV12002 (Australian University) | CRICOS Provider Code: 00120C}}
+% \renewcommand{\headrulewidth}{0pt} % removes horizontal header line
+
+%\usepackage{titling}
+%\pretitle{% add some rules
+%   \Huge\bfseries
+%}%, make the fonts bigger, make the title (only) bold
+%\posttitle{%
+% \vskip .75em plus .25em minus .25em% increase the vertical spacing a bit, make this particular glue stretchier
+%}
+
+% ensure chapter starts on the same page
+\makeatletter
+\patchcmd{\scr@startchapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother

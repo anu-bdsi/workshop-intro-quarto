@@ -4,6 +4,7 @@ project:
     - "exercises/*.qmd"
     - "exercises/ref.bib"
     - "!exercises/_*.qmd"
+    - "exercises/example-00-report*"
   render:
     - "*.qmd"
     - "!exercises/"
