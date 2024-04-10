@@ -1,5 +1,341 @@
 [
   {
+    "objectID": "slides/slide3.html#current-learning-objective",
+    "href": "slides/slide3.html#current-learning-objective",
+    "title": "Towards better reproducible practice",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\n-Generate HTML, PDF, or Word documents using Markdown syntax\n\n\n-Understand the anatomy of Quarto documents\n\n\n-Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n-Implement various code chunk options to customize chunk behaviour\n\n\nRecognize the significance of reproducibility and grasp the concept of literate programming\n\n\nApply reproducible practices\n\n\nEstablish an organized folder structure for data projects"
+  },
+  {
+    "objectID": "slides/slide3.html#non-robust-workflow",
+    "href": "slides/slide3.html#non-robust-workflow",
+    "title": "Towards better reproducible practice",
+    "section": "Non-Robust Workflow",
+    "text": "Non-Robust Workflow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat should have been submitted:"
+  },
+  {
+    "objectID": "slides/slide3.html#a-robust-reproducible-workflow",
+    "href": "slides/slide3.html#a-robust-reproducible-workflow",
+    "title": "Towards better reproducible practice",
+    "section": "A Robust, Reproducible Workflow",
+    "text": "A Robust, Reproducible Workflow\n\n\nUsing a robust, reproducible workflow means:\n\nyou avoid manual, repetitive tasks\nyour results are computationally reproducible\n\nUsing a robust, reproducible workflow doesn’t mean you won’t make mistakes, but it will help you minimise mistakes.\nLiterate programming is a programming paradigm introduced by Donald Knuth where it emphasises writing code for humans (i.e. intertwine code with natural language explanations).\nLiterate programming includes documentation (detailed explanations, comments and annotations to provide context, rationale and insight into the program’s design and functionality)."
+  },
+  {
+    "objectID": "slides/slide3.html#statistical-value-chain",
+    "href": "slides/slide3.html#statistical-value-chain",
+    "title": "Towards better reproducible practice",
+    "section": "Statistical Value Chain",
+    "text": "Statistical Value Chain\n\n… a statistical value chain is constructed by defining a number of meaningful intermediate data products, for which a chosen set of quality attributes are well described … — van der Loo & de Jonge (2018)]\n\n\n\n\n\n\nSchema from Mark van der Loo and Edwin de Jonge. 2018. Statistical Data Cleaning with Applications in R. John Wiley and Sons Ltd."
+  },
+  {
+    "objectID": "slides/slide3.html#folder-structure",
+    "href": "slides/slide3.html#folder-structure",
+    "title": "Towards better reproducible practice",
+    "section": "Folder structure",
+    "text": "Folder structure\nA suggested folder structure for data projects:\n    project-root-folder/  # Root of the project folder\n    │\n    ├── README.md         # README file\n    │\n    ├── data/             # Raw and derived data\n    │   ├── data-raw/     # Read-only files\n    │   ├── data-input/   # Extracted and coerced from raw data\n    │   ├── data-valid/   # Edit and imputed from input data\n    │   └── data-stats/   # Analysed results (R objects, .csv, etc.)\n    │\n    ├── analysis/         # Scripts (not functions) to run analysis\n    │\n    ├── figures/          # Figures (.png, .pdf, etc.)\n    │\n    ├── misc/             # Misc\n    │\n    ├── report.qmd        # Report, paper, or thesis output"
+  },
+  {
+    "objectID": "slides/slide3.html#sharing-your-documents-via-quarto-pubs",
+    "href": "slides/slide3.html#sharing-your-documents-via-quarto-pubs",
+    "title": "Towards better reproducible practice",
+    "section": "Sharing your documents via Quarto Pubs",
+    "text": "Sharing your documents via Quarto Pubs\n\nMake sure you are logged in to your Quarto Pub account.\nThen run the following command in the Terminal:\n\nquarto publish quarto-pub /path/to/your/quarto-document.qmd"
+  },
+  {
+    "objectID": "slides/slide1.html#teaching-team",
+    "href": "slides/slide1.html#teaching-team",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Teaching team",
+    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "slides/slide1.html#schedule",
+    "href": "slides/slide1.html#schedule",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
+  },
+  {
+    "objectID": "slides/slide1.html#todays-learning-objectives",
+    "href": "slides/slide1.html#todays-learning-objectives",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Today’s learning objectives",
+    "text": "Today’s learning objectives\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\nDevelop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\nImplement various code chunk options to customize chunk behaviour\n\n\nRecognize the significance of reproducibility and grasp the concept of literate programming\n\n\nApply reproducible practices\n\n\nEstablish an organized folder structure for data projects"
+  },
+  {
+    "objectID": "slides/slide1.html#current-learning-objective",
+    "href": "slides/slide1.html#current-learning-objective",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": " Current learning objective",
+    "text": "Current learning objective\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\n-Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n-Implement various code chunk options to customize chunk behaviour\n\n\n-Recognize the significance of reproducibility and grasp the concept of literate programming\n\n\n-Apply reproducible practices\n\n\n-Establish an organized folder structure for data projects"
+  },
+  {
+    "objectID": "slides/slide1.html#quarto-in-a-nutshell",
+    "href": "slides/slide1.html#quarto-in-a-nutshell",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Quarto in a nutshell",
+    "text": "Quarto in a nutshell\n\nQuarto integrates text + code in one source document with ability to render to many output formats (via Pandoc).\n\n\n\n\n\n\nQuarto is the next generation of R Markdown."
+  },
+  {
+    "objectID": "slides/slide1.html#r-markdown",
+    "href": "slides/slide1.html#r-markdown",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "R Markdown",
+    "text": "R Markdown\n\nQuarto and R Markdown are very similar.\nThe same team that created R Markdown created Quarto.\nQuarto supersedes R Markdown so we focus on Quarto.\n\n\n\nR Markdown\n\n\n\nQuarto"
+  },
+  {
+    "objectID": "slides/slide1.html#what-can-you-do-with-quarto",
+    "href": "slides/slide1.html#what-can-you-do-with-quarto",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "What can you do with Quarto?",
+    "text": "What can you do with Quarto?\n\n\n\n\n\n\nThese HTML slides are made using Quarto."
+  },
+  {
+    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-1",
+    "href": "slides/slide1.html#what-can-you-do-with-quarto-1",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "What can you do with Quarto?",
+    "text": "What can you do with Quarto?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese dynamic reports is made using Quarto.\nTemplate available at\nhttps://github.com/anuopensci/quarto-anu-report"
+  },
+  {
+    "objectID": "slides/slide1.html#what-can-you-do-with-r-markdown",
+    "href": "slides/slide1.html#what-can-you-do-with-r-markdown",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "What can you do with R Markdown?",
+    "text": "What can you do with R Markdown?\n\n\n\n\n\n\n\n\n\n\n\n\nThis thesis (online and pdf) is made using R Markdown (previous generation of Quarto). Available at https://thesis.earo.me/"
+  },
+  {
+    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-2",
+    "href": "slides/slide1.html#what-can-you-do-with-quarto-2",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "What can you do with Quarto?",
+    "text": "What can you do with Quarto?\nPossibilities are endless…\n\nMicrosoft Word document (.doc, .docx)\nOpen Document Text (.odt)\nRich text format (.rtf)\ne-book format (.epub)\nMarkdown documents (.md)\nDashboard (.html)\nBooks (.pdf or .html)\nWebsites (collection of web pages)"
+  },
+  {
+    "objectID": "slides/slide1.html#quarto-basics",
+    "href": "slides/slide1.html#quarto-basics",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Quarto basics",
+    "text": "Quarto basics\n\n\n\n\nIf you are not using RStudio Desktop, open with your own editor."
+  },
+  {
+    "objectID": "slides/slide1.html#render-to-a-html-document",
+    "href": "slides/slide1.html#render-to-a-html-document",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Render to a HTML document",
+    "text": "Render to a HTML document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
+  },
+  {
+    "objectID": "slides/slide1.html#render-to-a-pdf-document",
+    "href": "slides/slide1.html#render-to-a-pdf-document",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Render to a PDF document",
+    "text": "Render to a PDF document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
+  },
+  {
+    "objectID": "slides/slide1.html#rstudio-desktop",
+    "href": "slides/slide1.html#rstudio-desktop",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "RStudio Desktop",
+    "text": "RStudio Desktop"
+  },
+  {
+    "objectID": "slides/slide1.html#how-does-it-all-work",
+    "href": "slides/slide1.html#how-does-it-all-work",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "How does it all work?",
+    "text": "How does it all work?\n\n\n\n\n\n\n\nQuarto via knitr/jupyter: qmd  md\n\nPandoc: md  html, pdf, docx"
+  },
+  {
+    "objectID": "slides/slide1.html#yaml---yaml-aint-markup-language",
+    "href": "slides/slide1.html#yaml---yaml-aint-markup-language",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "YAML - YAML Ain’t Markup Language",
+    "text": "YAML - YAML Ain’t Markup Language\n\n\nBasic format\n---\nkey: value\n---\n\n\nExample\n---\ntitle: \"Reproducible Research with Quarto\"\nsubtitle: \"The Basics\"\nauthor: \"Emi Tanaka\"\ndate: \"`r Sys.Date()`\"\nengine: knitr\nformat: html\n---\n\n\n\n\nThere must be a space after “:”!\nWhite spaces indicate structure in YAML - don’t use tabs though!\nSame as R, you can comment lines by starting with #.\nYAML is case sensitive."
+  },
+  {
+    "objectID": "slides/slide1.html#yaml-with-multiple-key-values",
+    "href": "slides/slide1.html#yaml-with-multiple-key-values",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "YAML with multiple key values",
+    "text": "YAML with multiple key values\n\nA key can hold multiple values.\nMultiple values can be listed as a list:\n\nkey: \n  - value1\n  - value2\n  - value3\n\nOr it can be separated by a comma within a square bracket:\n\nkey: [value1, value2]"
+  },
+  {
+    "objectID": "slides/slide1.html#values-spanning-multiple-lines",
+    "href": "slides/slide1.html#values-spanning-multiple-lines",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Values spanning multiple lines",
+    "text": "Values spanning multiple lines\n\n\n\n---\ntitle: &gt;\n  this is a  \n  \n  **single line**\n  \nabstract: |\n  | this value spans   \n  | *many lines* and      \n  | \n  | appears as it is     \n  \nformat: html\n---"
+  },
+  {
+    "objectID": "slides/slide1.html#a-key-can-contain-keys",
+    "href": "slides/slide1.html#a-key-can-contain-keys",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "A key can contain keys",
+    "text": "A key can contain keys\n---\nformat: \n  html:\n    toc: true\n    theme: sketchy\n---\n\nWhat does each of the above keys do?"
+  },
+  {
+    "objectID": "slides/slide1.html#headers",
+    "href": "slides/slide1.html#headers",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Headers",
+    "text": "Headers\n\n\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n###### Header 6"
+  },
+  {
+    "objectID": "slides/slide1.html#lists",
+    "href": "slides/slide1.html#lists",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Lists",
+    "text": "Lists\n\n\n\n\nOrdered list\n\n1. Item 1\n2. Item 2\n   - Subitem 3A\n   - Subitem 3B\n  \nUnordered list\n\n* Item 1 \n  * Subitem 1\n* Item 2\n- Item 3\n- Item 4"
+  },
+  {
+    "objectID": "slides/slide1.html#formatting-text",
+    "href": "slides/slide1.html#formatting-text",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Formatting text",
+    "text": "Formatting text\n\n\n\n **This text is bold** \n \n __This text is also bold__  \n \n *This text is italic* \n \n _This text is also italic_  \n \n **_You can combine both_**"
+  },
+  {
+    "objectID": "slides/slide1.html#inserting-images-and-links",
+    "href": "slides/slide1.html#inserting-images-and-links",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Inserting images and links",
+    "text": "Inserting images and links\n\n\n\n![Avatar](images/avatar1.jpg){width=\"50%\"}\n\nCheck out the\n[BDSI website](https://bdsi.anu.edu.au/)!\n\n&lt;https://bdsi.anu.edu.au/&gt;\n\n\n\n\n\n\n\nAvatar\n\n\nCheck out the BDSI website!\nhttps://bdsi.anu.edu.au/\n\n\n\n\n\nRStudio &gt; Help &gt; Markdown Quick Reference"
+  },
+  {
+    "objectID": "slides/slide1.html#summary",
+    "href": "slides/slide1.html#summary",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Summary",
+    "text": "Summary\n\n\n\n\n\n\n\n\nUse YAML to control document’s meta data.\nUse Markdown syntax in the body of the document to write content.\nFocus on writing the content instead of formatting!\nThe best guide for Quarto is at https://quarto.org/docs/guide/."
+  },
+  {
+    "objectID": "slides/slide1.html#quarto-cheatsheet",
+    "href": "slides/slide1.html#quarto-cheatsheet",
+    "title": "Writing flexible document outputs with Markdown syntax",
+    "section": "Quarto cheatsheet",
+    "text": "Quarto cheatsheet\n\n\n\n\n\n\n\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-quarto/\n\n\n\n Quarto cheatsheet"
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Materials",
+    "section": "",
+    "text": "This website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "materials.html#schedule",
+    "href": "materials.html#schedule",
+    "title": "Materials",
+    "section": "🕙 Schedule",
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
+  },
+  {
+    "objectID": "materials.html#resources",
+    "href": "materials.html#resources",
+    "title": "Materials",
+    "section": "📑 Resources",
+    "text": "📑 Resources\n\nThe best guide is the Quarto documentation website."
+  },
+  {
+    "objectID": "materials.html#files",
+    "href": "materials.html#files",
+    "title": "Materials",
+    "section": "🔎 Files",
+    "text": "🔎 Files\n\nexample-00-report.qmd\nexample-01-first-quarto.qmd\nexample-02-yaml.qmd\nexample-03-markdown.qmd\nexample-04-code.qmd\nexample-05-cross-references.qmd"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Help",
+    "section": "",
+    "text": "You aren’t alone in your R journey. Make use of the experiences of those around you.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "help.html#during-the-workshop",
+    "href": "help.html#during-the-workshop",
+    "title": "Help",
+    "section": "During the workshop",
+    "text": "During the workshop\n\nDon’t be shy and ask fellow participants in the workshop.\nFlag and ask the teaching team."
+  },
+  {
+    "objectID": "help.html#outside-of-the-workshop",
+    "href": "help.html#outside-of-the-workshop",
+    "title": "Help",
+    "section": "Outside of the workshop",
+    "text": "Outside of the workshop\n\nAsk people around you. A second opinion is often helpful in uncovering a step towards the solution to your problem.\nAsk the local experts such as at the BDSI Drop-In Sessions and ANU Statistical Support Network.\nUse online resources such as:\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community.\n\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
+  },
+  {
+    "objectID": "help.html#reporting-mistakes",
+    "href": "help.html#reporting-mistakes",
+    "title": "Help",
+    "section": "Reporting mistakes",
+    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know by emailing workshop.bdsi@anu.edu.au."
+  },
+  {
+    "objectID": "help.html#providing-feedback",
+    "href": "help.html#providing-feedback",
+    "title": "Help",
+    "section": "Providing feedback",
+    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email workshop.bdsi@anu.edu.au or use the survey link that was/will be provided to you (if you are a workshop participants)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Reproducible research with Quarto",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe goal of the workshop is to provide participants with the proficiency to author reproducible research documents using Quarto, an open-source system for scientific and technical publishing. Prior familiarity and usage of at least one of the programming languages such as Python, R, or Julia is assumed to get the most out of the workshop.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "Reproducible research with Quarto",
+    "section": "",
+    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe goal of the workshop is to provide participants with the proficiency to author reproducible research documents using Quarto, an open-source system for scientific and technical publishing. Prior familiarity and usage of at least one of the programming languages such as Python, R, or Julia is assumed to get the most out of the workshop."
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Reproducible research with Quarto",
+    "section": "🎯 Learning objectives",
+    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\nUnderstand the anatomy of Quarto documents\nDevelop dynamic documents containing code (in R, Python, or Julia) using Quarto\nImplement various code chunk options to customize chunk behaviour\nRecognize the significance of reproducibility and grasp the concept of literate programming\nApply reproducible practices\nEstablish an organized folder structure for data projects"
+  },
+  {
+    "objectID": "index.html#preperation",
+    "href": "index.html#preperation",
+    "title": "Reproducible research with Quarto",
+    "section": "🔧 Preperation",
+    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of Quarto,\nbring your own dataset for technical report writing (note: the teaching team can’t help with the analysis or writing content – you are recommended to do the analysis and writing up the results before the workshop),\n(Optional) make a free account at Quarto Pub, and\n(Optional) Slack (alternatively you can use the web version).\n\n\nFor R users\n\nIt is assumed that you already have R installed.\nPlease install the latest version of RStudio Desktop,\nAnd install the following R packages:\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"quarto\", \"tinytex\"))\n# then install tinytex\ntinytex::install_tinytex()\n\n\nFor Python users\n\nIt is assumed that you already have Python installed.\nRun the following command in the terminal:\n\nquarto install tinytex\n\nPlease install Jupyter.\nOptionally (but preferred), follow the same instruction as the R users and install the following R package:\n\ninstall.packages(\"reticulate\")\n\n\nFor Julia users\n\nIt is assumed that you already have Julia installed.\nRun the following command in the terminal:\n\nquarto install tinytex\n\nPlease install Jupyter.\nOptionally (but preferred), follow the same instruction as the R users and install the following R package:\n\ninstall.packages(\"JuliaCall\")\n\n\nFor other language users\nOther languages are possible as well (e.g. E-Views, SAS and Stata) but it may not work as seamlessly as above languages. Other languages that is supported via the knitr engine are listed below.\n\nnames(knitr::knit_engines$get())\n\n [1] \"awk\"       \"bash\"      \"coffee\"    \"gawk\"      \"groovy\"    \"haskell\"  \n [7] \"lein\"      \"mysql\"     \"node\"      \"octave\"    \"perl\"      \"php\"      \n[13] \"psql\"      \"Rscript\"   \"ruby\"      \"sas\"       \"scala\"     \"sed\"      \n[19] \"sh\"        \"stata\"     \"zsh\"       \"asis\"      \"asy\"       \"block\"    \n[25] \"block2\"    \"bslib\"     \"c\"         \"cat\"       \"cc\"        \"comment\"  \n[31] \"css\"       \"ditaa\"     \"dot\"       \"embed\"     \"eviews\"    \"exec\"     \n[37] \"fortran\"   \"fortran95\" \"go\"        \"highlight\" \"js\"        \"julia\"    \n[43] \"python\"    \"R\"         \"Rcpp\"      \"sass\"      \"scss\"      \"sql\"      \n[49] \"stan\"      \"targets\"   \"tikz\"      \"verbatim\"  \"ojs\"       \"mermaid\"  \n\n\n\n\n Issues\nIf you are having issues, see also here or talk to the teaching team.\n Please note that the teaching team primarily consists of R users, so we may not be able to provide help for other languages.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
+  },
+  {
+    "objectID": "index.html#teaching-team",
+    "href": "index.html#teaching-team",
+    "title": "Reproducible research with Quarto",
+    "section": "Teaching team",
+    "text": "Teaching team\n\n\n\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
+  },
+  {
+    "objectID": "index.html#materials",
+    "href": "index.html#materials",
+    "title": "Reproducible research with Quarto",
+    "section": "Materials",
+    "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
+  },
+  {
+    "objectID": "slack.html",
+    "href": "slack.html",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "",
+    "text": "We take making our community safe, friendly, and free from harassment and abuse seriously. In order to participate in this Slack workspace all individuals must read and by participating in the Slack community agree to be bound by this Code of Conduct.\nThis website is brought to you by the ANU Biological Data Science Institute."
+  },
+  {
+    "objectID": "slack.html#summary",
+    "href": "slack.html#summary",
+    "title": "Code of Conduct in Slack Workspace",
+    "section": "Summary",
+    "text": "Summary\n\nBe respectful, be kind.\nAbusive behaviour is never tolerated.\nYou must use your full name and an image of yourself in your profile in order to participate in the community. Anonymous users who do not edit their profile after being given a warning by the Slack admin team will be removed from the Slack channel.\nShould you have any issues while participating in the Slack community you can reach out to one of the teaching team via Direct Message (DM).\nViolations of this code of conduct may result in immediate and permanent expulsion from the Slack community.\nAny decisions made by the Slack admin team are final."
+  },
+  {
     "objectID": "slides/slide2.html#current-learning-objective",
     "href": "slides/slide2.html#current-learning-objective",
     "title": "Dynamic documents with code",
@@ -56,367 +392,17 @@
     "text": "Table references\n```{r}\n#| label: tbl-cars\n#| tbl-cap: \"The first few rows of the `cars` dataset.\"\nknitr::kable(head(cars), booktabs = TRUE)\n```\n\nAbove table can be referenced in text as @tbl-cars.\nThe chunk label has the prefix tbl-."
   },
   {
+    "objectID": "slides/slide2.html#section-references",
+    "href": "slides/slide2.html#section-references",
+    "title": "Dynamic documents with code",
+    "section": "Section references",
+    "text": "Section references\nIf you have enabled numbering of sections:\n---\nnumber-sections: true\n---\nthen you can refer to them by their label!\n\n## Introduction\n\nTo see the main results, go to @sec-results.\n\n## Results {#sec-results}\n\nMy @tbl-results show that the method works."
+  },
+  {
     "objectID": "slides/slide2.html#stack-components-as-you-like",
     "href": "slides/slide2.html#stack-components-as-you-like",
     "title": "Dynamic documents with code",
     "section": "Stack components as you like!",
     "text": "Stack components as you like!\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-quarto/"
-  },
-  {
-    "objectID": "slack.html",
-    "href": "slack.html",
-    "title": "Code of Conduct in Slack Workspace",
-    "section": "",
-    "text": "We take making our community safe, friendly, and free from harassment and abuse seriously. In order to participate in this Slack workspace all individuals must read and by participating in the Slack community agree to be bound by this Code of Conduct.\nThis website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "slack.html#summary",
-    "href": "slack.html#summary",
-    "title": "Code of Conduct in Slack Workspace",
-    "section": "Summary",
-    "text": "Summary\n\nBe respectful, be kind.\nAbusive behaviour is never tolerated.\nYou must use your full name and an image of yourself in your profile in order to participate in the community. Anonymous users who do not edit their profile after being given a warning by the Slack admin team will be removed from the Slack channel.\nShould you have any issues while participating in the Slack community you can reach out to one of the teaching team via Direct Message (DM).\nViolations of this code of conduct may result in immediate and permanent expulsion from the Slack community.\nAny decisions made by the Slack admin team are final."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Reproducible research with Quarto",
-    "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe goal of the workshop is to provide participants with the proficiency to author reproducible research documents using Quarto, an open-source system for scientific and technical publishing. Prior familiarity and usage of at least one of the programming languages such as Python, R, or Julia is assumed to get the most out of the workshop.\nThis website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "Reproducible research with Quarto",
-    "section": "",
-    "text": "This is a training workshop for staff and students affiliated with the Australian National University (ANU) offered by the ANU Biological Data Science Institute (BDSI).\nThe goal of the workshop is to provide participants with the proficiency to author reproducible research documents using Quarto, an open-source system for scientific and technical publishing. Prior familiarity and usage of at least one of the programming languages such as Python, R, or Julia is assumed to get the most out of the workshop."
-  },
-  {
-    "objectID": "index.html#learning-objectives",
-    "href": "index.html#learning-objectives",
-    "title": "Reproducible research with Quarto",
-    "section": "🎯 Learning objectives",
-    "text": "🎯 Learning objectives\nUpon completion of this workshop, participants should be able to:\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\nUnderstand the anatomy of Quarto documents\nDevelop dynamic documents containing code (in R, Python, or Julia) using Quarto\nImplement various code chunk options to customize chunk behaviour\nRecognize the significance of reproducibility and grasp the concept of literate programming\nApply reproducible practices\nEstablish an organized folder structure for data projects"
-  },
-  {
-    "objectID": "index.html#preperation",
-    "href": "index.html#preperation",
-    "title": "Reproducible research with Quarto",
-    "section": "🔧 Preperation",
-    "text": "🔧 Preperation\nPlease ensure that you download and install\n\nthe latest version of Quarto,\nbring your own dataset for technical report writing (note: the teaching team can’t help with the analysis or writing content – you are recommended to do the analysis and writing up the results before the workshop),\n(Optional) make a free account at Quarto Pub, and\n(Optional) Slack (alternatively you can use the web version).\n\n\nFor R users\n\nIt is assumed that you already have R installed.\nPlease install the latest version of RStudio Desktop,\nAnd install the following R packages:\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"quarto\", \"tinytex\"))\n# then install tinytex\ntinytex::install_tinytex()\n\n\nFor Python users\n\nIt is assumed that you already have Python installed.\nRun the following command in the terminal:\n\nquarto install tinytex\n\nPlease install Jupyter.\nOptionally (but preferred), follow the same instruction as the R users and install the following R package:\n\ninstall.packages(\"reticulate\")\n\n\nFor Julia users\n\nIt is assumed that you already have Julia installed.\nRun the following command in the terminal:\n\nquarto install tinytex\n\nPlease install Jupyter.\nOptionally (but preferred), follow the same instruction as the R users and install the following R package:\n\ninstall.packages(\"JuliaCall\")\n\n\nFor other language users\nOther languages are possible as well (e.g. E-Views, SAS and Stata) but it may not work as seamlessly as above languages. Other languages that is supported via the knitr engine are listed below.\n\nnames(knitr::knit_engines$get())\n\n [1] \"awk\"       \"bash\"      \"coffee\"    \"gawk\"      \"groovy\"    \"haskell\"  \n [7] \"lein\"      \"mysql\"     \"node\"      \"octave\"    \"perl\"      \"php\"      \n[13] \"psql\"      \"Rscript\"   \"ruby\"      \"sas\"       \"scala\"     \"sed\"      \n[19] \"sh\"        \"stata\"     \"zsh\"       \"asis\"      \"asy\"       \"block\"    \n[25] \"block2\"    \"bslib\"     \"c\"         \"cat\"       \"cc\"        \"comment\"  \n[31] \"css\"       \"ditaa\"     \"dot\"       \"embed\"     \"eviews\"    \"exec\"     \n[37] \"fortran\"   \"fortran95\" \"go\"        \"highlight\" \"js\"        \"julia\"    \n[43] \"python\"    \"R\"         \"Rcpp\"      \"sass\"      \"scss\"      \"sql\"      \n[49] \"stan\"      \"targets\"   \"tikz\"      \"verbatim\"  \"ojs\"       \"mermaid\"  \n\n\n\n\n Issues\nIf you are having issues, see also here or talk to the teaching team.\n Please note that the teaching team primarily consists of R users, so we may not be able to provide help for other languages.\n\n\n\n\n\n\n Slack workspace (Optional)\n\n\n\nWe use Slack to facilitate communication between workshop participants and the teaching team.\n\nJoin ANU Learning Data Slack Community\n\n\nYou must use your ANU email to sign up.\nUse your full name.\nBy joining, you agree to abide by this code of conduct.\nPlease don’t direct message the teaching team in Slack. Your questions are more likely to be answered in the Slack channels rather than in direct messages.\n\nPlease note that the teaching team does not necessarily actively monitor or attend to the Slack workspace outside of the workshop."
-  },
-  {
-    "objectID": "index.html#teaching-team",
-    "href": "index.html#teaching-team",
-    "title": "Reproducible research with Quarto",
-    "section": "Teaching team",
-    "text": "Teaching team\n\n\n\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "index.html#materials",
-    "href": "index.html#materials",
-    "title": "Reproducible research with Quarto",
-    "section": "Materials",
-    "text": "Materials\nThe materials can be found here.\n   \nThese materials are shared under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."
-  },
-  {
-    "objectID": "help.html",
-    "href": "help.html",
-    "title": "Help",
-    "section": "",
-    "text": "You aren’t alone in your R journey. Make use of the experiences of those around you.\nThis website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "help.html#during-the-workshop",
-    "href": "help.html#during-the-workshop",
-    "title": "Help",
-    "section": "During the workshop",
-    "text": "During the workshop\n\nDon’t be shy and ask fellow participants in the workshop.\nFlag and ask the teaching team."
-  },
-  {
-    "objectID": "help.html#outside-of-the-workshop",
-    "href": "help.html#outside-of-the-workshop",
-    "title": "Help",
-    "section": "Outside of the workshop",
-    "text": "Outside of the workshop\n\nAsk people around you. A second opinion is often helpful in uncovering a step towards the solution to your problem.\nAsk the local experts such as at the BDSI Drop-In Sessions and ANU Statistical Support Network.\nUse online resources such as:\n\nOnline Statistics Courses by ANU Statistical Support Network\nR Project Sharepoint Resources by ANU Statistical Support Network\nR for Data Science\nR4DS Online Learning Community\nAsk questions on Stack Overflow or Posit Community.\n\nYou can continue to use the ANU Learning Data Slack Community to connect with each other."
-  },
-  {
-    "objectID": "help.html#reporting-mistakes",
-    "href": "help.html#reporting-mistakes",
-    "title": "Help",
-    "section": "Reporting mistakes",
-    "text": "Reporting mistakes\nDid you find mistakes in the workshop? Please let us know by emailing workshop.bdsi@anu.edu.au."
-  },
-  {
-    "objectID": "help.html#providing-feedback",
-    "href": "help.html#providing-feedback",
-    "title": "Help",
-    "section": "Providing feedback",
-    "text": "Providing feedback\nWe want to always improve our delivery! Please let us know what is working, what is not working, and/or other feedback. For feedback, you can either email workshop.bdsi@anu.edu.au or use the survey link that was/will be provided to you (if you are a workshop participants)."
-  },
-  {
-    "objectID": "materials.html",
-    "href": "materials.html",
-    "title": "Materials",
-    "section": "",
-    "text": "This website is brought to you by the ANU Biological Data Science Institute."
-  },
-  {
-    "objectID": "materials.html#schedule",
-    "href": "materials.html#schedule",
-    "title": "Materials",
-    "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–12:50\nWriting\n\n\n12:50–13:00\nWrap up"
-  },
-  {
-    "objectID": "materials.html#resources",
-    "href": "materials.html#resources",
-    "title": "Materials",
-    "section": "📑 Resources",
-    "text": "📑 Resources\n\nThe best guide is the Quarto documentation website."
-  },
-  {
-    "objectID": "materials.html#files",
-    "href": "materials.html#files",
-    "title": "Materials",
-    "section": "🔎 Files",
-    "text": "🔎 Files\n\nexample-01-first-quarto.qmd\nexample-02-yaml.qmd\nexample-03-markdown.qmd\nexample-04-code.qmd\nexample-05-cross-references.qmd"
-  },
-  {
-    "objectID": "slides/slide1.html#teaching-team",
-    "href": "slides/slide1.html#teaching-team",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Teaching team",
-    "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
-  },
-  {
-    "objectID": "slides/slide1.html#schedule",
-    "href": "slides/slide1.html#schedule",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–12:50\nWriting\n\n\n12:50–13:00\nWrap up"
-  },
-  {
-    "objectID": "slides/slide1.html#todays-learning-objectives",
-    "href": "slides/slide1.html#todays-learning-objectives",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Today’s learning objectives",
-    "text": "Today’s learning objectives\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\nDevelop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\nImplement various code chunk options to customize chunk behaviour\n\n\nRecognize the significance of reproducibility and grasp the concept of literate programming\n\n\nApply reproducible practices\n\n\nEstablish an organized folder structure for data projects"
-  },
-  {
-    "objectID": "slides/slide1.html#current-learning-objective",
-    "href": "slides/slide1.html#current-learning-objective",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\n-Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n-Implement various code chunk options to customize chunk behaviour\n\n\n-Recognize the significance of reproducibility and grasp the concept of literate programming\n\n\n-Apply reproducible practices\n\n\n-Establish an organized folder structure for data projects"
-  },
-  {
-    "objectID": "slides/slide1.html#quarto-in-a-nutshell",
-    "href": "slides/slide1.html#quarto-in-a-nutshell",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Quarto in a nutshell",
-    "text": "Quarto in a nutshell\n\nQuarto integrates text + code in one source document with ability to render to many output formats (via Pandoc).\n\n\n\n\n\n\nQuarto is the next generation of R Markdown."
-  },
-  {
-    "objectID": "slides/slide1.html#r-markdown",
-    "href": "slides/slide1.html#r-markdown",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "R Markdown",
-    "text": "R Markdown\n\nQuarto and R Markdown are very similar.\nThe same team that created R Markdown created Quarto.\nQuarto supersedes R Markdown so we focus on Quarto.\n\n\n\nR Markdown\n\n\n\nQuarto"
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-quarto",
-    "href": "slides/slide1.html#what-can-you-do-with-quarto",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\n\n\n\n\n\n\nThese HTML slides are made using Quarto."
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-1",
-    "href": "slides/slide1.html#what-can-you-do-with-quarto-1",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\n\n\n\n\n\n\nThese dynamic report is made using Quarto."
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-2",
-    "href": "slides/slide1.html#what-can-you-do-with-quarto-2",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\n\n\n\n\n\n\n\nThese manuscript is made using Quarto."
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-3",
-    "href": "slides/slide1.html#what-can-you-do-with-quarto-3",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\n\n\n\n\n\n\nThese online book is made using Quarto.\nAvailable at XXX\nThe pdf book is also made using Quarto."
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-r-markdown",
-    "href": "slides/slide1.html#what-can-you-do-with-r-markdown",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with R Markdown?",
-    "text": "What can you do with R Markdown?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis thesis (online and pdf) is made using R Markdown. Available at https://thesis.earo.me/"
-  },
-  {
-    "objectID": "slides/slide1.html#what-can-you-do-with-quarto-4",
-    "href": "slides/slide1.html#what-can-you-do-with-quarto-4",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\nPossibilities are endless…\n\nMicrosoft Word document (.doc, .docx)\nOpen Document Text (.odt)\nRich text format (.rtf)\nPower point slides (.ppt, .pptx)\nPosters (as .html or .pdf)\nResume (as .html or .pdf)\nInteractive R Notebooks (.html)\nMarkdown documents (.md)\nDashboard (.html)"
-  },
-  {
-    "objectID": "slides/slide1.html#quarto-basics",
-    "href": "slides/slide1.html#quarto-basics",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Quarto basics",
-    "text": "Quarto basics\n\n\n\n\nIf you are not using RStudio Desktop, open with your own editor."
-  },
-  {
-    "objectID": "slides/slide1.html#render-to-a-html-document",
-    "href": "slides/slide1.html#render-to-a-html-document",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Render to a HTML document",
-    "text": "Render to a HTML document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
-  },
-  {
-    "objectID": "slides/slide1.html#render-to-a-pdf-document",
-    "href": "slides/slide1.html#render-to-a-pdf-document",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Render to a PDF document",
-    "text": "Render to a PDF document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
-  },
-  {
-    "objectID": "slides/slide1.html#rstudio-desktop",
-    "href": "slides/slide1.html#rstudio-desktop",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "RStudio Desktop",
-    "text": "RStudio Desktop"
-  },
-  {
-    "objectID": "slides/slide1.html#how-does-it-all-work",
-    "href": "slides/slide1.html#how-does-it-all-work",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "How does it all work?",
-    "text": "How does it all work?\n\n\n\n\n\n\n\nQuarto via knitr/jupyter: qmd  md\n\nPandoc: md  html, pdf, docx"
-  },
-  {
-    "objectID": "slides/slide1.html#anatomy-of-quarto-documents",
-    "href": "slides/slide1.html#anatomy-of-quarto-documents",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Anatomy of Quarto documents",
-    "text": "Anatomy of Quarto documents"
-  },
-  {
-    "objectID": "slides/slide1.html#yaml---yaml-aint-markup-language",
-    "href": "slides/slide1.html#yaml---yaml-aint-markup-language",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "YAML - YAML Ain’t Markup Language",
-    "text": "YAML - YAML Ain’t Markup Language\n\n\nBasic format\n---\nkey: value\n---\n\n\nExample\n---\ntitle: \"Reproducible Research with Quarto\"\nsubtitle: \"The Basics\"\nauthor: \"Emi Tanaka\"\ndate: \"`r Sys.Date()`\"\nengine: knitr\nformat: html\n---\nThere must be a space after “:”!"
-  },
-  {
-    "objectID": "slides/slide1.html#yaml-structure",
-    "href": "slides/slide1.html#yaml-structure",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "YAML structure",
-    "text": "YAML structure\n\nWhite spaces indicate structure in YAML - don’t use tabs though!\nSame as R, you can comment lines by starting with #.\nYAML is case sensitive."
-  },
-  {
-    "objectID": "slides/slide1.html#yaml-with-multiple-key-values",
-    "href": "slides/slide1.html#yaml-with-multiple-key-values",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "YAML with multiple key values",
-    "text": "YAML with multiple key values\n\nA key can hold multiple values.\nMultiple values can be listed as a list:\n\nkey: \n  - value1\n  - value2\n  - value3\n\nOr it can be separated by a comma within a square bracket:\n\nkey: [value1, value2]"
-  },
-  {
-    "objectID": "slides/slide1.html#values-spanning-multiple-lines",
-    "href": "slides/slide1.html#values-spanning-multiple-lines",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Values spanning multiple lines",
-    "text": "Values spanning multiple lines\n\n\n\n---\ntitle: &gt;\n  this is a  \n  \n  **single line**\n  \nabstract: |\n  | this value spans   \n  | *many lines* and      \n  | \n  | appears as it is     \n  \nformat: html\n---"
-  },
-  {
-    "objectID": "slides/slide1.html#key-can-contain-keys",
-    "href": "slides/slide1.html#key-can-contain-keys",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "key can contain keys",
-    "text": "key can contain keys\n---\nformat: \n  html:\n    toc: true\n    toc-float: true \n    code-download: true \n    code-folding: \"hide\"\n---\n\nWhat does each of the above keys do?"
-  },
-  {
-    "objectID": "slides/slide1.html#headers",
-    "href": "slides/slide1.html#headers",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Headers",
-    "text": "Headers\n\n\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n###### Header 6"
-  },
-  {
-    "objectID": "slides/slide1.html#lists",
-    "href": "slides/slide1.html#lists",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Lists",
-    "text": "Lists\n\n\n\n\nOrdered list\n\n1. Item 1\n2. Item 2\n   - Subitem 3A\n   - Subitem 3B\n  \nUnordered list\n\n* Item 1 \n  * Subitem 1\n* Item 2\n- Item 3\n- Item 4"
-  },
-  {
-    "objectID": "slides/slide1.html#formatting-text",
-    "href": "slides/slide1.html#formatting-text",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Formatting text",
-    "text": "Formatting text\n\n\n\n **This text is bold** \n \n __This text is also bold__  \n \n *This text is italic* \n \n _This text is also italic_  \n \n **_You can combine both_** \n\n\n\n\n\n\n\n\n\n\nRStudio &gt; Help &gt; Markdown Quick Reference"
-  },
-  {
-    "objectID": "slides/slide1.html#summary",
-    "href": "slides/slide1.html#summary",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Summary",
-    "text": "Summary"
-  },
-  {
-    "objectID": "slides/slide1.html#quarto-cheatsheet",
-    "href": "slides/slide1.html#quarto-cheatsheet",
-    "title": "Writing flexible document outputs with Markdown syntax",
-    "section": "Quarto cheatsheet",
-    "text": "Quarto cheatsheet\n\n\n\n\n\n\n\n\n\n\n Quarto cheatsheet"
-  },
-  {
-    "objectID": "slides/slide3.html#current-learning-objective",
-    "href": "slides/slide3.html#current-learning-objective",
-    "title": "Towards better reproducible practice",
-    "section": " Current learning objective",
-    "text": "Current learning objective\n\n\n-Generate HTML, PDF, or Word documents using Markdown syntax\n\n\n-Understand the anatomy of Quarto documents\n\n\n-Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n-Implement various code chunk options to customize chunk behaviour\n\n\nRecognize the significance of reproducibility and grasp the concept of literate programming\n\n\nApply reproducible practices\n\n\nEstablish an organized folder structure for data projects"
-  },
-  {
-    "objectID": "slides/slide3.html#non-robust-workflow",
-    "href": "slides/slide3.html#non-robust-workflow",
-    "title": "Towards better reproducible practice",
-    "section": "Non-Robust Workflow",
-    "text": "Non-Robust Workflow\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat should have been submitted:"
-  },
-  {
-    "objectID": "slides/slide3.html#a-robust-workflow",
-    "href": "slides/slide3.html#a-robust-workflow",
-    "title": "Towards better reproducible practice",
-    "section": "A Robust Workflow",
-    "text": "A Robust Workflow\n\nUsing a robust, reproducible workflow means:\n\nyou avoid manual, repetitive tasks\nyour results are computationally reproducible\n\nUsing a robust, reproducible workflow doesn’t mean you won’t make mistakes.\nPractice of reproducibility just helps to minimise mistakes."
-  },
-  {
-    "objectID": "slides/slide3.html#literate-programming",
-    "href": "slides/slide3.html#literate-programming",
-    "title": "Towards better reproducible practice",
-    "section": "Literate Programming",
-    "text": "Literate Programming"
-  },
-  {
-    "objectID": "slides/slide3.html#sharing-your-documents-via-rpubs",
-    "href": "slides/slide3.html#sharing-your-documents-via-rpubs",
-    "title": "Towards better reproducible practice",
-    "section": "Sharing your documents via RPubs",
-    "text": "Sharing your documents via RPubs"
-  },
-  {
-    "objectID": "slides/slide3.html#summary",
-    "href": "slides/slide3.html#summary",
-    "title": "Towards better reproducible practice",
-    "section": "Summary",
-    "text": "Summary\n\n\n\n\nanu-bdsi.github.io/workshop-intro-quarto/"
   }
 ]

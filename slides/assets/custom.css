@@ -179,4 +179,6 @@
   z-index: 300;
 }
 
-
+.reveal pre code {
+  max-height: 1000px!important;
+}

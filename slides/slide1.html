@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.545">
+  <meta name="generator" content="quarto-1.4.551">
 
   <meta name="author" content="Emi Tanaka">
   <title>ANU BDSIworkshop Reproducible Research with Quarto - Writing flexible document outputs with Markdown syntax</title>
@@ -577,12 +577,8 @@ Emi Tanaka
 <td style="text-align: left;"><strong>Towards better reproducible practice</strong></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">12:25–12:50</td>
+<td style="text-align: left;">12:25–13:00</td>
 <td style="text-align: left;"><em>Writing</em></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">12:50–13:00</td>
-<td style="text-align: left;"><strong>Wrap up</strong></td>
 </tr>
 </tbody>
 </table>
@@ -686,75 +682,70 @@ Emi Tanaka
 </section>
 <section id="what-can-you-do-with-quarto-1" class="slide level2">
 <h2>What can you do with Quarto?</h2>
+<div class="flex">
+<div class="w-50">
 <br>
 <center>
-<iframe src="" width="80%" height="800px" style="border: solid 3px black;">
+<iframe src="../exercises/example-00-report.html" width="80%" height="800px" style="border: solid 3px black;">
 </iframe>
 </center>
-<div class="color-box">
-<p>These <strong>dynamic report</strong> is made using Quarto.</p>
 </div>
-</section>
-<section id="what-can-you-do-with-quarto-2" class="slide level2">
-<h2>What can you do with Quarto?</h2>
+<div class="w-50 pl3">
 <br>
 <center>
-<object data="output/articles/article_template_pnas_article.pdf" type="application/pdf" width="80%" height="450px" style="border: solid 3px black;">
-<embed src="output/articles/article_template_pnas_article.pdf" type="application/pdf">
+<object data="/exercises/example-00-report.pdf" type="application/pdf" width="80%" height="800px" style="border: solid 3px black;">
+<embed src="../exercises/example-00-report.pdf" type="application/pdf">
 </object>
 </center>
-<div class="color-box">
-<p>These <strong>manuscript</strong> is made using Quarto.</p>
 </div>
-</section>
-<section id="what-can-you-do-with-quarto-3" class="slide level2">
-<h2>What can you do with Quarto?</h2>
-<br>
-<center>
-<iframe src="" width="80%" height="800px" style="border: solid 3px black;">
-</iframe>
-</center>
+</div>
 <div class="color-box">
-<p>These <strong>online book</strong> is made using Quarto.<br>
-Available at XXX<br>
-The <strong>pdf book</strong> is also made using Quarto.</p>
+<p>These <strong>dynamic reports</strong> is made using Quarto.</p>
+<p>Template available at<br>
+<a href="https://github.com/anuopensci/quarto-anu-report" class="uri">https://github.com/anuopensci/quarto-anu-report</a></p>
 </div>
 </section>
 <section id="what-can-you-do-with-r-markdown" class="slide level2">
 <h2>What can you do with R Markdown?</h2>
-<br>
-<div class="grid" style="grid: 1fr / 1fr 1fr;">
-<div class="item">
-<center>
-<iframe src="https://thesis.earo.me/" width="80%" height="450px" style="border: solid 3px black;">
+<div class="flex">
+<div class="w-50">
+<iframe src="https://thesis.earo.me/" width="80%" height="800px" style="border: solid 3px black;">
 </iframe>
-</center>
 </div>
-<div class="item">
+<div class="w-50 pl3">
 <center>
 <a href="https://github.com/earowang/thesis/blob/master/_thesis/thesis.pdf"><img src="images/earothesis.png" width="60%" style="border: solid 3px black;"></a>
 </center>
 </div>
 </div>
 <div class="color-box">
-<p>This <b>thesis</b> (online and pdf) is made using R Markdown.<br> Available at https://thesis.earo.me/ <br></p>
+<p>This <b>thesis</b> (online and pdf) is made using R Markdown (previous generation of Quarto).<br> Available at https://thesis.earo.me/ <br></p>
 </div>
 </section>
-<section id="what-can-you-do-with-quarto-4" class="slide level2">
+<section id="what-can-you-do-with-quarto-2" class="slide level2">
 <h2>What can you do with Quarto?</h2>
 <p>Possibilities are endless…</p>
 <ul>
 <li>Microsoft Word document (.doc, .docx)</li>
 <li>Open Document Text (.odt)</li>
 <li>Rich text format (.rtf)</li>
-<li>Power point slides (.ppt, .pptx)</li>
-<li>Posters (as .html or .pdf)</li>
-<li>Resume (as .html or .pdf)</li>
-<li>Interactive R Notebooks (.html)</li>
+<li>e-book format (.epub)</li>
 <li>Markdown documents (.md)</li>
 <li>Dashboard (.html)</li>
+<li>Books (.pdf or .html)</li>
+<li>Websites (collection of web pages)</li>
 </ul>
 </section></section>
+<section id="starting-your-own-project" class="title-slide slide level1 center" data-background-color="#F5EDDE">
+<h1>Starting your own project</h1>
+<div class="f1">
+<ul>
+<li>RStudio Desktop &gt; New Project &gt; New Directory &gt; New Project</li>
+<li>For those without RStudio Desktop, create a new directory.</li>
+</ul>
+</div>
+</section>
+
 <section>
 <section id="open-and-inspect-the-file-example-01-first-quarto.qmd" class="title-slide slide level1 center">
 <h1>🔍 Open and inspect the file <a href="../exercises/example-01-first-quarto.qmd" download=""><code>example-01-first-quarto.qmd</code></a></h1>
@@ -810,10 +801,6 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 </div>
 </center>
 </div>
-</section>
-<section id="anatomy-of-quarto-documents" class="slide level2">
-<h2>Anatomy of Quarto documents</h2>
-<p><img data-src="images/quarto-overview.png"></p>
 </section></section>
 <section>
 <section id="meta-data-with-yaml" class="title-slide slide level1 center" data-background-color="#F5EDDE">
@@ -841,17 +828,16 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <span id="cb4-6"><a></a><span class="an">engine:</span><span class="co"> knitr</span></span>
 <span id="cb4-7"><a></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb4-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>There must be a space after “<code>:</code>”!</p>
 </div>
 </div>
-</section>
-<section id="yaml-structure" class="slide level2">
-<h2>YAML structure</h2>
+<div>
 <ul>
-<li>White spaces indicate structure in YAML - don’t use tabs though!</li>
-<li>Same as R, you can comment lines by starting with <code>#</code>.</li>
-<li>YAML is case sensitive.</li>
+<li class="fragment">There must be a space after “<code>:</code>”!</li>
+<li class="fragment">White spaces indicate structure in YAML - don’t use tabs though!</li>
+<li class="fragment">Same as R, you can comment lines by starting with <code>#</code>.</li>
+<li class="fragment">YAML is case sensitive.</li>
 </ul>
+</div>
 </section>
 <section id="yaml-with-multiple-key-values" class="slide level2">
 <h2>YAML with multiple key values</h2>
@@ -901,16 +887,14 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <h1>🔍 Open and inspect the file <a href="../exercises/example-02-yaml.qmd" download=""><code>example-02-yaml.qmd</code></a></h1>
 
 </section>
-<section id="key-can-contain-keys" class="slide level2">
-<h2>key can contain keys</h2>
+<section id="a-key-can-contain-keys" class="slide level2">
+<h2>A key can contain keys</h2>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="co">---</span></span>
 <span id="cb8-2"><a></a><span class="an">format:</span><span class="co"> </span></span>
 <span id="cb8-3"><a></a><span class="co">  html:</span></span>
 <span id="cb8-4"><a></a><span class="co">    toc: true</span></span>
-<span id="cb8-5"><a></a><span class="co">    toc-float: true </span></span>
-<span id="cb8-6"><a></a><span class="co">    code-download: true </span></span>
-<span id="cb8-7"><a></a><span class="co">    code-folding: "hide"</span></span>
-<span id="cb8-8"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-5"><a></a><span class="co">    theme: sketchy</span></span>
+<span id="cb8-6"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>What does each of the above keys do?</li>
 </ul>
@@ -925,7 +909,7 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <section id="headers" class="slide level2">
 <h2>Headers</h2>
 <div class="flex">
-<div class="w-50">
+<div class="w-55">
 <div class="text">
 <div class="sourceCode" id="cb9"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="fu"># Header 1</span></span>
 <span id="cb9-2"><a></a><span class="fu">## Header 2</span></span>
@@ -935,7 +919,7 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <span id="cb9-6"><a></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div class="w-50 pl3">
+<div class="w-45 pl3 fragment">
 <div class="output">
 <p><img data-src="images/markdown-header.png"></p>
 </div>
@@ -945,7 +929,7 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <section id="lists" class="slide level2">
 <h2>Lists</h2>
 <div class="flex">
-<div class="w-50">
+<div class="w-55">
 <div class="text">
 <div class="sourceCode" id="cb10"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a></span>
 <span id="cb10-2"><a></a>Ordered list</span>
@@ -964,9 +948,9 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <span id="cb10-15"><a></a><span class="ss">- </span>Item 4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div class="w-50 pl3">
+<div class="w-45 pl3 fragment">
 <div class="output pl3">
-<p><img data-src="images/markdown-list.png"></p>
+<p><img data-src="images/markdown-list.png" style="width:70.0%"></p>
 </div>
 </div>
 </div>
@@ -987,9 +971,36 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <span id="cb11-9"><a></a> **_You can combine both_** </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div class="w-50 pl3">
+<div class="w-50 pl3 fragment">
 <div class="output pl3">
 <p><img data-src="images/markdown-formatting.png"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="inserting-images-and-links" class="slide level2">
+<h2>Inserting images and links</h2>
+<div class="flex">
+<div class="w-65">
+<div class="text">
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="al">![Avatar](images/avatar1.jpg)</span>{width="50%"}</span>
+<span id="cb12-2"><a></a></span>
+<span id="cb12-3"><a></a>Check out the</span>
+<span id="cb12-4"><a></a><span class="co">[</span><span class="ot">BDSI website</span><span class="co">](https://bdsi.anu.edu.au/)</span>!</span>
+<span id="cb12-5"><a></a></span>
+<span id="cb12-6"><a></a><span class="ot">&lt;https://bdsi.anu.edu.au/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="w-35 pl3 fragment">
+<div class="output pl3">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/team/avatar1.jpg" style="width:50.0%"></p>
+<figcaption>Avatar</figcaption>
+</figure>
+</div>
+<p>Check out the <a href="https://bdsi.anu.edu.au/">BDSI website</a>!</p>
+<p><a href="https://bdsi.anu.edu.au/" class="uri">https://bdsi.anu.edu.au/</a></p>
 </div>
 </div>
 </div>
@@ -1006,13 +1017,18 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <section id="summary" class="slide level2">
 <h2>Summary</h2>
 <div class="flex">
-<div class="w-50">
+<div class="w-45">
 <center>
 <img data-src="images/quarto-first-doc.png">
 </center>
 </div>
-<div class="w-50 pl3">
-
+<div class="w-55 pl3">
+<ul>
+<li>Use <strong>YAML</strong> to control document’s meta data.</li>
+<li>Use <strong>Markdown syntax</strong> in the body of the document to write content.</li>
+<li>Focus on <em>writing the content</em> instead of formatting!</li>
+<li>The best guide for Quarto is at <a href="https://quarto.org/docs/guide/" class="uri">https://quarto.org/docs/guide/</a>.</li>
+</ul>
 </div>
 </div>
 </section>
@@ -1027,17 +1043,6 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 </div>
 </div>
 
-<aside><div>
-<p><a href="assets/quarto-cheatsheet.pdf"><i class="fas fa-file-pdf"></i> Quarto cheatsheet</a></p>
-</div></aside></section></section>
-<section id="starting-your-own-project" class="title-slide slide level1 center" data-background-color="#F5EDDE">
-<h1>Starting your own project</h1>
-<div class="f1">
-<ul>
-<li>RStudio Desktop &gt; New Project &gt; New Directory &gt; New Project</li>
-<li>For those without RStudio Desktop, create a new directory.</li>
-</ul>
-</div>
 
 <div class="quarto-auto-generated-content">
 <p><img src="_extensions/anu-links/anu-light/logo/ANU_ Crest_Gold.png" class="slide-logo"></p>
@@ -1045,7 +1050,9 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
 <p>anu-bdsi.github.io/workshop-intro-quarto/</p>
 </div>
 </div>
-</section>
+<aside><div>
+<p><a href="assets/quarto-cheatsheet.pdf"><i class="fas fa-file-pdf"></i> Quarto cheatsheet</a></p>
+</div></aside></section></section>
     </div>
   </div>
 
@@ -1369,6 +1376,24 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/anu-bdsi\.github\.io\/workshop-intro-quarto\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1405,7 +1430,11 @@ The <strong>pdf book</strong> is also made using Quarto.</p>
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
