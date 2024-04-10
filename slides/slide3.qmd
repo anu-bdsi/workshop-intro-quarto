@@ -75,23 +75,72 @@ What should have been submitted:
 
 :::
 
-## A Robust Workflow
+## A Robust, Reproducible Workflow
+
+::: incremental
 
 - Using a robust, reproducible workflow means:
   - you avoid manual, repetitive tasks
   - your results are computationally reproducible 
+- Using a robust, reproducible workflow doesn't mean you won't make mistakes, but it will help you minimise mistakes.
+- **Literate programming** is a programming paradigm introduced by Donald Knuth where it emphasises writing code _for humans_ (i.e. intertwine code with natural language explanations).
+- Literate programming includes **documentation** (detailed explanations, comments and annotations to provide context, rationale and insight into the program's design and functionality).
 
-- Using a robust, reproducible workflow doesn't mean you won't make mistakes.
-- Practice of reproducibility just helps to minimise mistakes. 
-
-
-
-## Literate Programming 
+:::
 
 
-## Sharing your documents via RPubs
+## Statistical Value Chain
 
 
-# Happy sharing!
+> ... a **statistical value chain** is constructed by defining a number of meaningful intermediate data products, for which a chosen set of quality attributes are well described ...
+> <br><br>&mdash; van der Loo & de Jonge (2018)]
 
-## Summary
+<center>
+![](images/stats-value-chain.png){width="100%"}
+</center>
+
+::: aside 
+
+Schema from Mark van der Loo and Edwin de Jonge. 2018. Statistical Data Cleaning with Applications in R. John Wiley and Sons Ltd.
+
+:::
+
+## Folder structure 
+
+A suggested folder structure for data projects:
+
+
+```
+    project-root-folder/  # Root of the project folder
+    │
+    ├── README.md         # README file
+    │
+    ├── data/             # Raw and derived data
+    │   ├── data-raw/     # Read-only files
+    │   ├── data-input/   # Extracted and coerced from raw data
+    │   ├── data-valid/   # Edit and imputed from input data
+    │   └── data-stats/   # Analysed results (R objects, .csv, etc.)
+    │
+    ├── analysis/         # Scripts (not functions) to run analysis
+    │
+    ├── figures/          # Figures (.png, .pdf, etc.)
+    │
+    ├── misc/             # Misc
+    │
+    ├── report.qmd        # Report, paper, or thesis output
+```
+
+
+
+
+## Sharing your documents via Quarto Pubs
+
+- Make sure you are logged in to your [Quarto Pub](https://quartopub.com/) account.
+- Then run the following command in the _Terminal_:
+```bash
+quarto publish quarto-pub /path/to/your/quarto-document.qmd
+```
+
+
+# Happy writing and sharing!
+

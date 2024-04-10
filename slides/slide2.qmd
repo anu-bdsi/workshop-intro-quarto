@@ -188,6 +188,31 @@ knitr::kable(head(cars), booktabs = TRUE)
 * Above table can be referenced in text as `@tbl-cars`.
 * The chunk label has the prefix `tbl-`.
 
+## Section references 
+
+If you have enabled numbering of sections:
+
+```markdown 
+---
+number-sections: true
+---
+```
+
+then you can refer to them by their label!
+
+```markdown 
+
+## Introduction
+
+To see the main results, go to @sec-results.
+
+## Results {#sec-results}
+
+My @tbl-results show that the method works. 
+
+```
+
+
 # `r example_doc(5)`
 
 Download the <a href="/exercises/ref.bib" download>ref.bib</a> file and place in the same location as the above file.

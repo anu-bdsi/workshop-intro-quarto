@@ -32,6 +32,6 @@ fa_file <- function(ext) {
 example_doc <- function(id) {
   fns <- dir(path = "../exercises", pattern = "[.]qmd$")
   #ex <- paste0(sprintf("example-%.2d", id), suffix, ".qmd")
-  ex <- fns[id]
+  ex <- fns[id + 1]
   paste0("🔍 Open and inspect the file <a href='/exercises/", ex, "' download>`", ex, "`</a>")
 }
