@@ -1,5 +1,5 @@
 ---
-title: Writing flexible document outputs with Markdown syntax 
+title: Writing flexible document outputs with YAML and Markdown syntax 
 subtitle: "[[ANU BDSI<br>workshop]{.tag-label} Reproducible research with Quarto]{.tag-workshop}"
 format:
   anu-light-revealjs:
