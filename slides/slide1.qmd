@@ -160,7 +160,7 @@ These **HTML slides** are made using Quarto.
 :::
 
 
-## What can you do with Quarto?
+## What can you do with Quarto? {visibility="hidden"}
 
 <br>
 <center>
@@ -173,7 +173,7 @@ These **dynamic report** is made using Quarto.
 
 :::
 
-## What can you do with Quarto?
+## What can you do with Quarto? {visibility="hidden"}
 
 <br>
 <center>
@@ -188,7 +188,7 @@ These **manuscript** is made using Quarto.
 
 :::
 
-## What can you do with Quarto?
+## What can you do with Quarto? {visibility="hidden"}
 
 <br>
 <center>
@@ -203,7 +203,7 @@ The **pdf book** is also made using Quarto.
 
 :::
 
-## What can you do with R Markdown?
+## What can you do with R Markdown? {visibility="hidden"}
 
 <br>
 <div class="grid" style="grid: 1fr / 1fr 1fr;">
@@ -234,12 +234,21 @@ Possibilities are endless...
 * Microsoft Word document (.doc, .docx)
 * Open Document Text (.odt)
 * Rich text format (.rtf)
-* Power point slides (.ppt, .pptx)
-* Posters (as .html or .pdf)
-* Resume (as .html or .pdf)
-* Interactive R Notebooks (.html)
+* e-book format (.epub)
 * Markdown documents (.md)
 * Dashboard (.html)
+* Books (.pdf or .html)
+* Websites (collection of web pages)
+
+# Starting your own project {background-color="#F5EDDE"}
+
+::: f1
+
+- RStudio Desktop > New Project > New Directory > New Project
+- For those without RStudio Desktop, create a new directory.
+
+:::
+
 
 # `r example_doc(1)`
 
@@ -305,10 +314,6 @@ quarto render /your/file/location/filename.qmd
 
 </center>
 
-## Anatomy of Quarto documents
-
-
-![](images/quarto-overview.png)
 
 # Meta data with YAML {background-color="#F5EDDE"}
 
@@ -346,17 +351,21 @@ format: html
 ---
 ```
 
-There must be a space after "`:`"!
+
 
 :::
 
 :::
 
-## YAML structure
+::: incremental
 
+* There must be a space after "`:`"!
 * White spaces indicate structure in YAML - don't use tabs though!
 * Same as R, you can comment lines by starting with `#`.
 * YAML is case sensitive.
+
+:::
+
 
 
 ## YAML with multiple key values
@@ -430,16 +439,14 @@ format: html
 
 
 
-## key can contain keys
+## A key can contain keys
 
 ```markdown
 ---
 format: 
   html:
     toc: true
-    toc-float: true 
-    code-download: true 
-    code-folding: "hide"
+    theme: sketchy
 ---
 ```
 
@@ -456,7 +463,7 @@ format:
 
 ::: flex
 
-::: {.w-50}
+::: {.w-55}
 
 ::: text
 
@@ -474,7 +481,7 @@ format:
 
 :::
 
-::: {.w-50 .pl3}
+::: {.w-45 .pl3 .fragment}
 
 ::: output
 
@@ -491,7 +498,7 @@ format:
 
 ::: flex
 
-::: {.w-50}
+::: {.w-55}
 
 ::: text
 
@@ -521,11 +528,11 @@ Unordered list
 
 :::
 
-::: {.w-50 .pl3}
+::: {.w-45 .pl3 .fragment}
 
 ::: {.output .pl3}
 
-![](images/markdown-list.png)
+![](images/markdown-list.png){width="70%"}
 
 :::
 
@@ -557,7 +564,7 @@ Unordered list
 
 :::
 
-::: {.w-50 .pl3}
+::: {.w-50 .pl3 .fragment}
 
 ::: {.output .pl3}
 
@@ -568,6 +575,45 @@ Unordered list
 :::
 
 :::
+
+## Inserting images and links
+
+::: flex
+
+::: {.w-65}
+
+::: text
+
+```markdown
+![Avatar](images/avatar1.jpg){width="50%"}
+
+Check out the
+[BDSI website](https://bdsi.anu.edu.au/)!
+
+<https://bdsi.anu.edu.au/>
+```
+
+:::
+
+:::
+
+::: {.w-35 .pl3 .fragment}
+
+::: {.output .pl3}
+
+![Avatar](images/team/avatar1.jpg){width="50%"}
+
+Check out the
+[BDSI website](https://bdsi.anu.edu.au/)!
+
+<https://bdsi.anu.edu.au/>
+
+:::
+
+:::
+
+:::
+
 
 <br>
 
@@ -584,7 +630,7 @@ RStudio > Help > Markdown Quick Reference
 
 ::: flex
 
-::: {.w-50}
+::: {.w-45}
 
 <center>
 ![](images/quarto-first-doc.png)
@@ -593,7 +639,11 @@ RStudio > Help > Markdown Quick Reference
 
 :::
 
-::: {.w-50 .pl3}
+::: {.w-55 .pl3}
+
+- Use **YAML** to control document's meta data.
+- Use **Markdown syntax** in the body of the document to write content.
+- Focus on _writing the content_ instead of formatting!
 
 :::
 
@@ -625,11 +675,3 @@ RStudio > Help > Markdown Quick Reference
 :::
 
 
-# Starting your own project {background-color="#F5EDDE"}
-
-::: f1
-
-- RStudio Desktop > New Project > New Directory > New Project
-- For those without RStudio Desktop, create a new directory.
-
-:::
