@@ -44,175 +44,175 @@
   {
     "objectID": "slides/slide1.html#teaching-team",
     "href": "slides/slide1.html#teaching-team",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Teaching team",
     "text": "Teaching team\n\nDr. Emi TanakaJeremias IvanAudrey PrasetyaRyan O’DonnellNils Kreuter\n\n\n\n\n\n Academic statistician passionate about data science and open source software\n\n\n Currently, Deputy Director of ANU Biological Data Science Institute and Executive Editor of R Journal\n\n\n PhD in Statistical Bioinformatics\n\n\n BSci (Adv Maths) with major in Mathematics and Statistics\n\n\n Loves data and coding\n\n\n         https://emitanaka.org      @statsgen      fosstodon.org/@emitanaka\n\n\n\n\n\n\n 2nd year of PhD student at ANU, working on phylogenomics methods to study hybridisation\n\n\n BSci in Bioinformatics\n\n\n Enjoy hiking and science\n\n\n jeremiasivan\n\n\n\n\n\n\n\n\n (Almost finishing) PhD student @Moritz Lab, E&E Division, RSB, ANU\n\n\n Working on historical biogeography of Indo-Australian birds\n\n\n BSc (Hons) with major in Zoology and Ecology & Conservation\n\n\n Loves games, art markets, and FOOD\n\n\n @goaudreymp\n\n\n https://linktr.ee/goaudreymp\n\n\n\n\n\n\n\n\n 3rd Year PhD student @ Linde Lab, E&E Division, RSB, ANU\n\n\n Investigating the evolution of the Australian orchid flora and associated funga\n\n\n MScSt (Biodiversity Science)\n\n\n Loves playing music, reading, nature\n\n\n @rpodonnell\n\n\n rpodonnell.github.io\n\n\n\n\n\n\n\n\n 2nd Year PhD student @ Sequeira Lab, E&E Division, RSB, ANU\n\n\n Identifying social, collective, or coordinated movement behaviour patterns in sharks using tracking data\n\n\n MSc (Marine Biology), BSc (Biology)\n\n\n Loves triathlon, hiking and the ocean\n\n\n @nilskreuter\n\n\n https://linktr.ee/nilskreuter"
   },
   {
     "objectID": "slides/slide1.html#schedule",
     "href": "slides/slide1.html#schedule",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
+    "text": "🕙 Schedule\n\n\n\n\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with YAML and Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
   },
   {
     "objectID": "slides/slide1.html#todays-learning-objectives",
     "href": "slides/slide1.html#todays-learning-objectives",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Today’s learning objectives",
     "text": "Today’s learning objectives\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\nDevelop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\nImplement various code chunk options to customize chunk behaviour\n\n\nRecognize the significance of reproducibility and grasp the concept of literate programming\n\n\nApply reproducible practices\n\n\nEstablish an organized folder structure for data projects"
   },
   {
     "objectID": "slides/slide1.html#current-learning-objective",
     "href": "slides/slide1.html#current-learning-objective",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": " Current learning objective",
     "text": "Current learning objective\n\n\nGenerate HTML, PDF, or Word documents using Markdown syntax\n\n\nUnderstand the anatomy of Quarto documents\n\n\n-Develop dynamic documents containing code (in R, Python, or Julia) using Quarto\n\n\n-Implement various code chunk options to customize chunk behaviour\n\n\n-Recognize the significance of reproducibility and grasp the concept of literate programming\n\n\n-Apply reproducible practices\n\n\n-Establish an organized folder structure for data projects"
   },
   {
     "objectID": "slides/slide1.html#quarto-in-a-nutshell",
     "href": "slides/slide1.html#quarto-in-a-nutshell",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Quarto in a nutshell",
     "text": "Quarto in a nutshell\n\nQuarto integrates text + code in one source document with ability to render to many output formats (via Pandoc).\n\n\n\n\n\n\nQuarto is the next generation of R Markdown."
   },
   {
     "objectID": "slides/slide1.html#r-markdown",
     "href": "slides/slide1.html#r-markdown",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "R Markdown",
     "text": "R Markdown\n\nQuarto and R Markdown are very similar.\nThe same team that created R Markdown created Quarto.\nQuarto supersedes R Markdown so we focus on Quarto.\n\n\n\nR Markdown\n\n\n\nQuarto"
   },
   {
     "objectID": "slides/slide1.html#what-can-you-do-with-quarto",
     "href": "slides/slide1.html#what-can-you-do-with-quarto",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "What can you do with Quarto?",
     "text": "What can you do with Quarto?\n\n\n\n\n\n\nThese HTML slides are made using Quarto."
   },
   {
     "objectID": "slides/slide1.html#what-can-you-do-with-quarto-1",
     "href": "slides/slide1.html#what-can-you-do-with-quarto-1",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "What can you do with Quarto?",
     "text": "What can you do with Quarto?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese dynamic reports is made using Quarto.\nTemplate available at\nhttps://github.com/anuopensci/quarto-anu-report"
   },
   {
     "objectID": "slides/slide1.html#what-can-you-do-with-r-markdown",
     "href": "slides/slide1.html#what-can-you-do-with-r-markdown",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "What can you do with R Markdown?",
     "text": "What can you do with R Markdown?\n\n\n\n\n\n\n\n\n\n\n\n\nThis thesis (online and pdf) is made using R Markdown (previous generation of Quarto). Available at https://thesis.earo.me/"
   },
   {
     "objectID": "slides/slide1.html#what-can-you-do-with-quarto-2",
     "href": "slides/slide1.html#what-can-you-do-with-quarto-2",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "What can you do with Quarto?",
     "text": "What can you do with Quarto?\nPossibilities are endless…\n\nMicrosoft Word document (.doc, .docx)\nOpen Document Text (.odt)\nRich text format (.rtf)\ne-book format (.epub)\nMarkdown documents (.md)\nDashboard (.html)\nBooks (.pdf or .html)\nWebsites (collection of web pages)"
   },
   {
     "objectID": "slides/slide1.html#quarto-basics",
     "href": "slides/slide1.html#quarto-basics",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Quarto basics",
     "text": "Quarto basics\n\n\n\n\nIf you are not using RStudio Desktop, open with your own editor."
   },
   {
     "objectID": "slides/slide1.html#render-to-a-html-document",
     "href": "slides/slide1.html#render-to-a-html-document",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Render to a HTML document",
     "text": "Render to a HTML document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
   },
   {
     "objectID": "slides/slide1.html#render-to-a-pdf-document",
     "href": "slides/slide1.html#render-to-a-pdf-document",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Render to a PDF document",
     "text": "Render to a PDF document\n\n\n\n\nIf you are not using RStudio Desktop, open the terminal and run\n\nquarto render /your/file/location/filename.qmd"
   },
   {
     "objectID": "slides/slide1.html#rstudio-desktop",
     "href": "slides/slide1.html#rstudio-desktop",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "RStudio Desktop",
     "text": "RStudio Desktop"
   },
   {
     "objectID": "slides/slide1.html#how-does-it-all-work",
     "href": "slides/slide1.html#how-does-it-all-work",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "How does it all work?",
     "text": "How does it all work?\n\n\n\n\n\n\n\nQuarto via knitr/jupyter: qmd  md\n\nPandoc: md  html, pdf, docx"
   },
   {
     "objectID": "slides/slide1.html#yaml---yaml-aint-markup-language",
     "href": "slides/slide1.html#yaml---yaml-aint-markup-language",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "YAML - YAML Ain’t Markup Language",
     "text": "YAML - YAML Ain’t Markup Language\n\n\nBasic format\n---\nkey: value\n---\n\n\nExample\n---\ntitle: \"Reproducible Research with Quarto\"\nsubtitle: \"The Basics\"\nauthor: \"Emi Tanaka\"\ndate: \"`r Sys.Date()`\"\nengine: knitr\nformat: html\n---\n\n\n\n\nThere must be a space after “:”!\nWhite spaces indicate structure in YAML - don’t use tabs though!\nSame as R, you can comment lines by starting with #.\nYAML is case sensitive."
   },
   {
     "objectID": "slides/slide1.html#yaml-with-multiple-key-values",
     "href": "slides/slide1.html#yaml-with-multiple-key-values",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "YAML with multiple key values",
     "text": "YAML with multiple key values\n\nA key can hold multiple values.\nMultiple values can be listed as a list:\n\nkey: \n  - value1\n  - value2\n  - value3\n\nOr it can be separated by a comma within a square bracket:\n\nkey: [value1, value2]"
   },
   {
     "objectID": "slides/slide1.html#values-spanning-multiple-lines",
     "href": "slides/slide1.html#values-spanning-multiple-lines",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Values spanning multiple lines",
     "text": "Values spanning multiple lines\n\n\n\n---\ntitle: &gt;\n  this is a  \n  \n  **single line**\n  \nabstract: |\n  | this value spans   \n  | *many lines* and      \n  | \n  | appears as it is     \n  \nformat: html\n---"
   },
   {
     "objectID": "slides/slide1.html#a-key-can-contain-keys",
     "href": "slides/slide1.html#a-key-can-contain-keys",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "A key can contain keys",
     "text": "A key can contain keys\n---\nformat: \n  html:\n    toc: true\n    theme: sketchy\n---\n\nWhat does each of the above keys do?"
   },
   {
     "objectID": "slides/slide1.html#headers",
     "href": "slides/slide1.html#headers",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Headers",
     "text": "Headers\n\n\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n###### Header 6"
   },
   {
     "objectID": "slides/slide1.html#lists",
     "href": "slides/slide1.html#lists",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Lists",
     "text": "Lists\n\n\n\n\nOrdered list\n\n1. Item 1\n2. Item 2\n   - Subitem 3A\n   - Subitem 3B\n  \nUnordered list\n\n* Item 1 \n  * Subitem 1\n* Item 2\n- Item 3\n- Item 4"
   },
   {
     "objectID": "slides/slide1.html#formatting-text",
     "href": "slides/slide1.html#formatting-text",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Formatting text",
     "text": "Formatting text\n\n\n\n **This text is bold** \n \n __This text is also bold__  \n \n *This text is italic* \n \n _This text is also italic_  \n \n **_You can combine both_**"
   },
   {
     "objectID": "slides/slide1.html#inserting-images-and-links",
     "href": "slides/slide1.html#inserting-images-and-links",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Inserting images and links",
     "text": "Inserting images and links\n\n\n\n![Avatar](images/avatar1.jpg){width=\"50%\"}\n\nCheck out the\n[BDSI website](https://bdsi.anu.edu.au/)!\n\n&lt;https://bdsi.anu.edu.au/&gt;\n\n\n\n\n\n\n\nAvatar\n\n\nCheck out the BDSI website!\nhttps://bdsi.anu.edu.au/\n\n\n\n\n\nRStudio &gt; Help &gt; Markdown Quick Reference"
   },
   {
     "objectID": "slides/slide1.html#summary",
     "href": "slides/slide1.html#summary",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Summary",
     "text": "Summary\n\n\n\n\n\n\n\n\nUse YAML to control document’s meta data.\nUse Markdown syntax in the body of the document to write content.\nFocus on writing the content instead of formatting!\nThe best guide for Quarto is at https://quarto.org/docs/guide/."
   },
   {
     "objectID": "slides/slide1.html#quarto-cheatsheet",
     "href": "slides/slide1.html#quarto-cheatsheet",
-    "title": "Writing flexible document outputs with Markdown syntax",
+    "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "Quarto cheatsheet",
     "text": "Quarto cheatsheet\n\n\n\n\n\n\n\n\n\n\n\n\n\nanu-bdsi.github.io/workshop-intro-quarto/\n\n\n\n Quarto cheatsheet"
   },
@@ -228,7 +228,7 @@
     "href": "materials.html#schedule",
     "title": "Materials",
     "section": "🕙 Schedule",
-    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
+    "text": "🕙 Schedule\n\n\n\n\n\nTime\nContent\n\n\n\n\n10:00–10:45\nWriting flexible document outputs with YAML and Markdown syntax\n\n\n10:45–11:30\nDynamic documents with code\n\n\n11:30–11:40\nBreak\n\n\n11:40–12:25\nTowards better reproducible practice\n\n\n12:25–13:00\nWriting"
   },
   {
     "objectID": "materials.html#resources",
