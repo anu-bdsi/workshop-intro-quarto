@@ -190,7 +190,7 @@ These **HTML slides** are made using Quarto.
 
 ::: color-box
 
-These **dynamic reports** is made using Quarto.
+These **dynamic reports** are made using Quarto.
 
 Template available at  
 <https://github.com/anuopensci/quarto-anu-report>
