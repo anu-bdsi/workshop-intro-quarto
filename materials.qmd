@@ -83,7 +83,7 @@ content |>
 ```{r}
 #| echo: false
 #| results: asis
-fns <- dir(path = "exercises", pattern = "[.]qmd$")
+fns <- dir(path = "exercises", pattern = "[.]qmd$")[-1]
 cat(paste0("- <a href='exercises/", fns, "' download>", fns, "</a>"), sep = "\n")
 ```
 
