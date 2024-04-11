@@ -135,13 +135,29 @@ A suggested folder structure for data projects:
 
 
 
-## Sharing your documents via Quarto Pubs
+## Sharing your documents 
+
+**via Quarto Pubs**
 
 - Make sure you are logged in to your [Quarto Pub](https://quartopub.com/) account.
 - Then run the following command in the _Terminal_:
 ```bash
 quarto publish quarto-pub /path/to/your/quarto-document.qmd
 ```
+
+. . . 
+
+<br>
+
+**Self-contained HTML document**
+
+```markdown
+format:
+  html:
+    embed-resources: true
+```
+
+- then you can share your output HTML file with no external dependencies
 
 
 # Happy writing and sharing! {background-color="#F5EDDE"}
