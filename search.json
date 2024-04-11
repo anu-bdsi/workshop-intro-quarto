@@ -35,11 +35,11 @@
     "text": "Folder structure\nA suggested folder structure for data projects:\n    project-root-folder/  # Root of the project folder\n    │\n    ├── README.md         # README file\n    │\n    ├── data/             # Raw and derived data\n    │   ├── data-raw/     # Read-only files\n    │   ├── data-input/   # Extracted and coerced from raw data\n    │   ├── data-valid/   # Edit and imputed from input data\n    │   └── data-stats/   # Analysed results (R objects, .csv, etc.)\n    │\n    ├── analysis/         # Scripts (not functions) to run analysis\n    │\n    ├── figures/          # Figures (.png, .pdf, etc.)\n    │\n    ├── misc/             # Misc\n    │\n    ├── report.qmd        # Report, paper, or thesis output"
   },
   {
-    "objectID": "slides/slide3.html#sharing-your-documents-via-quarto-pubs",
-    "href": "slides/slide3.html#sharing-your-documents-via-quarto-pubs",
+    "objectID": "slides/slide3.html#sharing-your-documents",
+    "href": "slides/slide3.html#sharing-your-documents",
     "title": "Towards better reproducible practice",
-    "section": "Sharing your documents via Quarto Pubs",
-    "text": "Sharing your documents via Quarto Pubs\n\nMake sure you are logged in to your Quarto Pub account.\nThen run the following command in the Terminal:\n\nquarto publish quarto-pub /path/to/your/quarto-document.qmd"
+    "section": "Sharing your documents",
+    "text": "Sharing your documents\nvia Quarto Pubs\n\nMake sure you are logged in to your Quarto Pub account.\nThen run the following command in the Terminal:\n\nquarto publish quarto-pub /path/to/your/quarto-document.qmd\n\n\nSelf-contained HTML document\nformat:\n  html:\n    embed-resources: true\n\nthen you can share your output HTML file with no external dependencies"
   },
   {
     "objectID": "slides/slide1.html#teaching-team",
@@ -95,7 +95,7 @@
     "href": "slides/slide1.html#what-can-you-do-with-quarto-1",
     "title": "Writing flexible document outputs with YAML and Markdown syntax",
     "section": "What can you do with Quarto?",
-    "text": "What can you do with Quarto?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese dynamic reports is made using Quarto.\nTemplate available at\nhttps://github.com/anuopensci/quarto-anu-report"
+    "text": "What can you do with Quarto?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThese dynamic reports are made using Quarto.\nTemplate available at\nhttps://github.com/anuopensci/quarto-anu-report"
   },
   {
     "objectID": "slides/slide1.html#what-can-you-do-with-r-markdown",
