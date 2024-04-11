@@ -89,6 +89,8 @@ What should have been submitted:
 :::
 
 
+# Organising and Sharing Your Data Projects {background-color="#F5EDDE"}
+
 ## Statistical Value Chain
 
 
@@ -142,5 +144,5 @@ quarto publish quarto-pub /path/to/your/quarto-document.qmd
 ```
 
 
-# Happy writing and sharing!
+# Happy writing and sharing! {background-color="#F5EDDE"}
 
