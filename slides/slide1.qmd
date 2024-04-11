@@ -178,7 +178,7 @@ These **HTML slides** are made using Quarto.
 <br>
 <center>
 <object data="/exercises/example-00-report.pdf" type="application/pdf" width="80%" height="800px" style="border: solid 3px black;">
-<embed src="/exercises/example-00-report.pdf" type="application/pdf" />
+<embed src="/exercises/example-00-report.pdf" type="application/pdf" width="80%" height="800px"/>
 </object>
 </center>
 
