@@ -354,7 +354,7 @@
     "href": "slides/slide2.html#quarto-and-r-markdown-is-not-just-for-r",
     "title": "Dynamic documents with code",
     "section": "Quarto (and R Markdown) is not just for R",
-    "text": "Quarto (and R Markdown) is not just for R\n\nTo use Python, change the language to python:\n\n\n```{python}\n2 * 2 + 3\n```\n\n7\n\n\n\nTo use Julia, change the language to julia:\n\n\n```{julia}\n3 + 3\n```\n\n6"
+    "text": "Quarto (and R Markdown) is not just for R\n\nTo use Python, change the language to python:\n\n\n```{python}\n2 * 2 + 3\n```\n\n7\n\n\n\n\nTo use Julia, change the language to julia:\n\n\n```{julia}\n3 + 3\n```\n\n6"
   },
   {
     "objectID": "slides/slide2.html#inline-r-code",
